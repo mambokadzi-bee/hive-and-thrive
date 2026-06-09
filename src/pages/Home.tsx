@@ -144,10 +144,10 @@ export default function Home() {
       <section className="py-20 lg:py-28 bg-warm-white">
         <div className="container">
           <FadeIn className="text-center mb-14">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Hive & Thrive Collection</span>
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Hive & Thrive</span>
             <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy mb-4">The Queen's Playbook</h2>
             <p className="text-charcoal/60 text-lg max-w-2xl mx-auto">
-              Career wisdom and inspirational stories drawn from 20+ years of real experience in corporate finance; the lessons they don't teach in business school.
+              Twenty years in corporate finance distilled into principles that actually hold up. Meet the Bee-Attitudes.
             </p>
           </FadeIn>
 
@@ -162,14 +162,14 @@ export default function Home() {
                   <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
                     <div className="flex items-center gap-2 mb-3">
                       <Crown className="w-4 h-4 text-honey" />
-                      <span className="text-honey text-xs font-semibold tracking-[0.15em] uppercase">The Collection</span>
+                      <span className="text-honey text-xs font-semibold tracking-[0.15em] uppercase">The Bee-Attitudes</span>
                     </div>
-                    <h3 className="font-display text-2xl lg:text-3xl font-bold text-white mb-2">Stories That Move You Forward</h3>
+                    <h3 className="font-display text-2xl lg:text-3xl font-bold text-white mb-2">Lessons from the Hive</h3>
                     <p className="text-cream/70 text-sm leading-relaxed max-w-lg">
-                      Real stories from real boardrooms, real challenges, and real breakthroughs. Each one a drop of honey meant to sustain you through the demands of professional life.
+                      Seven principles for professional women. Simple. Not easy.
                     </p>
                     <span className="inline-flex items-center gap-1 mt-4 text-honey text-sm font-medium group-hover:gap-2 transition-all">
-                      Read Stories <ArrowRight className="w-4 h-4" />
+                      Explore the Playbook <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>
                 </div>
