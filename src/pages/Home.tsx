@@ -198,6 +198,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== HONEY DROPS ===== */}
+      <section className="py-20 lg:py-28 bg-cream">
+        <div className="container">
+          <FadeIn className="text-center mb-14">
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">
+              Hive &amp; Thrive Honey Drops
+            </span>
+            <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy mb-4">
+              Truths Worth <span className="text-honey-dark italic">Sitting With</span>
+            </h2>
+            <p className="text-charcoal/60 text-lg max-w-2xl mx-auto">
+              Reflections gathered from two decades of showing up, absorbing, and finally learning to stop.
+            </p>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              "Survival and thriving are not the same thing.",
+              "Useful felt safer than seen.",
+              "Sometimes the workplace rewards an old wound and calls it leadership.",
+              "You do not have to survive the life you worked so hard to build.",
+              "Shrinking is not always humility. Sometimes shrinking is protection.",
+              "Excellence became proof of worth.",
+              "Even bees rest.",
+              "The work is not to abandon excellence. The work is to stop using excellence to earn permission to exist.",
+              "You are allowed to thrive unapologetically.",
+            ].map((drop, i) => (
+              <FadeIn key={i} delay={i * 60}>
+                <div className="group h-full bg-white border border-honey/10 rounded-2xl p-7 hover:border-honey/30 hover:shadow-lg hover:shadow-honey/10 transition-all duration-500 flex items-center">
+                  <p className="font-display text-lg lg:text-xl text-navy/85 italic leading-relaxed group-hover:text-navy transition-colors duration-300">
+                    &ldquo;{drop}&rdquo;
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* COMING SOON */}
       <section className="py-20 lg:py-28 bg-cream">
         <div className="container">

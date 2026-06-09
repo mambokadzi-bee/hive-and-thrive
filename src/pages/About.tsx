@@ -185,6 +185,42 @@ export default function About() {
         </div>
       </section>
 
+      {/* You Must Be Bee */}
+      <section className="py-20 lg:py-28 bg-navy relative overflow-hidden">
+        <div className="absolute top-10 right-16 w-32 h-32 border border-honey/8 hex-clip opacity-30" />
+        <div className="absolute bottom-16 left-10 w-20 h-20 bg-honey/5 hex-clip" />
+
+        <div className="container relative">
+          <div className="max-w-3xl mx-auto">
+            <FadeIn>
+              <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">
+                A Moment That Stayed With Me
+              </span>
+              <h2 className="font-display text-3xl lg:text-4xl font-bold text-white mb-10">
+                You Must Be <span className="text-honey-light italic">Bee</span>
+              </h2>
+            </FadeIn>
+
+            <FadeIn delay={100}>
+              <div className="space-y-6 text-cream/75 text-lg leading-relaxed">
+                <p>There's a moment I still think about.</p>
+                <p>We had exchanged emails for weeks. They knew my name. They knew my work. They just didn't know my face.</p>
+                <p>When he walked toward us down the corridor, he looked right past me and reached for someone else. Confident. Friendly. Hand already extended.</p>
+                <p className="font-display text-xl lg:text-2xl text-white italic">&ldquo;You must be Bee.&rdquo;</p>
+                <p>I stood there with a practiced smile and registered everything quietly: the assumption, the redirect, the shape of what leadership was expected to look like before I had said a single word.</p>
+                <p>My colleague corrected him. The meeting continued. No one mentioned it again.</p>
+                <p>That's what subtle looks like. Not always malicious. Not always intentional. But cumulative.</p>
+                <p>And I had spent a long time being very good at absorbing the cumulative. Registering the assumption and then leading the meeting anyway, as if the two things had nothing to do with each other.</p>
+                <p>That gap is exactly what this book is about. What you carry versus what you show.</p>
+                <p>Not rage. Not a grievance. Just an honest look at what it costs a woman to keep absorbing quietly. To keep performing capable while slowly disappearing inside the work.</p>
+                <p>And what it feels like to finally stop.</p>
+                <p className="text-honey font-semibold">Welcome to Hive &amp; Thrive. I'm Bee. And yes, I'm exactly who you were looking for. 🐝</p>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
       {/* Career Milestones Timeline */}
       <section className="py-20 lg:py-28 bg-navy relative overflow-hidden">
         {/* Decorative hexagons */}
