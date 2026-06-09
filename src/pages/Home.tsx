@@ -246,14 +246,14 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
             {[
-              { name: "Even Bees Rest Sherpa Blanket", price: "$49.99", tag: "From Chapter 12", img: "/images/devotional.jpg" },
-              { name: "You Are the Honey Ceramic Mug", price: "$9.99", tag: "Core theme", img: "/images/inspiration.jpg" },
-              { name: "Find Your Hive Hardcover Journal", price: "$13.99", tag: "Community & belonging", img: "/images/newsletter-bg.jpg" },
-              { name: "Even Bees Rest T-Shirt", price: "$19.99", tag: "Wearable reminder", img: "/images/hero-bg.jpg" },
+              { name: "Even Bees Rest Sherpa Blanket", price: "$49.99", tag: "From Chapter 12", img: "https://cdn.shopify.com/s/files/1/0983/4925/2883/files/18234007988467994398_2048.jpg?v=1775792642", handle: "even-bees-rest-hive-thrive-sherpa-fleece-blanket" },
+              { name: "You Are the Honey Ceramic Mug", price: "$9.99", tag: "Core theme", img: "https://cdn.shopify.com/s/files/1/0983/4925/2883/files/11638481605759695721_2048.jpg?v=1775791970", handle: "you-are-the-honey-hive-thrive-ceramic-mug-11oz" },
+              { name: "Find Your Hive Hardcover Journal", price: "$13.99", tag: "Community & belonging", img: "https://cdn.shopify.com/s/files/1/0983/4925/2883/files/3781165502475812487_2048.jpg?v=1775792122", handle: "find-your-hive-hive-thrive-hardcover-journal" },
+              { name: "Even Bees Rest T-Shirt", price: "$19.99", tag: "Wearable reminder", img: "https://cdn.shopify.com/s/files/1/0983/4925/2883/files/7928432989040128670_2048.jpg?v=1776022880", handle: "even-bees-rest-hive-thrive-t-shirt-1" },
             ].map((product, i) => (
               <FadeIn key={product.name} delay={i * 100}>
                 <a
-                  href="https://hive-thrive.myshopify.com"
+                  href={`https://hive-thrive.myshopify.com/products/${product.handle}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group block bg-white rounded-2xl overflow-hidden shadow-md shadow-honey/5 hover:shadow-xl hover:shadow-honey/10 transition-all duration-500 hover:-translate-y-1"
