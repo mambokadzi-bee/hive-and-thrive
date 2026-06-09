@@ -8,12 +8,14 @@ const LOGO_URL = "/images/logo.png";
 const navLinks = [
   { href: "/", label: "The Hive" },
   { href: "/about", label: "Meet Bee" },
-  { href: "/honeycomb", label: "The Honeycomb" },
-  { href: "/collections", label: "Collections" },
+  { href: "/the-book", label: "The Book" },
+  { href: "/collections", label: "The Queen's Playbook" },
   { href: "/join", label: "Join the Swarm" },
   { href: "/queens-circle", label: "The Queen's Circle" },
   { href: "/contact", label: "Contact" },
 ];
+
+const shopLink = { href: "https://hive-thrive.myshopify.com", label: "Shop" };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
@@ -85,6 +87,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 )}
               </Link>
             ))}
+            <a
+              href={shopLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`ml-2 px-5 py-2 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 border ${
+                scrolled
+                  ? "border-honey text-honey-dark hover:bg-honey hover:text-navy"
+                  : "border-honey/70 text-honey-light hover:bg-honey hover:text-navy"
+              }`}
+            >
+              {shopLink.label}
+            </a>
           </div>
 
           {/* Mobile Toggle */}
@@ -121,6 +135,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     {link.label}
                   </Link>
                 ))}
+                <a
+                  href={shopLink.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-3 text-base font-semibold rounded-lg text-honey-dark bg-honey/10 hover:bg-honey/20 transition-all duration-200"
+                >
+                  Shop ↗
+                </a>
               </div>
             </motion.div>
           )}

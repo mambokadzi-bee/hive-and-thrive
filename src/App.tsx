@@ -8,6 +8,7 @@ import Collections from "./pages/Collections";
 import JoinSwarm from "./pages/JoinSwarm";
 import QueensCircle from "./pages/QueensCircle";
 import Contact from "./pages/Contact";
+import TheBook from "./pages/TheBook";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
 
@@ -20,6 +21,7 @@ function Router() {
         <Route path="/honeycomb" component={Honeycomb} />
         <Route path="/collections" component={Collections} />
         <Route path="/join" component={JoinSwarm} />
+        <Route path="/the-book" component={TheBook} />
         <Route path="/queens-circle" component={QueensCircle} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />

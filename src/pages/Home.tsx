@@ -88,7 +88,7 @@ export default function Home() {
                   <img src={BEE_HEADSHOT} alt="Bee, Finance Director, Author and Speaker" className="w-full h-full object-cover object-top" />
                   <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-navy/60 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
-                    <p className="text-honey text-sm font-semibold tracking-wide">Finance Director · Author · Speaker</p>
+                    <p className="text-honey text-sm font-semibold tracking-wide">Author · Speaker · Finance Executive</p>
                   </div>
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-12 h-12 bg-honey/10 border border-honey/20 hex-clip" />
@@ -191,9 +191,9 @@ export default function Home() {
               <path d="M12 2L20 7V17L12 22L4 17V7L12 2Z" stroke="currentColor" strokeWidth="1" fill="currentColor" fillOpacity="0.2" />
             </svg>
             <blockquote className="font-display text-2xl lg:text-3xl xl:text-4xl text-cream/90 italic leading-relaxed mb-6">
-              "The secret of getting ahead is getting started. The secret of getting started is breaking your complex, overwhelming tasks into small manageable tasks, and then starting on the first one."
+              "Performance is not peace. It is the price you pay to borrow it."
             </blockquote>
-            <p className="text-honey/70 text-sm tracking-[0.15em] uppercase">~ Mark Twain</p>
+            <p className="text-honey/70 text-sm tracking-[0.15em] uppercase">~ Blessing (Bee) Nyamolo, <em>I Thought I Was Just Nice</em></p>
           </FadeIn>
         </div>
       </section>
@@ -230,6 +230,61 @@ export default function Home() {
               </FadeIn>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* SHOP PRODUCTS */}
+      <section className="py-20 lg:py-28 bg-cream">
+        <div className="container">
+          <FadeIn className="text-center mb-14">
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">The Hive & Thrive Collection</span>
+            <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy mb-4">Wear the Words</h2>
+            <p className="text-charcoal/60 text-lg max-w-2xl mx-auto">
+              Products born from the book. Each one carries a message worth holding onto.
+            </p>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            {[
+              { name: "Even Bees Rest Sherpa Blanket", price: "$49.99", tag: "From Chapter 12", img: "/images/devotional.jpg" },
+              { name: "You Are the Honey Ceramic Mug", price: "$9.99", tag: "Core theme", img: "/images/inspiration.jpg" },
+              { name: "Find Your Hive Hardcover Journal", price: "$13.99", tag: "Community & belonging", img: "/images/newsletter-bg.jpg" },
+              { name: "Even Bees Rest T-Shirt", price: "$19.99", tag: "Wearable reminder", img: "/images/hero-bg.jpg" },
+            ].map((product, i) => (
+              <FadeIn key={product.name} delay={i * 100}>
+                <a
+                  href="https://hive-thrive.myshopify.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block bg-white rounded-2xl overflow-hidden shadow-md shadow-honey/5 hover:shadow-xl hover:shadow-honey/10 transition-all duration-500 hover:-translate-y-1"
+                >
+                  <div className="aspect-square overflow-hidden bg-[oklch(0.97_0.01_60)]">
+                    <img
+                      src={product.img}
+                      alt={product.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <span className="text-honey-dark text-xs font-semibold tracking-[0.1em] uppercase mb-1 block">{product.tag}</span>
+                    <h3 className="font-display text-base font-bold text-navy mb-2 leading-snug">{product.name}</h3>
+                    <div className="flex items-center justify-between">
+                      <span className="text-charcoal/70 font-semibold">{product.price}</span>
+                      <span className="text-honey-dark text-sm font-medium group-hover:underline">Shop →</span>
+                    </div>
+                  </div>
+                </a>
+              </FadeIn>
+            ))}
+          </div>
+
+          <FadeIn className="text-center">
+            <a href="https://hive-thrive.myshopify.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-5 text-base transition-all duration-300">
+                View All Products <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </a>
+          </FadeIn>
         </div>
       </section>
 
