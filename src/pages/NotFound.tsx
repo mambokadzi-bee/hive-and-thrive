@@ -10,7 +10,7 @@ export default function NotFound() {
         </div>
         <h1 className="font-display text-4xl font-bold text-navy mb-4">Lost in the Hive?</h1>
         <p className="text-charcoal/60 text-lg mb-8 leading-relaxed">
-          This page doesn't exist — but the rest of the hive is full of good things.
+          This page doesn't exist. But the rest of the hive is full of good things.
         </p>
         <Link href="/">
           <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base">

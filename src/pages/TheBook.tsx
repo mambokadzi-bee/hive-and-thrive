@@ -30,25 +30,25 @@ const parts = [
   {
     number: "Part I",
     title: "The Making of a Nice Girl",
-    desc: "Where it begins — the early conditioning that taught high-achieving women to shrink, perform, and smile through it all.",
+    desc: "Where it starts. Learning early that being good, quiet, and agreeable was the price of belonging.",
     color: "from-honey/20 to-honey/5",
   },
   {
     number: "Part II",
     title: "The Cost of Keeping the Peace",
-    desc: "The corporate years. The late nights, the compromises, the quiet erosion of self that came disguised as professionalism.",
+    desc: "Twenty years in corporate finance. The late nights, the yes-when-I-meant-no, the slow disappearing.",
     color: "from-navy/10 to-navy/5",
   },
   {
     number: "Part III",
     title: "The Awakening",
-    desc: "The moment the paper tears. When \"nice\" stopped being enough and something truer began to emerge.",
+    desc: "The moment things stopped adding up. When being nice stopped feeling like a virtue and started feeling like a cage.",
     color: "from-honey/20 to-honey/5",
   },
   {
     number: "Part IV",
     title: "Hard-Won Freedom",
-    desc: "What it looks like to stop performing and start living. The other side of nice — and why it's worth the crossing.",
+    desc: "What comes after. Not a clean resolution. Something more honest than that.",
     color: "from-navy/10 to-navy/5",
   },
 ];
@@ -166,7 +166,7 @@ export default function TheBook() {
                     <div className="w-8 h-8 rounded-full bg-honey/20 flex items-center justify-center">
                       <Heart className="w-4 h-4 fill-honey text-honey" />
                     </div>
-                    You're on the list — we'll let you know the moment it's available!
+                    You're on the list. We'll reach out as soon as it's available.
                   </div>
                 )}
                 <p className="text-charcoal/40 text-xs mt-3">Be first to know when the book is available. No spam, ever.</p>
@@ -185,23 +185,23 @@ export default function TheBook() {
             <FadeIn className="text-center mb-12">
               <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">About the Book</span>
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
-                For Every Woman Who Performed Excellence<br className="hidden lg:block" /> and Called It Living
+                What It's About
               </h2>
             </FadeIn>
 
             <FadeIn delay={100}>
               <div className="space-y-5 text-charcoal/70 text-lg leading-relaxed">
                 <p>
-                  For over two decades, Blessing (Bee) Nyamolo navigated the demanding world of corporate finance with grace, competence, and an unwavering smile. She was the woman who stayed late, who said yes when she meant no, who made everyone comfortable — even when she wasn't.
+                  For over twenty years, Bee worked in corporate finance at some of the largest companies in the world. She stayed late. She said yes when she meant no. She made rooms comfortable, even when she wasn't.
                 </p>
                 <p>
                   She thought she was just nice. She was also exhausted.
                 </p>
                 <p>
-                  <em>I Thought I Was Just Nice</em> is a memoir about the quiet cost of people-pleasing in high-performance spaces — and the hard, beautiful work of unlearning it. Drawing from twenty years in corporate finance, Bee traces the moments she gave herself away in the name of professionalism, likability, and peace. And then, the moment everything changed.
+                  This memoir traces the moments Bee gave herself away in the name of professionalism and peace, and the slow reckoning that followed. It is honest, specific, and at times uncomfortably familiar.
                 </p>
                 <p>
-                  Part reckoning, part liberation, this is the book for every high-achieving woman who has ever wondered why excellence felt so lonely — and whether she was allowed to want more.
+                  It is for the woman who has achieved a great deal and felt quietly alone in it.
                 </p>
               </div>
             </FadeIn>
@@ -226,7 +226,7 @@ export default function TheBook() {
           <FadeIn className="text-center mb-14">
             <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Inside the Book</span>
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">The Journey</h2>
-            <p className="text-charcoal/60 text-lg max-w-xl mx-auto mt-3">Four parts. One reckoning. A story you may recognise as your own.</p>
+            <p className="text-charcoal/60 text-lg max-w-xl mx-auto mt-3">Four parts. One story. You'll probably recognise parts of it.</p>
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
