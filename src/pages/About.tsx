@@ -272,7 +272,7 @@ export default function About() {
                         <div className="w-10 h-10 rounded-xl bg-honey/15 flex items-center justify-center text-honey">
                           {milestone.icon}
                         </div>
-                        <span className="text-honey/80 text-sm font-semibold tracking-wider uppercase">
+                        <span className="text-honey/80 text-sm font-semibold tracking-wider">
                           {milestone.year}
                         </span>
                       </div>
