@@ -121,7 +121,7 @@ export default function Contact() {
                     {
                       icon: <Mail className="w-5 h-5" />,
                       title: "Email",
-                      detail: "hello@hiveandthrive.life",
+                      detail: "info@hiveandthrive.life",
                       subtitle: "For general inquiries",
                     },
                     {

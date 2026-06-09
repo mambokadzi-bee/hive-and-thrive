@@ -114,13 +114,12 @@ export default function QueensCircle() {
                 ))}
               </div>
 
-              <Button
-                onClick={() => toast.info("Speaking inquiry form coming soon! Please reach out via email in the meantime.")}
-                className="bg-honey hover:bg-honey-dark text-navy font-semibold px-6 py-5 text-base"
-              >
-                Inquire About Speaking
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
+              <a href="mailto:info@hiveandthrive.life?subject=Speaking%20Inquiry">
+                <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-6 py-5 text-base">
+                  Inquire About Speaking
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </a>
             </FadeIn>
           </div>
         </div>
@@ -170,14 +169,12 @@ export default function QueensCircle() {
                 ))}
               </div>
 
-              <Button
-                onClick={() => toast.info("Workshop booking coming soon! Please reach out via email in the meantime.")}
-                variant="outline"
-                className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 py-5 text-base"
-              >
-                Book a Workshop
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
+              <a href="mailto:info@hiveandthrive.life?subject=Workshop%20Booking">
+                <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 py-5 text-base">
+                  Book a Workshop
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </a>
             </FadeIn>
 
             <FadeIn className="lg:order-2">
@@ -287,13 +284,12 @@ export default function QueensCircle() {
             <p className="text-charcoal/60 text-lg leading-relaxed mb-8">
               Whether you're looking for a keynote speaker, a workshop facilitator, or a coaching partner, I’d love to hear from you. Every great partnership starts with a conversation.
             </p>
-            <Button
-              onClick={() => toast.info("Contact form coming soon! Please reach out via social media in the meantime.")}
-              className="bg-navy hover:bg-navy-light text-cream font-semibold px-8 py-5 text-base"
-            >
-              Start a Conversation
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-navy hover:bg-navy-light text-cream font-semibold px-8 py-5 text-base">
+                Start a Conversation
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
           </FadeIn>
         </div>
       </section>
