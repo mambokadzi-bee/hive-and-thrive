@@ -151,7 +151,7 @@ export default function QueensCircle() {
                   },
                   {
                     title: "The Whole Woman at Work",
-                    desc: "What it looks like to show up fully — not just professionally — and why organizations are better for it.",
+                    desc: "What it looks like to show up fully, not just professionally, and why organizations are better for it.",
                   },
                   {
                     title: "Leading with Purpose, Not Applause",
@@ -221,7 +221,7 @@ export default function QueensCircle() {
                   </div>
                   <h3 className="font-display text-xl font-bold text-white mb-2">Hive Talks Podcast</h3>
                   <p className="text-cream/60 text-sm leading-relaxed">
-                    Honest conversations with women who've built careers on their own terms. No highlight reels — just the real story.
+                    Honest conversations with women who've built careers on their own terms. No highlight reels. Just the real story.
                   </p>
                 </div>
               </div>
@@ -274,7 +274,7 @@ export default function QueensCircle() {
               Let's Work Together
             </h2>
             <p className="text-charcoal/60 text-lg leading-relaxed mb-8">
-              Whether you need a speaker, a workshop, or just want to start a conversation — reach out. I read every message.
+              Whether you need a speaker, a workshop, or just want to start a conversation, reach out. I read every message.
             </p>
             <Link href="/contact">
               <Button className="bg-navy hover:bg-navy-light text-cream font-semibold px-8 py-5 text-base">
