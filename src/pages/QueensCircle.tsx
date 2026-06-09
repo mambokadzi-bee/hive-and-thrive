@@ -1,20 +1,13 @@
-/*
- * DESIGN: Royal Apiary — The Queen's Circle
- * Premium offerings: coaching, speaking, workshops
- * Luxurious feel, navy/gold palette, aspirational
- */
-
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight, BookOpen, Crown, Mic, Sparkles, Users, Calendar } from "lucide-react";
+import { ArrowRight, BookOpen, Crown, Mic, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { toast } from "sonner";
 
 const SPEAKING_IMG = "/images/speaking.jpg";
 const PODCAST_IMG = "/images/podcast.jpg";
-const DEVOTIONAL_IMG = "/images/devotional.jpg";
+const JOURNAL_IMG = "https://cdn.shopify.com/s/files/1/0983/4925/2883/files/3781165502475812487_2048.jpg?v=1775792122";
 
 function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const { ref, isVisible } = useScrollAnimation(0.1);
@@ -51,20 +44,20 @@ export default function QueensCircle() {
             >
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-honey/15 text-honey text-sm font-medium tracking-wide mb-6 border border-honey/20">
                 <Crown className="w-4 h-4" />
-                Premium Experiences
+                Speaking & Workshops
               </div>
               <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6">
                 The Queen's <span className="text-honey-light italic">Circle</span>
               </h1>
               <p className="text-cream/70 text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto">
-                Exclusive coaching, speaking engagements, and corporate workshops for organizations and individuals ready to go deeper.
+                Twenty years in corporate finance. Real lessons. Honest conversations. If you're looking for someone to come and speak truth in a room, let's talk.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Speaking Engagements */}
+      {/* Speaking */}
       <section className="py-20 lg:py-28 bg-cream">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -73,7 +66,7 @@ export default function QueensCircle() {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-honey/10">
                   <img
                     src={SPEAKING_IMG}
-                    alt="Bee speaking at a corporate event"
+                    alt="Bee speaking"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -91,19 +84,22 @@ export default function QueensCircle() {
                 </span>
               </div>
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-4">
-                Keynote Speaking & Corporate Events
+                Keynote Speaking
               </h2>
-              <p className="text-charcoal/70 text-lg leading-relaxed mb-6">
-                Bee brings two decades of corporate finance experience and a deep well of wisdom to every stage. Her talks bridge the gap between professional excellence and personal purpose; leaving audiences inspired, equipped, and ready to thrive.
+              <p className="text-charcoal/70 text-lg leading-relaxed mb-3">
+                Bee speaks from experience, not theory. Her talks draw on two decades in corporate finance and the women's leadership program she has been part of.
+              </p>
+              <p className="text-charcoal/70 text-lg leading-relaxed mb-8">
+                The through-line is always the same: purpose over applause.
               </p>
 
               <div className="space-y-3 mb-8">
                 {[
                   "Women in Leadership conferences",
-                  "Corporate retreats and team-building events",
-                  "Values-driven professional gatherings",
-                  "Financial literacy and empowerment workshops",
-                  "University and MBA program guest lectures",
+                  "Corporate retreats and ERG events",
+                  "The Bee-Attitudes: a framework for professional women",
+                  "I Thought I Was Just Nice: rethinking niceness in the workplace",
+                  "University and MBA programs",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <div className="w-5 h-5 rounded-full bg-honey/15 flex items-center justify-center shrink-0 mt-0.5">
@@ -127,7 +123,7 @@ export default function QueensCircle() {
 
       <HoneycombDivider />
 
-      {/* Corporate Workshops */}
+      {/* Workshops */}
       <section className="py-20 lg:py-28 bg-warm-white">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -143,28 +139,28 @@ export default function QueensCircle() {
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-4">
                 Corporate Workshops
               </h2>
-              <p className="text-charcoal/70 text-lg leading-relaxed mb-6">
-                Interactive workshops designed for organizations that want to support the whole person, not just the professional. These sessions create space for values-driven leadership, growth, and purpose in the workplace.
+              <p className="text-charcoal/70 text-lg leading-relaxed mb-8">
+                Practical, honest sessions for teams and organizations. Built around real conversations, not slide decks.
               </p>
 
               <div className="space-y-4 mb-8">
                 {[
                   {
-                    title: "Values & Finance",
-                    desc: "Integrating personal values and ethical stewardship with modern financial leadership",
+                    title: "The Bee-Attitudes",
+                    desc: "A women's leadership framework built from real experience. Practical principles for navigating corporate environments with intention.",
                   },
                   {
                     title: "The Whole Woman at Work",
-                    desc: "Creating authentic professional identities that honor personal values",
+                    desc: "What it looks like to show up fully — not just professionally — and why organizations are better for it.",
                   },
                   {
-                    title: "Leading with Grace",
-                    desc: "Purpose-driven leadership principles for the modern corporate environment",
+                    title: "Leading with Purpose, Not Applause",
+                    desc: "Moving from performance-driven leadership to purpose-driven leadership. The shift that changes everything.",
                   },
                 ].map((workshop) => (
-                  <div key={workshop.title} className="p-4 bg-white rounded-xl border border-honey/10">
+                  <div key={workshop.title} className="p-5 bg-white rounded-xl border border-honey/10">
                     <h4 className="font-display font-semibold text-navy mb-1">{workshop.title}</h4>
-                    <p className="text-charcoal/60 text-sm">{workshop.desc}</p>
+                    <p className="text-charcoal/60 text-sm leading-relaxed">{workshop.desc}</p>
                   </div>
                 ))}
               </div>
@@ -181,8 +177,8 @@ export default function QueensCircle() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-honey/10">
                   <img
-                    src={DEVOTIONAL_IMG}
-                    alt="Corporate workshop setting"
+                    src={SPEAKING_IMG}
+                    alt="Workshop session"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -193,7 +189,7 @@ export default function QueensCircle() {
         </div>
       </section>
 
-      {/* Coming Soon: Podcast & Journal */}
+      {/* Coming Soon + Journal */}
       <section className="py-20 lg:py-28 bg-navy relative overflow-hidden">
         <div className="absolute top-10 left-10 w-32 h-32 border border-honey/10 hex-clip opacity-20" />
         <div className="absolute bottom-10 right-10 w-24 h-24 bg-honey/5 hex-clip" />
@@ -201,14 +197,11 @@ export default function QueensCircle() {
         <div className="container relative">
           <FadeIn className="text-center mb-14">
             <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">
-              On the Horizon
+              What's Next
             </span>
             <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
-              Coming to the Queen's Circle
+              More from the Hive
             </h2>
-            <p className="text-cream/60 text-lg max-w-2xl mx-auto">
-              The hive is growing. Here's what's buzzing next.
-            </p>
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -228,42 +221,44 @@ export default function QueensCircle() {
                   </div>
                   <h3 className="font-display text-xl font-bold text-white mb-2">Hive Talks Podcast</h3>
                   <p className="text-cream/60 text-sm leading-relaxed">
-                    Candid conversations with remarkable women who've built thriving careers while staying true to their values and vision.
+                    Honest conversations with women who've built careers on their own terms. No highlight reels — just the real story.
                   </p>
                 </div>
               </div>
             </FadeIn>
 
             <FadeIn delay={250}>
-              <div className="group bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-cream/10 hover:border-honey/20 transition-all duration-300">
+              <a
+                href="https://hive-thrive.myshopify.com/products/find-your-hive-hive-thrive-hardcover-journal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-cream/10 hover:border-honey/20 transition-all duration-300"
+              >
                 <div className="aspect-[16/10] overflow-hidden">
                   <img
-                    src={DEVOTIONAL_IMG}
-                    alt="Devotional Journal"
+                    src={JOURNAL_IMG}
+                    alt="Find Your Hive Hardcover Journal"
                     className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
                   />
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 text-honey mb-3">
                     <BookOpen className="w-4 h-4" />
-                    <span className="text-xs font-semibold tracking-[0.1em] uppercase">Coming Soon</span>
+                    <span className="text-xs font-semibold tracking-[0.1em] uppercase">Available Now</span>
                   </div>
-                  <h3 className="font-display text-xl font-bold text-white mb-2">Devotional Journal</h3>
+                  <h3 className="font-display text-xl font-bold text-white mb-2">Find Your Hive Journal</h3>
                   <p className="text-cream/60 text-sm leading-relaxed">
-                    A beautifully designed guided journal for professional women with daily reflections crafted for the pace and demands of your life.
+                    A hardcover journal for the woman who needs space to think. Available in the shop now.
                   </p>
                 </div>
-              </div>
+              </a>
             </FadeIn>
           </div>
 
           <FadeIn className="text-center mt-12">
-            <p className="text-cream/50 text-sm mb-4">
-              Want to be the first to know when these launch?
-            </p>
             <Link href="/join">
               <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base">
-                Join the Swarm for Updates
+                Stay in the Loop
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>
@@ -271,22 +266,19 @@ export default function QueensCircle() {
         </div>
       </section>
 
-      {/* Contact / Inquiry */}
+      {/* CTA */}
       <section className="py-20 lg:py-28 bg-cream">
         <div className="container">
           <FadeIn className="text-center max-w-2xl mx-auto">
-            <div className="w-16 h-16 rounded-2xl bg-honey/10 flex items-center justify-center mx-auto mb-6">
-              <Calendar className="w-8 h-8 text-honey-dark" />
-            </div>
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-4">
               Let's Work Together
             </h2>
             <p className="text-charcoal/60 text-lg leading-relaxed mb-8">
-              Whether you're looking for a keynote speaker, a workshop facilitator, or a coaching partner, I’d love to hear from you. Every great partnership starts with a conversation.
+              Whether you need a speaker, a workshop, or just want to start a conversation — reach out. I read every message.
             </p>
             <Link href="/contact">
               <Button className="bg-navy hover:bg-navy-light text-cream font-semibold px-8 py-5 text-base">
-                Start a Conversation
+                Get in Touch
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>
