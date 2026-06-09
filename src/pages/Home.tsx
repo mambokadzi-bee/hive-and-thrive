@@ -279,7 +279,7 @@ export default function Home() {
           </div>
 
           <FadeIn className="text-center">
-            <a href="https://hive-thrive.myshopify.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://hive-thrive.myshopify.com/collections/best-sellers" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-5 text-base transition-all duration-300">
                 View All Products <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
