@@ -115,48 +115,6 @@ export default function About() {
                 </p>
               </FadeIn>
 
-              <HoneycombDivider />
-
-              <FadeIn>
-                <h3 className="font-display text-2xl font-bold text-navy mb-6">
-                  The Journey So Far
-                </h3>
-                <div className="space-y-6">
-                  {[
-                    {
-                      icon: <Briefcase className="w-5 h-5" />,
-                      title: "20+ Years in Corporate Finance",
-                      desc: "Building expertise at major public companies, learning the language of leadership and the cost of compromise.",
-                    },
-                    {
-                      icon: <Award className="w-5 h-5" />,
-                      title: "Finance Director in High Tech",
-                      desc: "Leading financial strategy at one of the world's most innovative companies while staying grounded in purpose.",
-                    },
-                    {
-                      icon: <Heart className="w-5 h-5" />,
-                      title: "Values That Never Wavered",
-                      desc: "Through every promotion, every challenge, and every late night, my values remained my compass.",
-                    },
-                    {
-                      icon: <BookOpen className="w-5 h-5" />,
-                      title: "Hive & Thrive Is Born",
-                      desc: "Transforming two decades of lessons into stories that inspire the current and next generation of professional women.",
-                    },
-                  ].map((item, i) => (
-                    <div key={item.title} className="flex gap-4">
-                      <div className="shrink-0 w-12 h-12 rounded-xl bg-honey/10 flex items-center justify-center text-honey-dark">
-                        {item.icon}
-                      </div>
-                      <div>
-                        <h4 className="font-display text-lg font-semibold text-navy mb-1">{item.title}</h4>
-                        <p className="text-charcoal/60 text-sm leading-relaxed">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </FadeIn>
-
               <FadeIn>
                 <div className="mt-8 p-8 bg-navy rounded-2xl">
                   <blockquote className="font-display text-xl lg:text-2xl text-cream/90 italic leading-relaxed mb-4">
@@ -324,69 +282,6 @@ export default function About() {
               </FadeIn>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Achievements Stats */}
-      <section className="py-16 lg:py-20 bg-cream">
-        <div className="container">
-          <FadeIn>
-            <div className="text-center mb-12">
-              <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">
-                By the Numbers
-              </span>
-              <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
-                Achievements & <span className="text-honey-dark italic">Impact</span>
-              </h2>
-            </div>
-          </FadeIn>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            {[
-              {
-                number: "20+",
-                label: "Years in Corporate Finance",
-                icon: <Briefcase className="w-6 h-6" />,
-                detail: "Fortune 500 & Big Tech",
-              },
-              {
-                number: "$B+",
-                label: "Budgets Managed",
-                icon: <TrendingUp className="w-6 h-6" />,
-                detail: "Strategic financial oversight",
-              },
-              {
-                number: "100+",
-                label: "Women Mentored",
-                icon: <Users className="w-6 h-6" />,
-                detail: "Across industries & levels",
-              },
-              {
-                number: "1",
-                label: "Unwavering Purpose",
-                icon: <Heart className="w-6 h-6" />,
-                detail: "The foundation of it all",
-              },
-            ].map((stat, i) => (
-              <FadeIn key={stat.label} delay={i * 100}>
-                <div className="group text-center p-6 lg:p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg hover:shadow-honey/10 border border-honey/5 hover:border-honey/20 transition-all duration-500">
-                  <div className="w-14 h-14 rounded-2xl bg-honey/10 flex items-center justify-center text-honey-dark mx-auto mb-4 group-hover:bg-honey/20 transition-colors duration-300">
-                    {stat.icon}
-                  </div>
-                  <p className="font-display text-3xl lg:text-4xl font-bold text-navy mb-1">
-                    {stat.number}
-                  </p>
-                  <p className="font-semibold text-charcoal/80 text-sm mb-1">
-                    {stat.label}
-                  </p>
-                  <p className="text-charcoal/40 text-xs">
-                    {stat.detail}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-
         </div>
       </section>
 
