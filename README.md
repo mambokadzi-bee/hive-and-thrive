@@ -1,6 +1,6 @@
-# Hive & Thrive — Independent Website
+# Hive & Thrive — hiveandthrive.life
 
-Your site, fully owned. No Manus. No platform lock-in.
+Personal website for Blessing (Bee) Nyamolo. Author, speaker, and finance executive.
 
 ## Stack
 - **React 19** + **TypeScript**
