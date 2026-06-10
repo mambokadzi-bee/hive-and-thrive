@@ -198,42 +198,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== HONEY DROPS ===== */}
+      {/* ===== HONEY DROPS TEASER ===== */}
       <section className="py-20 lg:py-28 bg-cream">
         <div className="container">
-          <FadeIn className="text-center mb-14">
+          <FadeIn className="text-center mb-12">
             <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">
-              Hive &amp; Thrive Honey Drops
+              Hive &amp; Thrive
             </span>
             <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy mb-4">
-              Truths Worth <span className="text-honey-dark italic">Sitting With</span>
+              Honey <span className="text-honey-dark italic">Drops</span>
             </h2>
             <p className="text-charcoal/60 text-lg max-w-2xl mx-auto">
-              Reflections gathered from two decades of showing up, absorbing, and finally learning to stop.
+              Truths worth sitting with.
             </p>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto mb-10">
             {[
-              "Survival and thriving are not the same thing.",
               "Useful felt safer than seen.",
-              "Sometimes the workplace rewards an old wound and calls it leadership.",
               "You do not have to survive the life you worked so hard to build.",
-              "Shrinking is not always humility. Sometimes shrinking is protection.",
-              "Excellence became proof of worth.",
               "Even bees rest.",
-              "The work is not to abandon excellence. The work is to stop using excellence to earn permission to exist.",
-              "You are allowed to thrive unapologetically.",
             ].map((drop, i) => (
-              <FadeIn key={i} delay={i * 60}>
-                <div className="group h-full bg-white border border-honey/10 rounded-2xl p-7 hover:border-honey/30 hover:shadow-lg hover:shadow-honey/10 transition-all duration-500 flex items-center">
-                  <p className="font-display text-lg lg:text-xl text-navy/85 italic leading-relaxed group-hover:text-navy transition-colors duration-300">
+              <FadeIn key={i} delay={i * 80}>
+                <div className="h-full bg-white border border-honey/10 rounded-2xl p-6 flex items-center">
+                  <p className="font-display text-base lg:text-lg text-navy/85 italic leading-relaxed">
                     &ldquo;{drop}&rdquo;
                   </p>
                 </div>
               </FadeIn>
             ))}
           </div>
+
+          <FadeIn className="text-center">
+            <Link href="/honey-drops">
+              <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-5 text-base transition-all duration-300">
+                Read All Honey Drops
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+          </FadeIn>
         </div>
       </section>
 
