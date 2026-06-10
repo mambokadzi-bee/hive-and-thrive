@@ -94,29 +94,21 @@ export default function Collections() {
         </div>
       </section>
 
-      {/* Bee-Attitudes */}
+      {/* Bee-Attitudes Tease */}
       <section className="py-20 lg:py-28 bg-cream">
         <div className="container">
-          <FadeIn className="max-w-2xl mb-14">
+          <FadeIn className="max-w-2xl mx-auto text-center">
             <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">The Bee-Attitudes</span>
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-4">
-              Lessons from the Hive
+            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-6">
+              A Framework Born from Experience
             </h2>
+            <p className="text-charcoal/60 text-lg leading-relaxed mb-4">
+              I shared these principles in a women's leadership program and something in the room shifted. I call them the Bee-Attitudes.
+            </p>
             <p className="text-charcoal/60 text-lg leading-relaxed">
-              I shared these principles in a women's leadership program and they resonated. I call them my Bee-Attitudes. They're simple. They're not easy.
+              They are simple. They are not easy. And they are in the book.
             </p>
           </FadeIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {attitudes.map((attitude, i) => (
-              <FadeIn key={attitude.name} delay={i * 80}>
-                <div className={`h-full p-8 rounded-2xl border ${attitude.color} flex flex-col gap-3`}>
-                  <h3 className="font-display text-xl font-bold text-navy">{attitude.name}</h3>
-                  <p className="text-charcoal/60 text-base leading-relaxed italic">{attitude.tagline}</p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
         </div>
       </section>
 

@@ -24,112 +24,17 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
-const categories = [
-  {
-    label: "Survival & Thriving",
-    drops: [
-      "Survival and thriving are not the same thing.",
-      "Adaptation is not the same as freedom.",
-      "You do not have to survive the life you worked so hard to build.",
-      "Healing is learning that old survival rules no longer deserve authority over your adult life.",
-      "Thriving begins where performance for acceptance ends.",
-      "Freedom sometimes begins one unlearned rule at a time.",
-    ],
-  },
-  {
-    label: "Excellence & Worth",
-    drops: [
-      "Excellence became proof of worth.",
-      "The work is not to abandon excellence. The work is to stop using excellence to earn permission to exist.",
-      "Sometimes the workplace rewards an old wound and calls it leadership.",
-      "Exhaustion is not always evidence of purpose.",
-      "Over-functioning is not the same thing as thriving.",
-      "There is a difference between meaningful work and disappearing into work.",
-      "The woman who survives through excellence eventually grows tired of carrying everything.",
-    ],
-  },
-  {
-    label: "Visibility & Shrinking",
-    drops: [
-      "Useful felt safer than seen.",
-      "Being needed is not the same as being seen.",
-      "Shrinking is not always humility. Sometimes shrinking is protection.",
-      "I became indispensable without becoming visible.",
-      "You do not have to become loud to become visible.",
-      "Visibility is not arrogance.",
-      "Excellence without visibility can quietly become invisibility.",
-      "I was not only being overlooked. I had also become practiced at overlooking myself.",
-    ],
-  },
-  {
-    label: "Fear, Safety & Adaptation",
-    drops: [
-      "Peacekeeping slowly became personality.",
-      "Silence is not always a lack of confidence. Sometimes silence is a history.",
-      "I learned to read rooms before I learned to rest.",
-      "Praise felt suspicious because unpredictability had trained me to brace for impact.",
-      "Adaptation that once protected you can later limit you.",
-      "Fear disguised itself as professionalism.",
-    ],
-  },
-  {
-    label: "Boundaries & Rest",
-    drops: [
-      "Even bees rest.",
-      "Boundaries are not disobedience.",
-      "You can be dependable without being endlessly available.",
-      "There is wisdom in stopping before collapse.",
-      "You do not have to earn rest through exhaustion.",
-      "Peace is not something you have to overwork to deserve.",
-      "A thriving life cannot be built on permanent depletion.",
-    ],
-  },
-  {
-    label: "Kindness, Softness & Strength",
-    drops: [
-      "You can be soft without becoming small.",
-      "Kindness without self-abandonment.",
-      "Softness is not weakness. Directness is not cruelty.",
-      "The goal is not to become harder. The goal is to stop disappearing.",
-      "Boundaries are kindness with structure.",
-      "You can be visible and still be kind.",
-    ],
-  },
-  {
-    label: "Leadership & Professional Identity",
-    drops: [
-      "Work does not always speak in rooms where power and positioning are speaking too.",
-      "Leadership is not only carrying responsibility. It is also claiming authority.",
-      "Excellence may open doors. Visibility determines who gets invited back.",
-      "Sometimes confidence means staying in the sentence. \"Thank you. I'm proud of that work.\"",
-      "The woman behind the work deserves to be seen too.",
-    ],
-  },
-  {
-    label: "Self-Worth & Reclamation",
-    drops: [
-      "I no longer need to earn permission to exist.",
-      "You are enough without over-proving.",
-      "Worthiness is not a performance review.",
-      "I worked the hive and earned the honey.",
-      "Healing is not becoming someone else. It is becoming less afraid to be yourself.",
-      "I no longer apologize for taking up space in rooms I earned.",
-      "Thriving requires a different kind of courage. The courage to stop abandoning yourself.",
-    ],
-  },
-  {
-    label: "Hive & Thrive Philosophy",
-    drops: [
-      "Honey takes time.",
-      "Even the Queen Bee depends on the hive.",
-      "Not every burden belongs inside your hive.",
-      "Loyalty without boundaries becomes depletion.",
-      "The hive should nourish you too.",
-      "There are seasons when it is time to outgrow an old hive.",
-      "Build a life that nourishes the woman you are becoming.",
-      "You are allowed to thrive unapologetically.",
-    ],
-  },
+const drops = [
+  "Survival and thriving are not the same thing.",
+  "Useful felt safer than seen.",
+  "Sometimes the workplace rewards an old wound and calls it leadership.",
+  "Shrinking is not always humility. Sometimes shrinking is protection.",
+  "Excellence became proof of worth.",
+  "Fear disguised itself as professionalism.",
+  "You do not have to survive the life you worked so hard to build.",
+  "Even bees rest.",
+  "The work is not to abandon excellence. The work is to stop using excellence to earn permission to exist.",
+  "You are allowed to thrive unapologetically.",
 ];
 
 export default function HoneyDrops() {
@@ -159,29 +64,18 @@ export default function HoneyDrops() {
         </div>
       </section>
 
-      {/* Drops by Category */}
+      {/* Drops */}
       <section className="py-20 lg:py-28 bg-cream">
         <div className="container">
-          <div className="space-y-20">
-            {categories.map((cat, catIndex) => (
-              <div key={cat.label}>
-                <FadeIn delay={0}>
-                  <h2 className="font-display text-2xl lg:text-3xl font-bold text-navy mb-8 pb-4 border-b border-honey/20">
-                    {cat.label}
-                  </h2>
-                </FadeIn>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                  {cat.drops.map((drop, i) => (
-                    <FadeIn key={i} delay={i * 50}>
-                      <div className="group h-full bg-white border border-honey/10 rounded-2xl p-6 hover:border-honey/30 hover:shadow-lg hover:shadow-honey/10 transition-all duration-500 flex items-center">
-                        <p className="font-display text-base lg:text-lg text-navy/85 italic leading-relaxed group-hover:text-navy transition-colors duration-300">
-                          &ldquo;{drop}&rdquo;
-                        </p>
-                      </div>
-                    </FadeIn>
-                  ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+            {drops.map((drop, i) => (
+              <FadeIn key={i} delay={i * 60}>
+                <div className="group h-full bg-white border border-honey/10 rounded-2xl p-7 hover:border-honey/30 hover:shadow-lg hover:shadow-honey/10 transition-all duration-500 flex items-center">
+                  <p className="font-display text-lg text-navy/85 italic leading-relaxed group-hover:text-navy transition-colors duration-300">
+                    &ldquo;{drop}&rdquo;
+                  </p>
                 </div>
-              </div>
+              </FadeIn>
             ))}
           </div>
         </div>

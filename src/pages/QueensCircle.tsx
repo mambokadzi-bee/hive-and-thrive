@@ -154,8 +154,8 @@ export default function QueensCircle() {
                 {[
                   "Women in Leadership conferences",
                   "Corporate retreats and ERG events",
-                  "The Bee-Attitudes: a framework for professional women",
-                  "I Thought I Was Just Nice: rethinking niceness in the workplace",
+                  "The Bee-Attitudes",
+                  "I Thought I Was Just Nice",
                   "University and MBA programs",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
@@ -204,7 +204,7 @@ export default function QueensCircle() {
                 {[
                   {
                     title: "The Bee-Attitudes",
-                    desc: "A women's leadership framework built from real experience. Practical principles for navigating corporate environments with intention.",
+                    desc: "A leadership framework born from the field, not a textbook. The full principles live in the book.",
                   },
                   {
                     title: "The Whole Woman at Work",
