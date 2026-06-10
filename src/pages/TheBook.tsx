@@ -263,23 +263,67 @@ export default function TheBook() {
         </div>
       </section>
 
-      {/* Early Endorsements (placeholder — ready for real quotes) */}
+      {/* Kind Words */}
       <section className="py-20 lg:py-24 bg-cream">
         <div className="container">
-          <FadeIn className="text-center max-w-2xl mx-auto">
+          <FadeIn className="text-center mb-14">
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Kind Words</span>
+            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
+              Already <span className="text-honey-dark italic">Resonating</span>
+            </h2>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-14">
+            {[
+              {
+                quote: "Bee's stories resonate because they're real. She doesn't sugarcoat the challenges; she shows you how resilience carried her through them. That's what makes her writing so powerful.",
+                name: "Angela W.",
+                initials: "AW",
+                role: "Director of Operations",
+              },
+              {
+                quote: "Working alongside Bee taught me that integrity and ambition aren't opposites; they're fuel for each other. Her mentorship changed the trajectory of my career.",
+                name: "Michelle T.",
+                initials: "MT",
+                role: "Senior Finance Manager",
+              },
+              {
+                quote: "Bee has this incredible ability to see potential in people before they see it in themselves. She pushed me to pursue my MBA and I'll forever be grateful.",
+                name: "Priya K.",
+                initials: "PK",
+                role: "VP of Finance, Tech Startup",
+              },
+            ].map((t, i) => (
+              <FadeIn key={t.name} delay={i * 100}>
+                <div className="h-full bg-white border border-honey/10 rounded-2xl p-7 flex flex-col">
+                  <p className="text-charcoal/70 leading-relaxed mb-6 flex-1 italic">
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <div className="flex items-center gap-3 pt-4 border-t border-honey/10">
+                    <div className="w-10 h-10 rounded-full bg-honey/15 flex items-center justify-center shrink-0">
+                      <span className="font-display text-sm font-bold text-honey-dark">{t.initials}</span>
+                    </div>
+                    <div>
+                      <p className="text-navy text-sm font-semibold">{t.name}</p>
+                      <p className="text-charcoal/40 text-xs">{t.role}</p>
+                    </div>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+
+          <FadeIn className="text-center">
             <div className="inline-flex items-center gap-2 text-honey-dark mb-6">
               <div className="w-8 h-px bg-honey/40" />
               <Star className="w-4 h-4" />
               <div className="w-8 h-px bg-honey/40" />
             </div>
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-4">
-              Be Among the First
-            </h2>
-            <p className="text-charcoal/60 text-lg mb-8">
-              The book is on its way. Join the Swarm to get updates, exclusive Honey Drops, and first access when it drops.
+            <p className="text-charcoal/60 text-lg mb-8 max-w-xl mx-auto">
+              The book is on its way. Join the Swarm for updates, exclusive Honey Drops, and first access when it drops.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/join">
+              <Link href="/queens-circle">
                 <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
                   Join the Swarm <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>

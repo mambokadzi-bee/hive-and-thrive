@@ -323,6 +323,58 @@ export default function QueensCircle() {
         </div>
       </section>
 
+      {/* Kind Words */}
+      <section className="py-20 lg:py-28 bg-cream">
+        <div className="container">
+          <FadeIn className="text-center mb-14">
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Kind Words</span>
+            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
+              What They're <span className="text-honey-dark italic">Saying</span>
+            </h2>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              {
+                quote: "Bee doesn't just lead with numbers — she leads with heart. In every meeting, every decision, she brought a rare combination of sharp financial acumen and genuine care for the people around her. She made me believe I could aim higher.",
+                name: "Sarah R.",
+                initials: "SR",
+                role: "Former Direct Report",
+              },
+              {
+                quote: "I've worked with many finance leaders, but Bee stands apart. Her strategic mind is matched only by her generosity in lifting others up. She's the real deal.",
+                name: "James C.",
+                initials: "JC",
+                role: "Director, Risk Management",
+              },
+              {
+                quote: "In a world of corporate politics, Bee was always authentic. She proved you can climb the ladder without compromising who you are. A true role model.",
+                name: "David L.",
+                initials: "DL",
+                role: "V.P. Accounting, Healthcare",
+              },
+            ].map((t, i) => (
+              <FadeIn key={t.name} delay={i * 100}>
+                <div className="h-full bg-white border border-honey/10 rounded-2xl p-7 flex flex-col">
+                  <p className="text-charcoal/70 leading-relaxed mb-6 flex-1 italic">
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <div className="flex items-center gap-3 pt-4 border-t border-honey/10">
+                    <div className="w-10 h-10 rounded-full bg-honey/15 flex items-center justify-center shrink-0">
+                      <span className="font-display text-sm font-bold text-honey-dark">{t.initials}</span>
+                    </div>
+                    <div>
+                      <p className="text-navy text-sm font-semibold">{t.name}</p>
+                      <p className="text-charcoal/40 text-xs">{t.role}</p>
+                    </div>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Join the Swarm */}
       <section className="relative py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">

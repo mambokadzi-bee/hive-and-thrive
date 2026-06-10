@@ -285,117 +285,18 @@ export default function About() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 lg:py-28 bg-navy relative overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute top-16 left-16 w-24 h-24 border border-honey/8 hex-clip" />
-        <div className="absolute bottom-12 right-12 w-36 h-36 bg-honey/3 hex-clip" />
-        <div className="absolute top-1/3 right-10 w-16 h-16 border border-honey/5 hex-clip" />
-
-        <div className="container relative">
+      {/* Kind Words */}
+      <section className="py-16 lg:py-20 bg-cream">
+        <div className="container">
           <FadeIn>
-            <div className="text-center mb-16">
-              <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">
-                Kind Words
-              </span>
-              <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
-                What Others <span className="text-honey-light italic">Say</span>
-              </h2>
-              <p className="text-cream/50 text-lg max-w-2xl mx-auto">
-                From boardrooms to mentoring sessions, the impact of walking in purpose.
-              </p>
+            <div className="max-w-3xl mx-auto text-center">
+              <Quote className="w-8 h-8 text-honey/30 mx-auto mb-6" />
+              <blockquote className="font-display text-xl lg:text-2xl text-navy/80 italic leading-relaxed mb-6">
+                "Bee invited me to a women's networking breakfast during a particularly tough quarter. That single act of kindness reminded me why I was in this industry. She sees the whole person."
+              </blockquote>
+              <p className="text-charcoal/50 text-sm font-medium">Tanya M. &mdash; Finance Director, Fortune 500</p>
             </div>
           </FadeIn>
-
-          {/* Featured testimonial */}
-          <FadeIn>
-            <div className="mb-12 max-w-4xl mx-auto">
-              <div className="relative bg-gradient-to-br from-honey/10 to-honey/5 border border-honey/20 rounded-3xl p-8 lg:p-12">
-                <Quote className="absolute top-6 left-6 lg:top-8 lg:left-8 w-10 h-10 text-honey/20" />
-                <div className="relative">
-                  <blockquote className="font-display text-xl lg:text-2xl xl:text-3xl text-white/90 italic leading-relaxed mb-6 pl-4 lg:pl-8">
-                    "Bee doesn't just lead with numbers she leads with heart. In every meeting, every decision, she brought a rare combination of sharp financial acumen and genuine care for the people around her. She made me believe I could aim higher."
-                  </blockquote>
-                  <div className="flex items-center gap-4 pl-4 lg:pl-8">
-                    <div className="w-12 h-12 rounded-full bg-honey/20 flex items-center justify-center">
-                      <span className="font-display text-lg font-bold text-honey">SR</span>
-                    </div>
-                    <div>
-                      <p className="text-white font-semibold">Sarah R.</p>
-                      <p className="text-cream/40 text-sm">Former Direct Report</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </FadeIn>
-
-          {/* Testimonial grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {[
-              {
-                quote: "Working alongside Bee taught me that integrity and ambition aren't opposites; they're fuel for each other. Her mentorship changed the trajectory of my career.",
-                name: "Michelle T.",
-                initials: "MT",
-                role: "Senior Finance Manager",
-                relationship: "Mentee",
-              },
-              {
-                quote: "Bee has this incredible ability to see potential in people before they see it in themselves. She pushed me to pursue my MBA and I'll forever be grateful.",
-                name: "Priya K.",
-                initials: "PK",
-                role: "VP of Finance, Tech Startup",
-                relationship: "Mentee",
-              },
-              {
-                quote: "In a world of corporate politics, Bee was always authentic. She proved you can climb the ladder without compromising who you are. A true role model.",
-                name: "David L.",
-                initials: "DL",
-                role: "V.P Accounting, Healthcare Company",
-                relationship: "Former Colleague",
-              },
-              {
-                quote: "Bee's stories resonate because they're real. She doesn't sugarcoat the challenges; she shows you how resilience carried her through them. That's what makes her writing so powerful.",
-                name: "Angela W.",
-                initials: "AW",
-                role: "Director of Operations",
-                relationship: "Reader & Mentee",
-              },
-              {
-                quote: "I've worked with many finance leaders, but Bee stands apart. Her strategic mind is matched only by her generosity in lifting others up. She's the real deal.",
-                name: "James C.",
-                initials: "JC",
-                role: "Director, Risk Management",
-                relationship: "Industry Peer",
-              },
-              {
-                quote: "Bee invited me to a women's networking breakfast during a particularly tough quarter. That single act of kindness reminded me why I was in this industry. She sees the whole person.",
-                name: "Tanya M.",
-                initials: "TM",
-                role: "Finance Director, Fortune 500",
-                relationship: "Former Colleague",
-              },
-            ].map((testimonial, i) => (
-              <FadeIn key={testimonial.name} delay={i * 80}>
-                <div className="group h-full bg-white/5 backdrop-blur-sm border border-honey/10 rounded-2xl p-6 lg:p-8 hover:bg-white/8 hover:border-honey/20 transition-all duration-500 flex flex-col">
-                  <Quote className="w-6 h-6 text-honey/30 mb-4 shrink-0" />
-                  <p className="text-cream/70 leading-relaxed mb-6 flex-1">
-                    "{testimonial.quote}"
-                  </p>
-                  <div className="flex items-center gap-3 pt-4 border-t border-honey/10">
-                    <div className="w-10 h-10 rounded-full bg-honey/15 flex items-center justify-center shrink-0">
-                      <span className="font-display text-sm font-bold text-honey">{testimonial.initials}</span>
-                    </div>
-                    <div>
-                      <p className="text-white text-sm font-semibold">{testimonial.name}</p>
-                      <p className="text-cream/40 text-xs">{testimonial.role}</p>
-                      <p className="text-honey/50 text-xs">{testimonial.relationship}</p>
-                    </div>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
         </div>
       </section>
 
