@@ -85,7 +85,7 @@ export default function TheBook() {
                 <div className="absolute -inset-1 bg-gradient-to-br from-honey/20 to-transparent rounded-2xl" />
                 <img
                   src={BOOK_COVER}
-                  alt="I Thought I Was Just Nice: A Memoir by Blessing (Bee) Nyamolo"
+                  alt="I Thought I Was Just Nice: A Memoir of Becoming Whole by Blessing (Bee) Nyamolo"
                   className="relative w-[240px] sm:w-[280px] lg:w-[320px] rounded-xl shadow-2xl shadow-honey/20"
                   style={{ rotate: "-2deg" }}
                 />
@@ -97,7 +97,7 @@ export default function TheBook() {
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }}>
                 <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-honey/15 text-honey-dark text-sm font-medium tracking-wide border border-honey/20 mb-5">
                   <BookOpen className="w-3.5 h-3.5" />
-                  A Memoir
+                  A Memoir of Becoming Whole
                 </span>
               </motion.div>
 
@@ -201,7 +201,7 @@ export default function TheBook() {
                   This memoir traces the moments Bee gave herself away in the name of professionalism and peace, and the slow reckoning that followed. It is honest, specific, and at times uncomfortably familiar.
                 </p>
                 <p>
-                  It is for the woman who has achieved a great deal and felt quietly alone in it.
+                  It is a confession from a woman whose understanding of herself was incomplete — and the quiet, hard-won journey back to who she always was.
                 </p>
               </div>
             </FadeIn>
