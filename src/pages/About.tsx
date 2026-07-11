@@ -91,13 +91,16 @@ export default function About() {
                   My Story
                 </h2>
                 <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
-                  For over twenty years, I navigated the demanding world of corporate finance at some of the largest public companies in the world. From the late-night grind, to time zone dances, I learned what it takes to excel in a space that often asks women to choose between ambition and authenticity.
+                  For over twenty years, I built a career that looked, from the outside, like exactly what success is supposed to look like. Big companies. Senior titles. Rooms most people never get invited into.
                 </p>
                 <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
-                  As Finance Director at top-tier tech company, I sat at the intersection of innovation and accountability. I managed teams, shaped strategy, and helped steer one of the world's most influential companies. But through it all, there was a quiet voice, one that reminded me my purpose extended far beyond the balance sheet.
+                  What the resume never showed was the quieter story underneath it. The late nights. The yes when I meant no. The way I learned to make rooms comfortable, even when I wasn't. I was excellent at my job. I was also exhausted in ways I didn't fully understand yet.
+                </p>
+                <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
+                  For a long time, I thought that was just what professionalism required. I had confused survival patterns for personality, and usefulness for worth. I thought I was simply nice.
                 </p>
                 <p className="text-charcoal/70 text-lg leading-relaxed">
-                  That voice was my inner compass. And it's the reason Hive & Thrive exists today.
+                  That quiet reckoning is what eventually led me here. Not away from everything I built, but toward something more honest. Hive &amp; Thrive exists because I believe the women still in the middle of those years deserve someone who tells the truth about what it costs, and what it can become.
                 </p>
               </FadeIn>
 
