@@ -75,7 +75,7 @@ const lessons = [
     anchor: "Healing is not becoming someone else. It is becoming less afraid to be yourself.",
     reflection:
       "I was not broken. I was buried. I needed to remember what had been spoken over me before the world got its hands on me. The kindness was always real. The gifts were always real. What had shifted was my relationship to them. How much I had learned to hide, apologize for, and earn permission to keep. Coming home meant returning to what was already true.",
-    drop: "I want the same woman. With different instructions.",
+    drop: "I don't want to become someone else. I want the same woman. With different instructions.",
   },
 ];
 
