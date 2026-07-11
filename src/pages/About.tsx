@@ -114,7 +114,7 @@ export default function About() {
                   And my name? Well, life has a way of writing its own metaphors. When your real name is Blessing, and you go by Bee, the story practically writes itself. Every story I tell, every lesson I share, is nectar gathered from lessons corporate life taught me about resilience, humility, courage, and motion. Each story is meant to nourish, strengthen, and encourage women navigating career ceilings, identity shifts, and purpose awakenings.
                 </p>
                 <p className="text-charcoal/70 text-lg leading-relaxed">
-                  But underneath all of it is a simple belief: that you cannot build a career, a legacy, or a life worth living on a version of yourself that isn't real. Knowing who you are — and staying true to her — is the work beneath all the other work.
+                  But underneath all of it is a simple belief: that you cannot build a career, a legacy, or a life worth living on a version of yourself that isn't real. Knowing who you are, and staying true to her, is the work beneath all the other work.
                 </p>
               </FadeIn>
 
