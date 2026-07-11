@@ -100,7 +100,7 @@ export default function About() {
                   For a long time, I thought that was just what professionalism required. I had confused survival patterns for personality, and usefulness for worth. I thought I was simply nice.
                 </p>
                 <p className="text-charcoal/70 text-lg leading-relaxed">
-                  That quiet reckoning is what eventually led me here. Not away from everything I built, but toward something more honest. Hive &amp; Thrive exists because I believe the women still in the middle of those years deserve someone who tells the truth about what it costs, and what it can become.
+                  That quiet reckoning is what eventually led me here. Not away from everything I built, but toward something more honest. Hive &amp; Thrive exists because I believe every woman, wherever she is in her journey, deserves someone willing to share their story truthfully, and point toward what is possible.
                 </p>
               </FadeIn>
 
