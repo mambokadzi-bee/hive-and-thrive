@@ -6,7 +6,7 @@
 
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight, Award, BookOpen, Briefcase, Heart, TrendingUp, Users, Star, Crown, Target, Sparkles, GraduationCap, Quote, MessageCircle } from "lucide-react";
+import { ArrowRight, Heart, Star, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -145,112 +145,6 @@ export default function About() {
                 </div>
               </FadeIn>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Career Milestones Timeline */}
-      <section className="py-20 lg:py-28 bg-navy relative overflow-hidden">
-        {/* Decorative hexagons */}
-        <div className="absolute top-10 right-10 w-32 h-32 border border-honey/8 hex-clip" />
-        <div className="absolute bottom-20 left-20 w-20 h-20 bg-honey/5 hex-clip" />
-        <div className="absolute top-1/2 right-1/4 w-16 h-16 border border-honey/5 hex-clip" />
-
-        <div className="container relative">
-          <FadeIn>
-            <div className="text-center mb-16">
-              <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">
-                The Journey
-              </span>
-              <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
-                Career <span className="text-honey-light italic">Milestones</span>
-              </h2>
-              <p className="text-cream/50 text-lg max-w-2xl mx-auto">
-                Two decades of building, leading, and learning, each chapter preparing me for the next.
-              </p>
-            </div>
-          </FadeIn>
-
-          {/* Timeline */}
-          <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-6 lg:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-honey/40 via-honey/20 to-transparent lg:-translate-x-px" />
-
-            {[
-              {
-                year: "Early 2000s",
-                title: "Entered Finance Consulting",
-                description: "Began my career in finance at a Big 4 Consulting firm, served clients in various industries quickly learning that the corporate world needed more women who led with both competence and conviction.",
-                icon: <GraduationCap className="w-5 h-5" />,
-                side: "left",
-              },
-              {
-                year: "Mid 2000s",
-                title: "Pivoted to Corporate Finance",
-                description: "Promoted to senior manager roles managing multi-million dollar budgets and cross-functional teams. Discovered that mentoring younger women was just as fulfilling as the work itself.",
-                icon: <TrendingUp className="w-5 h-5" />,
-                side: "right",
-              },
-              {
-                year: "2010s",
-                title: "Finance Leadership at Scale",
-                description: "Took on director-level responsibilities at major public companies, overseeing internal audit, accounting, reporting, risk management and strategy that impacted thousands of employees.",
-                icon: <Users className="w-5 h-5" />,
-                side: "left",
-              },
-              {
-                year: "Meta Era",
-                title: "Finance Director in High Tech",
-                description: "Built a global accounting center of excellence, led financial risk management at one of the world's most influential technology companies. Managed high-stakes decisions while staying true to my values.",
-                icon: <Crown className="w-5 h-5" />,
-                side: "right",
-              },
-              {
-                year: "The Pivot",
-                title: "Experience Meets Purpose",
-                description: "A pivotal season of deep reflection revealed a deeper purpose; to use my story and experience to uplift professional women navigating the same crossroads of vocation and ambition.",
-                icon: <Heart className="w-5 h-5" />,
-                side: "left",
-              },
-              {
-                year: "Today",
-                title: "Hive & Thrive Is Born",
-                description: "Launched Hive & Thrive to share inspirational stories, career wisdom, and encouragement with professional women around the world. The best chapter is just beginning.",
-                icon: <Sparkles className="w-5 h-5" />,
-                side: "right",
-              },
-            ].map((milestone, i) => (
-              <FadeIn key={milestone.title} delay={i * 100}>
-                <div className={`relative flex items-start gap-6 lg:gap-0 mb-12 last:mb-0 ${
-                  milestone.side === "right" ? "lg:flex-row-reverse" : ""
-                }`}>
-                  {/* Dot on timeline */}
-                  <div className="absolute left-6 lg:left-1/2 w-3 h-3 rounded-full bg-honey border-2 border-navy -translate-x-1.5 lg:-translate-x-1.5 mt-6 z-10" />
-
-                  {/* Content card */}
-                  <div className={`ml-16 lg:ml-0 lg:w-[calc(50%-3rem)] ${
-                    milestone.side === "right" ? "lg:mr-auto lg:pl-0 lg:pr-12" : "lg:ml-auto lg:pr-0 lg:pl-12"
-                  }`}>
-                    <div className="group bg-white/5 backdrop-blur-sm border border-honey/10 rounded-2xl p-6 lg:p-8 hover:bg-white/8 hover:border-honey/20 transition-all duration-500">
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className="w-10 h-10 rounded-xl bg-honey/15 flex items-center justify-center text-honey">
-                          {milestone.icon}
-                        </div>
-                        <span className="text-honey/80 text-sm font-semibold tracking-wider">
-                          {milestone.year}
-                        </span>
-                      </div>
-                      <h3 className="font-display text-xl lg:text-2xl font-bold text-white mb-3">
-                        {milestone.title}
-                      </h3>
-                      <p className="text-cream/50 leading-relaxed">
-                        {milestone.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
           </div>
         </div>
       </section>
