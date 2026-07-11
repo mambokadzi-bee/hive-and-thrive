@@ -35,7 +35,7 @@ const lessons = [
     anchor: "You do not have to survive the life you worked so hard to build.",
     reflection:
       "I spent years being excellent at surviving. What I didn't realize was that survival had become my default setting. Not a season I was passing through, but a posture I had locked into. The patterns that served me as a child had followed me into boardrooms, into friendships, into my own home. Healing began when I understood that I was allowed to want more than endurance.",
-    drop: "Freedom sometimes begins one unlearned rule at a time.",
+    drop: "I mistook her instincts for my personality. I mistook her ways of surviving for who I was.",
   },
   {
     number: "02",
@@ -67,7 +67,7 @@ const lessons = [
     anchor: "Leadership is not only carrying responsibility. It is also claiming authority.",
     reflection:
       "I was comfortable with the weight of leadership long before I was comfortable with its visibility. I could deliver. I could execute. I could carry more than I should have been asked to carry. What took longer to learn was that sitting in a room is not the same as being present in it, and that the woman behind the work deserves to be seen and heard too.",
-    drop: "I had become more comfortable carrying responsibility than claiming authority.",
+    drop: "Capacity is not proof of obligation.",
   },
   {
     number: "06",
