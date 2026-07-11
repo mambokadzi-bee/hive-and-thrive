@@ -1,7 +1,7 @@
 /*
- * DESIGN: Royal Apiary — The Queen's Playbook
- * Single collection showcase with max 5 stories
- * Hexagonal accents, warm tones, editorial feel
+ * DESIGN: The Queen's Playbook
+ * Curated lessons from the hive — Honey Drops + reflections
+ * Editorial feel, warm tones, aligned to Hive & Thrive brand foundation
  */
 
 import { motion } from "framer-motion";
@@ -28,41 +28,78 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
-const attitudes = [
+const lessons = [
   {
-    name: "Bee' Intentional",
-    tagline: "A hive isn't built by accident.",
-    color: "bg-honey/10 border-honey/20",
+    number: "01",
+    theme: "On Survival",
+    anchor: "You do not have to survive the life you worked so hard to build.",
+    reflection:
+      "I spent years being excellent at surviving. What I didn't realize was that survival had become my default setting. Not a season I was passing through, but a posture I had locked into. The patterns that served me as a child had followed me into boardrooms, into friendships, into my own home. Healing began when I understood that I was allowed to want more than endurance.",
+    drops: [
+      "Survival and thriving are not the same thing.",
+      "Adaptation is not the same as freedom.",
+      "Thriving begins where performance for acceptance ends.",
+    ],
   },
   {
-    name: "Bee' Willing to Ask for Help",
-    tagline: "Even queens rely on the hive.",
-    color: "bg-navy/5 border-navy/10",
+    number: "02",
+    theme: "On Worth",
+    anchor: "The work is not to abandon excellence. It is to stop using it to earn permission to exist.",
+    reflection:
+      "Excellence was the language I trusted most. It was reliable. It gave me results. What I didn't see was that I had turned it into a currency, proof that I deserved to take up space. The problem with earning your worth through output is that the work is never finished. There is always one more thing to deliver before you allow yourself to rest.",
+    drops: [
+      "Achievement became emotional currency.",
+      "Exhaustion is not always evidence of purpose.",
+      "Worthiness is not a performance review.",
+    ],
   },
   {
-    name: "Bee' Patient",
-    tagline: "Honey takes time.",
-    color: "bg-honey/10 border-honey/20",
+    number: "03",
+    theme: "On Visibility",
+    anchor: "I became indispensable without becoming visible.",
+    reflection:
+      "I was very good at being useful. I could carry a room without being noticed in it. What I eventually had to face was that I had built a professional life around executing brilliantly while staying just small enough to feel safe. Visibility felt like arrogance. What I learned was that it was actually just truth-telling, about what I had built and who had built it.",
+    drops: [
+      "Useful felt safer than seen.",
+      "Excellence without visibility can quietly become invisibility.",
+      "You do not have to become loud to become visible.",
+    ],
   },
   {
-    name: "Bee' Mindful",
-    tagline: "Be mindful of where your energy is pollinating.",
-    color: "bg-navy/5 border-navy/10",
+    number: "04",
+    theme: "On Rest",
+    anchor: "Even bees rest.",
+    reflection:
+      "I had mastered productivity but forgotten how to pause. Rest felt like a luxury I hadn't earned yet, or a risk I couldn't afford. But a hive that never stops working eventually collapses. I had to learn that rest is not a reward waiting at the end of enough doing. It is part of the work. It is what makes the work sustainable.",
+    drops: [
+      "You do not have to earn rest through exhaustion.",
+      "The body was never designed to live permanently in survival mode.",
+      "A thriving life cannot be built on permanent depletion.",
+    ],
   },
   {
-    name: "Bee' Collaborative",
-    tagline: "No queen thrives alone in the hive.",
-    color: "bg-honey/10 border-honey/20",
+    number: "05",
+    theme: "On Leadership",
+    anchor: "Leadership is not only carrying responsibility. It is also claiming authority.",
+    reflection:
+      "I was comfortable with the weight of leadership long before I was comfortable with its visibility. I could deliver. I could execute. I could carry more than I should have been asked to carry. What took longer to learn was that sitting in a room is not the same as being present in it, and that the woman behind the work deserves to be seen and heard too.",
+    drops: [
+      "I had become more comfortable carrying responsibility than claiming authority.",
+      "Work does not always speak in rooms where power and positioning are speaking too.",
+      "Sometimes confidence means staying in the sentence.",
+    ],
   },
   {
-    name: "Bee' Adaptable",
-    tagline: "Evolution is survival.",
-    color: "bg-navy/5 border-navy/10",
-  },
-  {
-    name: "Bee' Relentless",
-    tagline: "Expertise is daily effort, compounded over time.",
-    color: "bg-honey/10 border-honey/20",
+    number: "06",
+    theme: "On Coming Home",
+    anchor: "Healing is not becoming someone else. It is becoming less afraid to be yourself.",
+    reflection:
+      "I was not broken. I was buried. I needed to remember what had been spoken over me before the world got its hands on me. The kindness was always real. The gifts were always real. What had shifted was my relationship to them. How much I had learned to hide, apologize for, and earn permission to keep. Coming home meant returning to what was already true.",
+    drops: [
+      "I no longer need to earn permission to exist.",
+      "I can honor where I came from without remaining governed by it.",
+      "Thriving requires a different kind of courage. The courage to stop abandoning yourself.",
+    ],
   },
 ];
 
@@ -79,34 +116,31 @@ export default function Collections() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center max-w-3xl mx-auto"
+            className="max-w-3xl"
           >
             <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">
-              Hive & Thrive
+              Hive &amp; Thrive
             </span>
             <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6">
               The Queen's <span className="text-honey-light italic">Playbook</span>
             </h1>
-            <p className="text-cream/60 text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto">
-              Twenty years in corporate finance taught me a lot. These are the principles I keep coming back to.
+            <p className="text-cream/60 text-lg lg:text-xl leading-relaxed max-w-2xl">
+              Curated lessons from the hive. Not theory. Lived truth, gathered from two decades of high achievement, hard lessons, and the slow work of becoming whole.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Bee-Attitudes Tease */}
-      <section className="py-20 lg:py-28 bg-cream">
+      {/* Intro */}
+      <section className="py-16 lg:py-20 bg-cream">
         <div className="container">
           <FadeIn className="max-w-2xl mx-auto text-center">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">The Bee-Attitudes</span>
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-6">
-              A Framework Born from Experience
-            </h2>
-            <p className="text-charcoal/60 text-lg leading-relaxed mb-4">
-              I shared these principles in a women's leadership program and something in the room shifted. I call them the Bee-Attitudes.
+            <p className="font-display text-xl lg:text-2xl text-navy/80 italic leading-relaxed">
+              &ldquo;The hive needs my gifts. But it also needs me whole.&rdquo;
             </p>
-            <p className="text-charcoal/60 text-lg leading-relaxed">
-              They are simple. They are not easy. And they are in the book.
+            <p className="text-honey-dark text-sm font-semibold tracking-[0.12em] uppercase mt-4">~ Bee</p>
+            <p className="text-charcoal/60 text-base leading-relaxed mt-8">
+              These are the lessons I keep returning to. Each one is an anchor drop, the emotional truth at the center, followed by a reflection and the wisdom that surrounds it. Take what serves you. Leave what doesn't. Come back when you need to.
             </p>
           </FadeIn>
         </div>
@@ -114,19 +148,71 @@ export default function Collections() {
 
       <HoneycombDivider />
 
-      {/* Book CTA */}
-      <section className="py-16 lg:py-20 bg-navy relative overflow-hidden">
+      {/* Lessons */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            {lessons.map((lesson, i) => (
+              <FadeIn key={i} delay={80}>
+                <article>
+                  {/* Lesson header */}
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="font-display text-4xl font-bold text-honey/20 leading-none">{lesson.number}</span>
+                    <span className="text-honey-dark text-xs font-semibold tracking-[0.2em] uppercase">{lesson.theme}</span>
+                  </div>
+
+                  {/* Anchor Honey Drop */}
+                  <blockquote className="font-display text-2xl lg:text-3xl font-bold text-navy leading-snug italic border-l-4 border-honey pl-6 mb-8">
+                    &ldquo;{lesson.anchor}&rdquo;
+                  </blockquote>
+
+                  {/* Reflection */}
+                  <p className="text-charcoal/70 text-base lg:text-lg leading-relaxed mb-10">
+                    {lesson.reflection}
+                  </p>
+
+                  {/* Supporting drops */}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    {lesson.drops.map((drop, j) => (
+                      <div
+                        key={j}
+                        className="bg-cream border border-honey/15 rounded-xl px-5 py-4 hover:border-honey/30 hover:shadow-sm transition-all duration-300"
+                      >
+                        <p className="font-display text-sm text-navy/75 italic leading-relaxed">
+                          &ldquo;{drop}&rdquo;
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Divider between lessons */}
+                  {i < lessons.length - 1 && (
+                    <div className="mt-20 lg:mt-28 border-t border-honey/10" />
+                  )}
+                </article>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <HoneycombDivider />
+
+      {/* CTA */}
+      <section className="py-16 lg:py-24 bg-navy relative overflow-hidden">
         <div className="absolute top-10 left-10 w-32 h-32 border border-honey/10 hex-clip opacity-20" />
         <div className="absolute bottom-10 right-10 w-24 h-24 bg-honey/5 hex-clip" />
 
         <div className="container relative">
           <FadeIn className="text-center max-w-2xl mx-auto">
-            <p className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4">The Full Story</p>
+            <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">
+              The Full Story
+            </span>
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-white mb-4">
-              The stories behind these lessons are in the book.
+              These lessons came from somewhere.
             </h2>
-            <p className="text-cream/60 text-lg mb-8">
-              <em>I Thought I Was Just Nice</em> is where it all started. The Bee-Attitudes didn't come from nowhere.
+            <p className="text-cream/60 text-lg leading-relaxed mb-10">
+              <em>I Thought I Was Just Nice</em> is where they live in full. The confession. The becoming. The remembering.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/the-book">
