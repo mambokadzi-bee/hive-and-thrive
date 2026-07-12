@@ -136,7 +136,7 @@ export default function Home() {
               </p>
               <Link href="/about">
                 <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 py-5 text-base transition-all duration-300">
-                  Meet Bee <ArrowRight className="ml-2 w-4 h-4" />
+                  Read My Story <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
             </FadeIn>
