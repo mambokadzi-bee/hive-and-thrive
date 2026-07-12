@@ -149,47 +149,29 @@ export default function About() {
         </div>
       </section>
 
-      {/* Kind Words */}
-      <section className="py-16 lg:py-20 bg-cream">
-        <div className="container">
-          <FadeIn>
-            <div className="max-w-3xl mx-auto text-center">
-              <Quote className="w-8 h-8 text-honey/30 mx-auto mb-6" />
-              <blockquote className="font-display text-xl lg:text-2xl text-navy/80 italic leading-relaxed mb-6">
-                "Bee invited me to a women's networking breakfast during a particularly tough quarter. That single act of kindness reminded me why I was in this industry. She sees the whole person."
-              </blockquote>
-              <p className="text-charcoal/50 text-sm font-medium">Tanya M. &mdash; Finance Director, Fortune 500</p>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
+      {/* Closing */}
+      <section className="py-20 lg:py-28 bg-navy relative overflow-hidden">
+        <div className="absolute top-10 left-10 w-32 h-32 border border-honey/10 hex-clip opacity-20" />
+        <div className="absolute bottom-10 right-10 w-24 h-24 bg-honey/5 hex-clip" />
 
-      {/* Closing Quote & CTA */}
-      <section className="py-16 lg:py-20 bg-cream">
-        <div className="container">
-          <FadeIn>
-            <div className="text-center max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-2 text-honey-dark mb-6">
-                <div className="w-8 h-px bg-honey/40" />
-                <Star className="w-4 h-4" />
-                <div className="w-8 h-px bg-honey/40" />
-              </div>
-              <blockquote className="font-display text-xl lg:text-2xl text-navy/80 italic leading-relaxed mb-4">
-                "Every corporate room I entered, every budget I balanced, every team I led; it was all preparation. Life was writing a story through my career that I'm only now beginning to share."
-              </blockquote>
-              <p className="text-honey-dark/70 text-sm font-medium">~ Bee</p>
+        <div className="container relative">
+          <FadeIn className="text-center max-w-2xl mx-auto">
+            <div className="inline-flex items-center gap-2 text-honey mb-8">
+              <div className="w-8 h-px bg-honey/40" />
+              <Star className="w-4 h-4" />
+              <div className="w-8 h-px bg-honey/40" />
             </div>
-          </FadeIn>
-
-          <FadeIn>
-            <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+            <p className="font-display text-2xl lg:text-3xl text-cream/90 italic leading-relaxed mb-10">
+              If you've spent years proving your worth and are finally ready to discover who you are underneath the proving, welcome to the hive.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/collections">
-                <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base">
-                  Read My Stories <ArrowRight className="ml-2 w-4 h-4" />
+                <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
+                  Explore the Playbook <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
               <Link href="/join">
-                <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-5 text-base">
+                <Button variant="outline" className="border-cream/30 text-cream hover:bg-cream/10 px-8 py-5 text-base">
                   Join the Swarm
                 </Button>
               </Link>
