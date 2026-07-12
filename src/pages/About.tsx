@@ -46,14 +46,11 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">
-              Meet Bee
+              My Story
             </span>
-            <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6 max-w-3xl">
-              A Finance Director Who Found Her <span className="text-honey-light italic">True Purpose</span>
+            <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight max-w-3xl">
+              I thought I was simply nice. <span className="text-honey-light italic">I had confused survival for personality.</span>
             </h1>
-            <p className="text-cream/60 text-lg lg:text-xl max-w-2xl leading-relaxed">
-              My journey from corporate finance to purpose-driven storytelling; and why I believe every professional woman deserves both success and fulfillment.
-            </p>
           </motion.div>
         </div>
       </section>
