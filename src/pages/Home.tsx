@@ -256,9 +256,9 @@ export default function Home() {
         <div className="container">
           <FadeIn className="text-center mb-14">
             <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">The Hive & Thrive Collection</span>
-            <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy mb-4">Wear the Words</h2>
+            <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy mb-4">Carry the Philosophy</h2>
             <p className="text-charcoal/60 text-lg max-w-2xl mx-auto">
-              Products born from the book. Each one carries a message worth holding onto.
+              Inspired by the memoir. Shaped by the Hive &amp; Thrive philosophy. Created as everyday reminders to bring your gifts, and stay whole.
             </p>
           </FadeIn>
 
