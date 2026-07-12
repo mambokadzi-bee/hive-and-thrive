@@ -204,48 +204,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== HONEY DROPS TEASER ===== */}
-      <section className="py-20 lg:py-28 bg-cream">
-        <div className="container">
-          <FadeIn className="text-center mb-12">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">
-              Hive &amp; Thrive
-            </span>
-            <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy mb-4">
-              Honey <span className="text-honey-dark italic">Drops</span>
-            </h2>
-            <p className="text-charcoal/60 text-lg max-w-2xl mx-auto">
-              Truths worth sitting with.
-            </p>
-          </FadeIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto mb-10">
-            {[
-              "Useful felt safer than seen.",
-              "You do not have to survive the life you worked so hard to build.",
-              "Even bees rest.",
-            ].map((drop, i) => (
-              <FadeIn key={i} delay={i * 80}>
-                <div className="h-full bg-white border border-honey/10 rounded-2xl p-6 flex items-center">
-                  <p className="font-display text-base lg:text-lg text-navy/85 italic leading-relaxed">
-                    &ldquo;{drop}&rdquo;
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-
-          <FadeIn className="text-center">
-            <Link href="/honey-drops">
-              <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-5 text-base transition-all duration-300">
-                Read All Honey Drops
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </Link>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* COMING SOON */}
       <section className="py-20 lg:py-28 bg-cream">
         <div className="container">
