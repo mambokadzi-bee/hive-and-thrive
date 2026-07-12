@@ -204,8 +204,10 @@ export default function Home() {
         </div>
       </section>
 
+      <HoneycombDivider />
+
       {/* THE BOOK */}
-      <section className="py-20 lg:py-28 bg-navy relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-cream relative overflow-hidden">
         <div className="absolute top-20 right-20 w-40 h-40 border border-honey/10 hex-clip opacity-20" />
         <div className="absolute bottom-20 left-20 w-28 h-28 bg-honey/5 hex-clip" />
 
@@ -227,13 +229,13 @@ export default function Home() {
 
             {/* Content */}
             <FadeIn delay={200} className="flex-1 text-center lg:text-left">
-              <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">The Book</span>
-              <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight mb-2">
-                I Thought I Was Just <span className="text-honey-light italic">Nice</span>
+              <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">The Book</span>
+              <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy leading-tight mb-2">
+                I Thought I Was Just <span className="text-honey-dark italic">Nice</span>
               </h2>
-              <p className="text-honey/70 font-medium tracking-wide mb-6">by Blessing (Bee) Nyamolo</p>
-              <p className="text-cream/60 text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-                A memoir about what happens when a high-achieving woman stops mistaking survival for personality — and finally comes home to herself.
+              <p className="text-honey-dark/70 font-medium tracking-wide mb-6">by Blessing (Bee) Nyamolo</p>
+              <p className="text-charcoal/60 text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+                A memoir about what happens when a high-achieving woman stops mistaking survival for personality and finally comes home to herself.
               </p>
               <Link href="/the-book">
                 <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
