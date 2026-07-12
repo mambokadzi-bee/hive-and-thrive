@@ -120,17 +120,23 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn delay={200}>
-              <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Meet Bee</span>
-              <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy leading-tight mb-6">Where Career Meets Purpose.</h2>
+              <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">The Story Behind the Hive</span>
+              <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy leading-tight mb-6">I didn't set out to build a movement. I was trying to understand my own story.</h2>
               <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
-                With over two decades navigating the corporate world including serving as Finance Director at a high tech company, I've learned that true success isn't just about climbing the ladder.
+                For more than twenty years, I built a successful career in finance. From the outside, it looked like I had everything under control.
               </p>
-              <p className="text-charcoal/70 text-lg leading-relaxed mb-8">
-                It's about building a life that matters, honors your values, and creates a legacy worth leaving behind. Welcome to my hive.
+              <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
+                But beneath the promotions and performance was a quieter question: Why does success still feel so heavy?
+              </p>
+              <p className="text-charcoal/70 text-lg leading-relaxed mb-6">
+                The answer became a memoir. The memoir became a philosophy. The philosophy became Hive and Thrive, a place where high-achieving women learn to stop confusing survival with identity and begin sharing their gifts from a place of wholeness.
+              </p>
+              <p className="font-display text-lg text-navy italic border-l-4 border-honey pl-4 mb-8">
+                The memoir became a philosophy. The philosophy became a movement.
               </p>
               <Link href="/about">
                 <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 py-5 text-base transition-all duration-300">
-                  Read My Story <ArrowRight className="ml-2 w-4 h-4" />
+                  Meet Bee <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
             </FadeIn>
