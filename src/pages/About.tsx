@@ -108,23 +108,23 @@ export default function About() {
 
               <FadeIn>
                 <h3 className="font-display text-2xl font-bold text-navy mb-4">
-                  Why "Hive & Thrive"?
+                  Why the Hive?
                 </h3>
                 <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
-                  The hive is one of nature's most remarkable structures. Built with precision, sustained by community, and producing something sweet from hard work. That's exactly what I want to build for professional women.
+                  The hive has always felt like the perfect metaphor for the women I admire most. Women who build. Women who contribute. Women who carry more than most people ever see. But here's what we've forgotten: the hive doesn't thrive when the bees are depleted.
                 </p>
-                <p className="text-charcoal/70 text-lg leading-relaxed">
+                <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
                   And my name? Well, life has a way of writing its own metaphors. When your real name is Blessing, and you go by Bee, the story practically writes itself. Every story I tell, every lesson I share, is nectar gathered from lessons corporate life taught me about resilience, humility, courage, and motion. Each story is meant to nourish, strengthen, and encourage women navigating career ceilings, identity shifts, and purpose awakenings.
                 </p>
                 <p className="text-charcoal/70 text-lg leading-relaxed">
-                  But underneath all of it is a simple belief: that you cannot build a career, a legacy, or a life worth living on a version of yourself that isn't real. Knowing who you are, and staying true to her, is the work beneath all the other work.
+                  But underneath all of it is a simple belief: that <strong className="font-bold text-navy">you cannot build a career, a legacy, or a life worth living on a version of yourself that isn't real.</strong> Knowing who you are, and becoming courageous enough to live from that place, is the work beneath all the other work.
                 </p>
               </FadeIn>
 
               <FadeIn>
                 <div className="mt-8 p-8 bg-navy rounded-2xl">
                   <blockquote className="font-display text-xl lg:text-2xl text-cream/90 italic leading-relaxed mb-4">
-                    "I believe every woman carries a story worth telling, a purpose worth pursuing, and a vision worth fighting for. My job is simply to remind her."
+                    "The hive needs your gifts. But it also needs you whole."
                   </blockquote>
                   <p className="text-honey/70 text-sm">~Bee</p>
                 </div>
