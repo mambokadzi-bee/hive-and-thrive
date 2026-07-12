@@ -88,7 +88,7 @@ export default function About() {
                   My Story
                 </h2>
                 <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
-                  For over twenty years, I built a career that looked, from the outside, like exactly what success is supposed to look like. Big companies. Senior titles. Rooms most people never get invited into.
+                  For over twenty years, I built a career inside some of the world's most complex and innovative companies. It looked, from the outside, like exactly what success is supposed to look like. Big companies. Senior titles. Rooms most people never get invited into.
                 </p>
                 <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
                   What the resume never showed was the quieter story underneath it. The late nights. The yes when I meant no. The way I learned to make rooms comfortable, even when I wasn't. I was excellent at my job. I was also exhausted in ways I didn't fully understand yet.
@@ -100,7 +100,7 @@ export default function About() {
                   That quiet reckoning is what eventually led me here. Not away from everything I built, but toward something more honest.
                 </p>
                 <p className="text-charcoal/70 text-lg leading-relaxed">
-                  Hive &amp; Thrive exists because I believe every woman, wherever she is in her journey, deserves someone willing to share their story truthfully, and point toward what is possible.
+                  Hive &amp; Thrive exists because too many women are admired for their excellence while quietly disappearing inside it.
                 </p>
               </FadeIn>
 
