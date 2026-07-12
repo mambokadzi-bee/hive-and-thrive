@@ -212,6 +212,10 @@ export default function Home() {
         <div className="absolute bottom-20 left-20 w-28 h-28 bg-honey/5 hex-clip" />
 
         <div className="container relative">
+          <FadeIn className="text-center mb-12">
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase">The Book</span>
+          </FadeIn>
+
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 max-w-5xl mx-auto">
 
             {/* Book Cover */}
@@ -229,7 +233,6 @@ export default function Home() {
 
             {/* Content */}
             <FadeIn delay={200} className="flex-1 text-center lg:text-left">
-              <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">The Book</span>
               <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy leading-tight mb-2">
                 I Thought I Was Just <span className="text-honey-dark italic">Nice</span>
               </h2>
