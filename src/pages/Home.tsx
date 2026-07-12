@@ -213,7 +213,7 @@ export default function Home() {
 
         <div className="container relative">
           <FadeIn className="text-center mb-12">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase">The Book</span>
+            <span className="text-honey-dark text-xl font-semibold tracking-[0.15em] uppercase">The Book</span>
           </FadeIn>
 
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 max-w-5xl mx-auto">
