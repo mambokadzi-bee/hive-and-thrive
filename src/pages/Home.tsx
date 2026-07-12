@@ -57,23 +57,23 @@ export default function Home() {
               </motion.div>
 
               <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }} className="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] mb-6">
-                I'm <span className="gold-shimmer">Bee</span>, and I help women{" "}
-                <span className="text-honey-light italic">thrive</span>, in their professional hive, and beyond!
+                You've been excellent your whole life.{" "}
+                <span className="text-honey-light italic">And exhausted for just as long.</span>
               </motion.h1>
 
               <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.6 }} className="text-lg lg:text-xl text-cream/70 leading-relaxed mb-8 max-w-xl">
-                20+ years in corporate finance. Lessons worth sharing. Stories that will inspire your next chapter.
+                A place for high-achieving women who are ready to stop surviving success and start sharing their gifts without losing themselves.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.8 }} className="flex flex-col sm:flex-row gap-4">
-                <Link href="/collections">
+                <Link href="/the-book">
                   <Button size="lg" className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-6 text-base shadow-lg shadow-honey/20 transition-all duration-300 hover:shadow-xl hover:shadow-honey/30">
-                    Explore My Stories <ArrowRight className="ml-2 w-5 h-5" />
+                    Read the Book <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
-                <Link href="/about">
+                <Link href="/collections">
                   <Button size="lg" variant="outline" className="border-cream/30 text-cream hover:bg-cream/10 px-8 py-6 text-base">
-                    Meet Bee
+                    Explore the Hive
                   </Button>
                 </Link>
               </motion.div>
