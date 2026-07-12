@@ -204,37 +204,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* COMING SOON */}
-      <section className="py-20 lg:py-28 bg-cream">
-        <div className="container">
-          <FadeIn className="text-center mb-14">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">The Hive Is Growing</span>
-            <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy mb-4">What's Buzzing Next</h2>
-            <p className="text-charcoal/60 text-lg max-w-2xl mx-auto">Exciting new ways to connect, grow, and thrive together are on the horizon.</p>
-          </FadeIn>
+      {/* THE BOOK */}
+      <section className="py-20 lg:py-28 bg-navy relative overflow-hidden">
+        <div className="absolute top-20 right-20 w-40 h-40 border border-honey/10 hex-clip opacity-20" />
+        <div className="absolute bottom-20 left-20 w-28 h-28 bg-honey/5 hex-clip" />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[
-              { img: PODCAST_IMG, icon: <Mic className="w-5 h-5" />, title: "Hive Talks Podcast", desc: "Candid conversations with women who've built remarkable careers while staying true to their values.", status: "Coming Soon" },
-              { img: SPEAKING_IMG, icon: <Crown className="w-5 h-5" />, title: "Speaking & Workshops", desc: "Corporate workshops and keynote speaking that bridge the gap between professional excellence and personal purpose.", status: "Coming Soon" },
-              { img: DEVOTIONAL_IMG, icon: <BookOpen className="w-5 h-5" />, title: "Guided Journal", desc: "A guided journal for professional women; daily reflections designed for the pace of your life.", status: "Coming Soon" },
-            ].map((item, i) => (
-              <FadeIn key={item.title} delay={i * 150}>
-                <div className="group bg-white rounded-2xl overflow-hidden shadow-md shadow-honey/5 hover:shadow-xl hover:shadow-honey/10 transition-all duration-500 hover:-translate-y-1">
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img src={item.img} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center gap-2 text-honey-dark mb-3">
-                      {item.icon}
-                      <span className="text-xs font-semibold tracking-[0.1em] uppercase">{item.status}</span>
-                    </div>
-                    <h3 className="font-display text-xl font-bold text-navy mb-2">{item.title}</h3>
-                    <p className="text-charcoal/60 text-sm leading-relaxed">{item.desc}</p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
+        <div className="container relative">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 max-w-5xl mx-auto">
+
+            {/* Book Cover */}
+            <FadeIn className="shrink-0">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-honey/10 blur-2xl rounded-2xl" />
+                <img
+                  src="/images/book-cover.jpg"
+                  alt="I Thought I Was Just Nice by Blessing (Bee) Nyamolo"
+                  className="relative w-[220px] sm:w-[260px] rounded-xl shadow-2xl shadow-honey/20"
+                  style={{ rotate: "-2deg" }}
+                />
+              </div>
+            </FadeIn>
+
+            {/* Content */}
+            <FadeIn delay={200} className="flex-1 text-center lg:text-left">
+              <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">The Book</span>
+              <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight mb-2">
+                I Thought I Was Just <span className="text-honey-light italic">Nice</span>
+              </h2>
+              <p className="text-honey/70 font-medium tracking-wide mb-6">by Blessing (Bee) Nyamolo</p>
+              <p className="text-cream/60 text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+                A memoir about what happens when a high-achieving woman stops mistaking survival for personality — and finally comes home to herself.
+              </p>
+              <Link href="/the-book">
+                <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
+                  Read About the Book <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </Link>
+            </FadeIn>
+
           </div>
         </div>
       </section>
