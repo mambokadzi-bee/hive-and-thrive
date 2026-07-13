@@ -133,7 +133,7 @@ export default function QueensCircle() {
                   This is for the woman who has spent years being excellent in rooms that never quite felt like hers. The one who achieved more than she expected and rested less than she needed. The one who is starting to ask a different question.
                 </p>
                 <p>
-                  You do not have to earn your place here. You just have to show up.
+                  You don't have to earn your place here. You've already carried enough.
                 </p>
               </div>
             </FadeIn>
@@ -165,7 +165,7 @@ export default function QueensCircle() {
               {
                 icon: "🐝",
                 title: "Community",
-                desc: "A growing circle of high-achieving women navigating the same journey. Excellence without exhaustion. Together.",
+                desc: "A growing circle of high-achieving women navigating the same journey. Women becoming whole together.",
               },
               {
                 icon: "✨",
@@ -217,10 +217,10 @@ export default function QueensCircle() {
                 Keynote Speaking
               </h2>
               <p className="text-charcoal/70 text-lg leading-relaxed mb-3">
-                Bee speaks from experience, not theory. Her talks draw on two decades in corporate finance and the women's leadership program she has been part of.
+                Every talk begins the same way. With a story. Because stories have a way of reaching places that strategies never can.
               </p>
               <p className="text-charcoal/70 text-lg leading-relaxed mb-8">
-                The through-line is always the same: purpose over applause.
+                Bee draws on two decades in corporate finance and the hard-won lessons of building a career with both excellence and integrity. Her talks don't offer frameworks. They offer mirrors.
               </p>
 
               <div className="space-y-3 mb-8">
@@ -270,7 +270,7 @@ export default function QueensCircle() {
                 Corporate Workshops
               </h2>
               <p className="text-charcoal/70 text-lg leading-relaxed mb-8">
-                Practical, honest sessions for teams and organizations. Built around real conversations, not slide decks.
+                Honest conversations that stay with people long after the slides would have been forgotten. Built around stories, not slide decks.
               </p>
 
               <div className="space-y-4 mb-8">
