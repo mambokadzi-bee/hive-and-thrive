@@ -42,13 +42,13 @@ const parts = [
   {
     number: "Part III",
     title: "The Quiet Reckoning",
-    desc: "Not a single revelation. Something slower — the growing awareness that success and wholeness were never the same thing.",
+    desc: "Not a single revelation. Something slower: the growing awareness that success and wholeness were never the same thing.",
     color: "from-honey/20 to-honey/5",
   },
   {
     number: "Part IV",
     title: "Hard-Won Freedom",
-    desc: "What it means to stop surviving the life you built. Not a tidy ending — something richer, and more real, than that.",
+    desc: "What it means to stop surviving the life you built. Not a tidy ending. Something richer, and more real, than that.",
     color: "from-navy/10 to-navy/5",
   },
 ];
@@ -198,10 +198,10 @@ export default function TheBook() {
                   She thought she was just nice. She was also exhausted.
                 </p>
                 <p>
-                  This memoir traces the exact moments — the meeting rooms, the missed opportunities, the silence where a no should have been — and the slow reckoning that followed. It is honest, specific, and at times uncomfortably familiar.
+                  This memoir traces the exact moments: the meeting rooms, the missed opportunities, the silence where a no should have been. And the slow reckoning that followed. It is honest, specific, and at times uncomfortably familiar.
                 </p>
                 <p>
-                  It is a confession from a woman whose understanding of herself was incomplete — and the quiet, hard-won journey back to who she always was.
+                  It is a confession from a woman whose understanding of herself was incomplete, and the quiet, hard-won journey back to who she always was.
                 </p>
               </div>
             </FadeIn>
@@ -288,7 +288,7 @@ export default function TheBook() {
               {
                 icon: "✨",
                 headline: "The woman who is done surviving and ready to remember.",
-                body: "You're starting to ask a different question. Not what's wrong with you — but what these patterns were once protecting you from.",
+                body: "You're starting to ask a different question. Not what's wrong with you. But what these patterns were once protecting you from.",
               },
             ].map((card, i) => (
               <FadeIn key={card.headline} delay={i * 100}>
@@ -308,7 +308,7 @@ export default function TheBook() {
               <div className="w-8 h-px bg-honey/40" />
             </div>
             <p className="text-charcoal/60 text-lg mb-8 max-w-xl mx-auto">
-              If any of this sounds like your life — this book was written for you. Be the first to know when it's available.
+              If any of this sounds like your life, this book was written for you. Be the first to know when it's available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/queens-circle">
