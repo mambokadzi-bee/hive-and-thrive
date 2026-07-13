@@ -41,8 +41,8 @@ const parts = [
   },
   {
     number: "Part III",
-    title: "The Awakening",
-    desc: "The moment things stopped adding up. When being nice stopped feeling like a virtue and started feeling like a cage.",
+    title: "The Quiet Reckoning",
+    desc: "Not a single revelation. Something slower — the growing awareness that success and wholeness were never the same thing.",
     color: "from-honey/20 to-honey/5",
   },
   {
@@ -263,51 +263,39 @@ export default function TheBook() {
         </div>
       </section>
 
-      {/* Kind Words */}
+      {/* Who This Book Is For */}
       <section className="py-20 lg:py-24 bg-cream">
         <div className="container">
           <FadeIn className="text-center mb-14">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Kind Words</span>
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Who This Book Is For</span>
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
-              Already <span className="text-honey-dark italic">Resonating</span>
+              You'll recognise <span className="text-honey-dark italic">yourself</span> in these pages
             </h2>
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-14">
             {[
               {
-                quote: "Bee's stories resonate because they're real. She doesn't sugarcoat the challenges; she shows you how resilience carried her through them. That's what makes her writing so powerful.",
-                name: "Angela W.",
-                initials: "AW",
-                role: "Director of Operations",
+                icon: "🐝",
+                headline: "The woman whose success still feels heavy.",
+                body: "You've done everything right. The career, the reputation, the results. And somehow you're more exhausted than you've ever been.",
               },
               {
-                quote: "Working alongside Bee taught me that integrity and ambition aren't opposites; they're fuel for each other. Her mentorship changed the trajectory of my career.",
-                name: "Michelle T.",
-                initials: "MT",
-                role: "Senior Finance Manager",
+                icon: "🍯",
+                headline: "The woman who says yes when she means something more complicated.",
+                body: "You keep the peace. You stay late. You make rooms comfortable even when you aren't. You've told yourself it's just who you are.",
               },
               {
-                quote: "Bee has this incredible ability to see potential in people before they see it in themselves. She pushed me to pursue my MBA and I'll forever be grateful.",
-                name: "Priya K.",
-                initials: "PK",
-                role: "VP of Finance, Tech Startup",
+                icon: "✨",
+                headline: "The woman who is done surviving and ready to remember.",
+                body: "You're starting to ask a different question. Not what's wrong with you — but what these patterns were once protecting you from.",
               },
-            ].map((t, i) => (
-              <FadeIn key={t.name} delay={i * 100}>
-                <div className="h-full bg-white border border-honey/10 rounded-2xl p-7 flex flex-col">
-                  <p className="text-charcoal/70 leading-relaxed mb-6 flex-1 italic">
-                    &ldquo;{t.quote}&rdquo;
-                  </p>
-                  <div className="flex items-center gap-3 pt-4 border-t border-honey/10">
-                    <div className="w-10 h-10 rounded-full bg-honey/15 flex items-center justify-center shrink-0">
-                      <span className="font-display text-sm font-bold text-honey-dark">{t.initials}</span>
-                    </div>
-                    <div>
-                      <p className="text-navy text-sm font-semibold">{t.name}</p>
-                      <p className="text-charcoal/40 text-xs">{t.role}</p>
-                    </div>
-                  </div>
+            ].map((card, i) => (
+              <FadeIn key={card.headline} delay={i * 100}>
+                <div className="h-full bg-white border border-honey/10 rounded-2xl p-8 flex flex-col">
+                  <div className="text-3xl mb-5">{card.icon}</div>
+                  <h3 className="font-display text-lg font-bold text-navy mb-3 leading-snug">{card.headline}</h3>
+                  <p className="text-charcoal/60 text-sm leading-relaxed flex-1">{card.body}</p>
                 </div>
               </FadeIn>
             ))}
