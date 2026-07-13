@@ -48,7 +48,7 @@ const parts = [
   {
     number: "Part IV",
     title: "Hard-Won Freedom",
-    desc: "What comes after. Not a clean resolution. Something more honest than that.",
+    desc: "What it means to stop surviving the life you built. Not a tidy ending — something richer, and more real, than that.",
     color: "from-navy/10 to-navy/5",
   },
 ];
@@ -185,7 +185,7 @@ export default function TheBook() {
             <FadeIn className="text-center mb-12">
               <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">About the Book</span>
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
-                What It's About
+                The story the résumé doesn't tell
               </h2>
             </FadeIn>
 
@@ -198,7 +198,7 @@ export default function TheBook() {
                   She thought she was just nice. She was also exhausted.
                 </p>
                 <p>
-                  This memoir traces the moments Bee gave herself away in the name of professionalism and peace, and the slow reckoning that followed. It is honest, specific, and at times uncomfortably familiar.
+                  This memoir traces the exact moments — the meeting rooms, the missed opportunities, the silence where a no should have been — and the slow reckoning that followed. It is honest, specific, and at times uncomfortably familiar.
                 </p>
                 <p>
                   It is a confession from a woman whose understanding of herself was incomplete — and the quiet, hard-won journey back to who she always was.
@@ -308,7 +308,7 @@ export default function TheBook() {
               <div className="w-8 h-px bg-honey/40" />
             </div>
             <p className="text-charcoal/60 text-lg mb-8 max-w-xl mx-auto">
-              The book is on its way. Join the Swarm for updates, exclusive Honey Drops, and first access when it drops.
+              If any of this sounds like your life — this book was written for you. Be the first to know when it's available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/queens-circle">
@@ -316,11 +316,11 @@ export default function TheBook() {
                   Join the Swarm <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
-              <a href="https://hive-thrive.myshopify.com" target="_blank" rel="noopener noreferrer">
+              <Link href="/about">
                 <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-5 text-base">
-                  Shop the Collection
+                  Meet Bee
                 </Button>
-              </a>
+              </Link>
             </div>
           </FadeIn>
         </div>
