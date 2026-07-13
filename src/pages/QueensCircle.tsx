@@ -101,18 +101,91 @@ export default function QueensCircle() {
             >
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-honey/15 text-honey text-sm font-medium tracking-wide mb-6 border border-honey/20">
                 <Crown className="w-4 h-4" />
-                Speaking & Workshops
+                Community
               </div>
               <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6">
                 The Queen's <span className="text-honey-light italic">Circle</span>
               </h1>
               <p className="text-cream/70 text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto">
-                Twenty years in corporate finance. Real lessons. Honest conversations. If you're looking for someone to come and speak truth in a room, let's talk.
+                A community for women who are done surviving their success and ready to thrive in it. This is where we land when we are ready to stop performing and start belonging.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
+
+      {/* About the Circle */}
+      <section className="py-20 lg:py-28 bg-cream">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <FadeIn className="text-center mb-12">
+              <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">About the Circle</span>
+              <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
+                A circle within the Hive
+              </h2>
+            </FadeIn>
+            <FadeIn delay={100}>
+              <div className="space-y-5 text-charcoal/70 text-lg leading-relaxed">
+                <p>
+                  The Queen's Circle is the community at the heart of Hive & Thrive. It is where the women who read the book, attend the workshops, and receive the Honey Drops come together. Not to perform. Not to compete. To breathe, reflect, and remember who they are.
+                </p>
+                <p>
+                  This is for the woman who has spent years being excellent in rooms that never quite felt like hers. The one who achieved more than she expected and rested less than she needed. The one who is starting to ask a different question.
+                </p>
+                <p>
+                  You do not have to earn your place here. You just have to show up.
+                </p>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      <HoneycombDivider />
+
+      {/* What Belonging Looks Like */}
+      <section className="py-20 lg:py-28 bg-warm-white">
+        <div className="container">
+          <FadeIn className="text-center mb-14">
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Inside the Circle</span>
+            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">What belonging looks like</h2>
+          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {[
+              {
+                icon: "🍯",
+                title: "Honey Drops",
+                desc: "A weekly letter from Bee. Honest reflections, hard-won lessons, and gentle reminders to bring your gifts and stay whole.",
+              },
+              {
+                icon: "📖",
+                title: "First Access",
+                desc: "Be the first to know when the book drops, workshops open, and new content lands. The Circle gets in early.",
+              },
+              {
+                icon: "🐝",
+                title: "Community",
+                desc: "A growing circle of high-achieving women navigating the same journey. Excellence without exhaustion. Together.",
+              },
+              {
+                icon: "✨",
+                title: "Bee in the Room",
+                desc: "From keynotes to corporate workshops, members of the Circle are first to hear when Bee is speaking near them.",
+              },
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 100}>
+                <div className="h-full p-8 rounded-2xl bg-white border border-honey/10">
+                  <div className="text-3xl mb-4">{item.icon}</div>
+                  <h3 className="font-display text-lg font-bold text-navy mb-2">{item.title}</h3>
+                  <p className="text-charcoal/60 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <HoneycombDivider />
 
       {/* Speaking */}
       <section className="py-20 lg:py-28 bg-cream">
@@ -137,7 +210,7 @@ export default function QueensCircle() {
                   <Mic className="w-5 h-5 text-honey-dark" />
                 </div>
                 <span className="text-honey-dark text-sm font-semibold tracking-[0.1em] uppercase">
-                  Speaking
+                  Bee in the Room
                 </span>
               </div>
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-4">
@@ -323,57 +396,7 @@ export default function QueensCircle() {
         </div>
       </section>
 
-      {/* Kind Words */}
-      <section className="py-20 lg:py-28 bg-cream">
-        <div className="container">
-          <FadeIn className="text-center mb-14">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Kind Words</span>
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
-              What They're <span className="text-honey-dark italic">Saying</span>
-            </h2>
-          </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {[
-              {
-                quote: "Bee doesn't just lead with numbers — she leads with heart. In every meeting, every decision, she brought a rare combination of sharp financial acumen and genuine care for the people around her. She made me believe I could aim higher.",
-                name: "Sarah R.",
-                initials: "SR",
-                role: "Former Direct Report",
-              },
-              {
-                quote: "I've worked with many finance leaders, but Bee stands apart. Her strategic mind is matched only by her generosity in lifting others up. She's the real deal.",
-                name: "James C.",
-                initials: "JC",
-                role: "Director, Risk Management",
-              },
-              {
-                quote: "In a world of corporate politics, Bee was always authentic. She proved you can climb the ladder without compromising who you are. A true role model.",
-                name: "David L.",
-                initials: "DL",
-                role: "V.P. Accounting, Healthcare",
-              },
-            ].map((t, i) => (
-              <FadeIn key={t.name} delay={i * 100}>
-                <div className="h-full bg-white border border-honey/10 rounded-2xl p-7 flex flex-col">
-                  <p className="text-charcoal/70 leading-relaxed mb-6 flex-1 italic">
-                    &ldquo;{t.quote}&rdquo;
-                  </p>
-                  <div className="flex items-center gap-3 pt-4 border-t border-honey/10">
-                    <div className="w-10 h-10 rounded-full bg-honey/15 flex items-center justify-center shrink-0">
-                      <span className="font-display text-sm font-bold text-honey-dark">{t.initials}</span>
-                    </div>
-                    <div>
-                      <p className="text-navy text-sm font-semibold">{t.name}</p>
-                      <p className="text-charcoal/40 text-xs">{t.role}</p>
-                    </div>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Join the Swarm */}
       <section className="relative py-20 lg:py-28 overflow-hidden">
@@ -388,10 +411,10 @@ export default function QueensCircle() {
                 Join the Swarm
               </span>
               <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
-                Be Part of Something <span className="text-honey-light italic">Sweet</span>
+                Ready to join the <span className="text-honey-light italic">Circle?</span>
               </h2>
               <p className="text-cream/70 text-lg leading-relaxed mb-10">
-                Join a growing community of professional women who refuse to choose between career success and personal fulfillment. Weekly inspiration delivered with love.
+                Join the Queen's Circle and receive Honey Drops, first access to the book, and a community of women who get it. No performance required.
               </p>
               <JoinForm />
             </FadeIn>
