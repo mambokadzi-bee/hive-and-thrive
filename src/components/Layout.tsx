@@ -214,9 +214,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </ul>
             </div>
 
-            {/* Daily Nectar */}
+            {/* Honey Drop */}
             <div>
-              <h4 className="font-display text-lg font-semibold text-honey mb-4">Daily Nectar</h4>
+              <h4 className="font-display text-lg font-semibold text-honey mb-4">Honey Drop</h4>
               <blockquote className="text-sm italic text-cream/60 leading-relaxed border-l-2 border-honey/30 pl-4">
                 "A woman who knows her worth adds value to everything she touches. She is clothed with strength and dignity."
               </blockquote>
