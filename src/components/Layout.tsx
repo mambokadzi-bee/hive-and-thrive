@@ -209,8 +209,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-2.5">
                 <li className="text-sm text-cream/60">Hive Talks Podcast</li>
                 <li className="text-sm text-cream/60">Guided Journal</li>
-                <li className="text-sm text-cream/60">Corporate Workshops</li>
-                <li className="text-sm text-cream/60">Speaking Engagements</li>
+
               </ul>
             </div>
 

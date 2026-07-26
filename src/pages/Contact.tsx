@@ -241,8 +241,6 @@ export default function Contact() {
                         >
                           <option value="">Select a topic...</option>
                           <option value="General Inquiry">General Inquiry</option>
-                          <option value="Speaking Engagement">Speaking Engagement</option>
-                          <option value="Corporate Workshop">Corporate Workshop</option>
                           <option value="Collaboration">Collaboration</option>
                           <option value="Book/Story Feedback">Book/Story Feedback</option>
                           <option value="Media/Press">Media/Press</option>

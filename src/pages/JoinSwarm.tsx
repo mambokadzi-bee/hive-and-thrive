@@ -171,7 +171,7 @@ export default function JoinSwarm() {
               {
                 icon: <Sparkles className="w-6 h-6" />,
                 title: "Early Access",
-                desc: "Be the first to know about new books, the Hive Talks podcast launch, speaking events, and workshops.",
+                desc: "Be the first to know about new books, the Hive Talks podcast launch, and new content as it drops.",
               },
             ].map((item, i) => (
               <FadeIn key={item.title} delay={i * 100}>
@@ -188,9 +188,9 @@ export default function JoinSwarm() {
         </div>
       </section>
 
-      <HoneycombDivider />
-
-      {/* Social Proof */}
+      {/* Social Proof — hidden until testimonials are ready */}
+      {false && <HoneycombDivider />}
+      {false && (
       <section className="py-16 lg:py-24 bg-warm-white">
         <div className="container">
           <FadeIn className="text-center max-w-3xl mx-auto">
@@ -236,6 +236,7 @@ export default function JoinSwarm() {
           </FadeIn>
         </div>
       </section>
+      )}
     </div>
   );
 }

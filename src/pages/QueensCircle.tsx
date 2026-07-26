@@ -170,7 +170,7 @@ export default function QueensCircle() {
               {
                 icon: "✨",
                 title: "Bee in the Room",
-                desc: "From keynotes to corporate workshops, members of the Circle are first to hear when Bee is speaking near them.",
+                desc: "Members of the Circle are first to hear when Bee is showing up in new spaces and creating new experiences.",
               },
             ].map((item, i) => (
               <FadeIn key={item.title} delay={i * 100}>
@@ -181,135 +181,6 @@ export default function QueensCircle() {
                 </div>
               </FadeIn>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <HoneycombDivider />
-
-      {/* Speaking */}
-      <section className="py-20 lg:py-28 bg-cream">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <FadeIn>
-              <div className="relative">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-honey/10">
-                  <img
-                    src={SPEAKING_IMG}
-                    alt="Bee speaking"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-honey/10 hex-clip hidden lg:block" />
-              </div>
-            </FadeIn>
-
-            <FadeIn delay={200}>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-honey/10 flex items-center justify-center">
-                  <Mic className="w-5 h-5 text-honey-dark" />
-                </div>
-                <span className="text-honey-dark text-sm font-semibold tracking-[0.1em] uppercase">
-                  Bee in the Room
-                </span>
-              </div>
-              <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-4">
-                Keynote Speaking
-              </h2>
-              <p className="text-charcoal/70 text-lg leading-relaxed mb-3">
-                Every talk begins the same way. With a story. Because stories have a way of reaching places that strategies never can.
-              </p>
-              <p className="text-charcoal/70 text-lg leading-relaxed mb-8">
-                Bee draws on two decades in corporate finance and the hard-won lessons of building a career with both excellence and integrity. Her talks don't offer frameworks. They offer mirrors.
-              </p>
-
-              <div className="space-y-3 mb-8">
-                {[
-                  "Women in Leadership conferences",
-                  "Corporate retreats and ERG events",
-                  "I Thought I Was Just Nice",
-                  "University and MBA programs",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-honey/15 flex items-center justify-center shrink-0 mt-0.5">
-                      <div className="w-2 h-2 rounded-full bg-honey-dark" />
-                    </div>
-                    <span className="text-charcoal/70 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              <a href="mailto:info@hiveandthrive.life?subject=Speaking%20Inquiry">
-                <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-6 py-5 text-base">
-                  Inquire About Speaking
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </a>
-            </FadeIn>
-          </div>
-        </div>
-      </section>
-
-      <HoneycombDivider />
-
-      {/* Workshops */}
-      <section className="py-20 lg:py-28 bg-warm-white">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <FadeIn delay={200} className="lg:order-1">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-navy/5 flex items-center justify-center">
-                  <Users className="w-5 h-5 text-navy" />
-                </div>
-                <span className="text-navy text-sm font-semibold tracking-[0.1em] uppercase">
-                  Workshops
-                </span>
-              </div>
-              <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-4">
-                Corporate Workshops
-              </h2>
-              <p className="text-charcoal/70 text-lg leading-relaxed mb-8">
-                Honest conversations that stay with people long after the slides would have been forgotten. Built around stories, not slide decks.
-              </p>
-
-              <div className="space-y-4 mb-8">
-                {[
-                  {
-                    title: "The Whole Woman at Work",
-                    desc: "What it looks like to show up fully, not just professionally, and why organizations are better for it.",
-                  },
-                  {
-                    title: "Leading with Purpose, Not Applause",
-                    desc: "Moving from performance-driven leadership to purpose-driven leadership. The shift that changes everything.",
-                  },
-                ].map((workshop) => (
-                  <div key={workshop.title} className="p-5 bg-white rounded-xl border border-honey/10">
-                    <h4 className="font-display font-semibold text-navy mb-1">{workshop.title}</h4>
-                    <p className="text-charcoal/60 text-sm leading-relaxed">{workshop.desc}</p>
-                  </div>
-                ))}
-              </div>
-
-              <a href="mailto:info@hiveandthrive.life?subject=Workshop%20Booking">
-                <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 py-5 text-base">
-                  Book a Workshop
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </a>
-            </FadeIn>
-
-            <FadeIn className="lg:order-2">
-              <div className="relative">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-honey/10">
-                  <img
-                    src={SPEAKING_IMG}
-                    alt="Workshop session"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -top-4 -left-4 w-16 h-16 bg-navy/5 hex-clip hidden lg:block" />
-              </div>
-            </FadeIn>
           </div>
         </div>
       </section>
@@ -425,7 +296,7 @@ export default function QueensCircle() {
               Let's Work Together
             </h2>
             <p className="text-charcoal/60 text-lg leading-relaxed mb-8">
-              Whether you need a speaker, a workshop, or just want to start a conversation, reach out. I read every message.
+              Whether you want to connect, collaborate, or just start a conversation, reach out. I read every message.
             </p>
             <Link href="/contact">
               <Button className="bg-navy hover:bg-navy-light text-cream font-semibold px-8 py-5 text-base">
