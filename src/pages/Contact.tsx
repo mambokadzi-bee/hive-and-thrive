@@ -43,13 +43,6 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (FORMSPREE_ID === "YOUR_FORM_ID") {
-      // Demo mode: show success without sending
-      setSubmitted(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      toast.success("Message sent! Bee will get back to you soon.");
-      return;
-    }
     setIsPending(true);
     try {
       const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
