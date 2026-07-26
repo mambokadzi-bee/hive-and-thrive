@@ -5,12 +5,10 @@
  */
 
 import { motion } from "framer-motion";
-import { Check, Heart, Mail, MessageCircle, Sparkles, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Heart, MessageCircle, Sparkles, Users } from "lucide-react";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { toast } from "sonner";
-import { useState } from "react";
+import { KitForm } from "@/components/KitForm";
 
 const NEWSLETTER_BG = "/images/newsletter-bg.jpg";
 
@@ -32,16 +30,6 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
 }
 
 export default function JoinSwarm() {
-  const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    toast.success("Welcome to the Swarm! Check your inbox for a warm welcome.");
-  };
-
   return (
     <div>
       {/* Hero */}
@@ -69,58 +57,13 @@ export default function JoinSwarm() {
               </p>
             </motion.div>
 
-            {/* Signup Form */}
+            {/* Kit Signup Form */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              {!submitted ? (
-                <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
-                  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-cream/10">
-                    <div className="space-y-4 mb-6">
-                      <input
-                        type="text"
-                        placeholder="First name"
-                        value={firstName}
-                        onChange={(e) => setFirstName(e.target.value)}
-                        required
-                        className="w-full px-5 py-3.5 rounded-lg bg-white/10 border border-cream/20 text-white placeholder:text-cream/40 focus:outline-none focus:border-honey/50 focus:ring-1 focus:ring-honey/30 transition-all text-sm"
-                      />
-                      <input
-                        type="email"
-                        placeholder="Email address"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                        className="w-full px-5 py-3.5 rounded-lg bg-white/10 border border-cream/20 text-white placeholder:text-cream/40 focus:outline-none focus:border-honey/50 focus:ring-1 focus:ring-honey/30 transition-all text-sm"
-                      />
-                    </div>
-                    <Button
-                      type="submit"
-                      className="w-full bg-honey hover:bg-honey-dark text-navy font-semibold py-4 text-base shadow-lg shadow-honey/20 transition-all duration-300"
-                    >
-                      <Mail className="mr-2 w-4 h-4" />
-                      Join the Hive
-                    </Button>
-                    <p className="text-cream/30 text-xs mt-4">
-                      No spam. Unsubscribe anytime. Just pure honey for your inbox.
-                    </p>
-                  </div>
-                </form>
-              ) : (
-                <div className="max-w-lg mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-honey/20">
-                  <div className="w-16 h-16 rounded-full bg-honey/20 flex items-center justify-center mx-auto mb-4">
-                    <Check className="w-8 h-8 text-honey" />
-                  </div>
-                  <h3 className="font-display text-2xl font-bold text-white mb-2">
-                    Welcome to the Swarm, {firstName}!
-                  </h3>
-                  <p className="text-cream/70 text-sm">
-                    Check your inbox for a warm welcome from Bee. Your first drop of nectar is on its way.
-                  </p>
-                </div>
-              )}
+              <KitForm className="max-w-lg mx-auto" />
             </motion.div>
           </div>
         </div>

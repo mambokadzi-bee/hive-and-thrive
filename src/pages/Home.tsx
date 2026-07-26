@@ -4,7 +4,7 @@ import { ArrowRight, BookOpen, Mic, Crown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { toast } from "sonner";
+import { KitForm } from "@/components/KitForm";
 
 const HERO_BG = "/images/hero-bg.jpg";
 const CAREER_IMG = "/images/career.jpg";
@@ -321,25 +321,7 @@ export default function Home() {
               Join a growing hive of women who are done surviving their success. Receive Honey Drops, honest reflections, and gentle reminders to bring your gifts, and stay whole.
             </p>
 
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                toast.success("Thank you for joining the swarm! Check your inbox soon.");
-              }}
-              className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                required
-                className="flex-1 px-5 py-3.5 rounded-lg bg-white/10 border border-cream/20 text-white placeholder:text-cream/40 focus:outline-none focus:border-honey/50 focus:ring-1 focus:ring-honey/30 transition-all text-sm"
-              />
-              <Button type="submit" className="bg-honey hover:bg-honey-dark text-navy font-semibold px-6 py-3.5 shadow-lg shadow-honey/20 transition-all duration-300">
-                Join the Hive
-              </Button>
-            </form>
-
-            <p className="text-cream/40 text-xs mt-4">No spam, ever. Just pure honey for your inbox.</p>
+            <KitForm className="max-w-md mx-auto" />
           </FadeIn>
         </div>
       </section>
