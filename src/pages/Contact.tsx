@@ -113,7 +113,7 @@ export default function Contact() {
                   Reach Out to the Hive
                 </h2>
                 <p className="text-charcoal/70 text-lg leading-relaxed mb-10">
-                  I'm always excited to connect with professional women who are navigating the intersection of career, growth, and purpose. Don't be a stranger.
+                  I'm always excited to connect with high-achieving women who are ready to bring their gifts and stay whole. Don't be a stranger.
                 </p>
 
                 <div className="space-y-8">
