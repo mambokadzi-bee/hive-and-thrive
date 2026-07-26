@@ -171,7 +171,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <span className="font-display text-xl font-bold text-cream">Hive & Thrive</span>
               </div>
               <p className="text-sm leading-relaxed text-cream/60 mb-4">
-                Helping professional women build thriving careers with purpose. Excellence, resilience, and the courage to fly.
+                Bring your gifts. Stay whole.
+A place where high-achieving women stop surviving success and start belonging.
               </p>
               <a href="mailto:info@hiveandthrive.life" className="text-sm text-honey/70 hover:text-honey transition-colors">
                 info@hiveandthrive.life
