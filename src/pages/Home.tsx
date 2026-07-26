@@ -72,7 +72,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link href="/collections">
-                  <Button size="lg" variant="outline" className="border-cream/30 text-cream hover:bg-cream/10 px-8 py-6 text-base">
+                  <Button size="lg" className="bg-cream hover:bg-cream/90 text-navy font-semibold px-8 py-6 text-base transition-all duration-300">
                     Explore the Hive
                   </Button>
                 </Link>
