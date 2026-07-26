@@ -5,7 +5,7 @@
  */
 
 import { motion } from "framer-motion";
-import { Heart, MessageCircle, Sparkles, Users } from "lucide-react";
+import { Heart, Mail, MessageCircle, Sparkles, Users } from "lucide-react";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { KitForm } from "@/components/KitForm";
