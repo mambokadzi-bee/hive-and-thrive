@@ -4,8 +4,7 @@ import { ArrowRight, BookOpen, Heart, Star, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { useState } from "react";
-import { toast } from "sonner";
+import { KitForm } from "@/components/KitForm";
 
 const BOOK_COVER = "/images/book-cover.jpg";
 
@@ -54,14 +53,6 @@ const parts = [
 ];
 
 export default function TheBook() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleNotify = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    toast.success("You're on the list! We'll let you know the moment the book is available.");
-  };
 
   return (
     <div>
@@ -147,29 +138,7 @@ export default function TheBook() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1 }}
               >
-                {!submitted ? (
-                  <form onSubmit={handleNotify} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto lg:mx-0">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email"
-                      required
-                      className="flex-1 px-5 py-3.5 rounded-lg bg-white border border-honey/20 text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:border-honey/60 focus:ring-1 focus:ring-honey/30 transition-all text-sm shadow-sm"
-                    />
-                    <Button type="submit" className="bg-honey hover:bg-honey-dark text-navy font-semibold px-6 py-3.5 shadow-lg shadow-honey/20 transition-all duration-300 whitespace-nowrap">
-                      Notify Me <ArrowRight className="ml-1.5 w-4 h-4" />
-                    </Button>
-                  </form>
-                ) : (
-                  <div className="flex items-center gap-3 text-honey-dark font-medium">
-                    <div className="w-8 h-8 rounded-full bg-honey/20 flex items-center justify-center">
-                      <Heart className="w-4 h-4 fill-honey text-honey" />
-                    </div>
-                    You're on the list. We'll reach out as soon as it's available.
-                  </div>
-                )}
-                <p className="text-charcoal/40 text-xs mt-3">Be first to know when the book is available. No spam, ever.</p>
+                <KitForm className="max-w-md mx-auto lg:mx-0" />
               </motion.div>
             </div>
           </div>
