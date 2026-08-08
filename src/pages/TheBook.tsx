@@ -138,6 +138,9 @@ export default function TheBook() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1 }}
               >
+                <p className="text-charcoal/60 text-sm font-medium mb-3">
+                  The book is coming. Be the first to know when it launches.
+                </p>
                 <KitForm className="max-w-md mx-auto lg:mx-0" />
               </motion.div>
             </div>
