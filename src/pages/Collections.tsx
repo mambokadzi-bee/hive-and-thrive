@@ -59,7 +59,7 @@ const lessons = [
     anchor: "Even bees rest.",
     reflection:
       "I had mastered productivity but forgotten how to pause. Rest felt like a luxury I hadn't earned yet, or a risk I couldn't afford. But a hive that never stops working eventually collapses. I had to learn that rest is not a reward waiting at the end of enough doing. It is part of the work. It is what makes the work sustainable.",
-    drop: "Peace is not something you have to overwork to deserve.",
+    drop: "Performance is not peace. It is the price you pay to borrow it.",
   },
   {
     number: "05",
