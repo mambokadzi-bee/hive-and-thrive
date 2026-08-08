@@ -67,7 +67,7 @@ const lessons = [
     anchor: "Leadership is not only carrying responsibility. It is also claiming authority.",
     reflection:
       "I was comfortable with the weight of leadership long before I was comfortable with its visibility. I could deliver. I could execute. I could carry more than I should have been asked to carry. What took longer to learn was that sitting in a room is not the same as being present in it, and that the woman behind the work deserves to be seen and heard too.",
-    drop: "Capacity is not proof of obligation.",
+    drop: "The woman behind the work deserves to be in front of it too.",
   },
   {
     number: "06",
