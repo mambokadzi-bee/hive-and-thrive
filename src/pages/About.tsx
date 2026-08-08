@@ -74,7 +74,7 @@ export default function About() {
                   <p className="text-charcoal/60 text-sm">Author, Speaker & Finance Executive</p>
                   <div className="mt-3 pt-3 border-t border-honey/10">
                     <p className="text-charcoal/50 text-xs italic">
-                      "A woman who knows her worth adds value to everything she touches."
+                      "You can be excellent without abandoning yourself."
                     </p>
                   </div>
                 </div>

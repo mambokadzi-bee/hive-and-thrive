@@ -218,7 +218,7 @@ A place where high-achieving women stop surviving success and start belonging.
             <div>
               <h4 className="font-display text-lg font-semibold text-honey mb-4">Honey Drop</h4>
               <blockquote className="text-sm italic text-cream/60 leading-relaxed border-l-2 border-honey/30 pl-4">
-                "A woman who knows her worth adds value to everything she touches. She is clothed with strength and dignity."
+                "You can be excellent without abandoning yourself."
               </blockquote>
               <p className="text-xs text-honey/60 mt-2">~ Bee</p>
             </div>
