@@ -132,12 +132,12 @@ export default function About() {
 
               <FadeIn>
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                  <Link href="/collections">
+                  <Link href="/collections/">
                     <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-6 py-5 text-base">
                       Read My Stories <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                   </Link>
-                  <Link href="/join">
+                  <Link href="/join/">
                     <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 py-5 text-base">
                       Join the Swarm
                     </Button>
@@ -165,12 +165,12 @@ export default function About() {
               If you've spent years proving your worth and are finally ready to discover who you are underneath the proving, welcome to the hive.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/collections">
+              <Link href="/collections/">
                 <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
                   Explore the Playbook <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
-              <Link href="/join">
+              <Link href="/join/">
                 <Button className="bg-cream hover:bg-cream/90 !text-navy font-semibold px-8 py-5 text-base">
                   Join the Swarm
                 </Button>

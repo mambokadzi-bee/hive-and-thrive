@@ -104,7 +104,7 @@ export default function HoneyDrops() {
                 <p className="text-cream/60 text-lg leading-relaxed mb-8">
                   These 10 are just the beginning. Join the Swarm and receive the complete Honey Drops collection — all themes, all drops — delivered to your inbox.
                 </p>
-                <Link href="/queens-circle#join">
+                <Link href="/queens-circle/#join">
                   <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
                     Join the Swarm
                     <ArrowRight className="ml-2 w-4 h-4" />

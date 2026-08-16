@@ -200,7 +200,7 @@ export default function QueensCircle() {
           </div>
 
           <FadeIn className="text-center mt-12">
-            <Link href="/join">
+            <Link href="/join/">
               <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base">
                 Stay in the Loop
                 <ArrowRight className="ml-2 w-4 h-4" />
@@ -246,7 +246,7 @@ export default function QueensCircle() {
             <p className="text-charcoal/60 text-lg leading-relaxed mb-8">
               Whether you want to connect, collaborate, or just start a conversation, reach out. I read every message.
             </p>
-            <Link href="/contact">
+            <Link href="/contact/">
               <Button className="bg-navy hover:bg-navy-light text-cream font-semibold px-8 py-5 text-base">
                 Get in Touch
                 <ArrowRight className="ml-2 w-4 h-4" />

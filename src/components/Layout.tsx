@@ -7,11 +7,11 @@ const LOGO_URL = "/images/logo.png";
 
 const navLinks = [
   { href: "/", label: "The Hive" },
-  { href: "/about", label: "Meet Bee" },
-  { href: "/the-book", label: "The Book" },
-  { href: "/collections", label: "The Queen's Playbook" },
-  { href: "/queens-circle", label: "The Queen's Circle" },
-  { href: "/contact", label: "Contact" },
+  { href: "/about/", label: "Meet Bee" },
+  { href: "/the-book/", label: "The Book" },
+  { href: "/collections/", label: "The Queen's Playbook" },
+  { href: "/queens-circle/", label: "The Queen's Circle" },
+  { href: "/contact/", label: "Contact" },
 ];
 
 const shopLink = { href: "https://hive-thrive.myshopify.com", label: "Shop" };

@@ -184,13 +184,13 @@ export default function Collections() {
               <em>I Thought I Was Just Nice</em> is where they live in full. The confession. The becoming. The remembering.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/the-book">
+              <Link href="/the-book/">
                 <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
                   Read About the Book
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
-              <Link href="/join">
+              <Link href="/join/">
                 <Button className="bg-cream hover:bg-cream/90 !text-navy font-semibold px-8 py-5 text-base">
                   Join the Swarm
                 </Button>

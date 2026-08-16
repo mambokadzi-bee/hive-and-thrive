@@ -17,12 +17,19 @@ function Router() {
     <Layout>
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/about/" component={About} />
         <Route path="/about" component={About} />
+        <Route path="/honeycomb/" component={Honeycomb} />
         <Route path="/honeycomb" component={Honeycomb} />
+        <Route path="/collections/" component={Collections} />
         <Route path="/collections" component={Collections} />
+        <Route path="/join/" component={JoinSwarm} />
         <Route path="/join" component={JoinSwarm} />
+        <Route path="/the-book/" component={TheBook} />
         <Route path="/the-book" component={TheBook} />
+        <Route path="/queens-circle/" component={QueensCircle} />
         <Route path="/queens-circle" component={QueensCircle} />
+        <Route path="/contact/" component={Contact} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>

@@ -348,7 +348,7 @@ export default function Honeycomb() {
             <p className="text-cream/60 text-lg mb-8">
               Subscribe to get new posts delivered straight to your inbox every week.
             </p>
-            <Link href="/join">
+            <Link href="/join/">
               <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base">
                 Join the Swarm
                 <ArrowRight className="ml-2 w-4 h-4" />

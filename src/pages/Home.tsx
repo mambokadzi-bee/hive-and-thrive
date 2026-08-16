@@ -66,12 +66,12 @@ export default function Home() {
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.8 }} className="flex flex-col sm:flex-row gap-4">
-                <Link href="/the-book">
+                <Link href="/the-book/">
                   <Button size="lg" className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-6 text-base shadow-lg shadow-honey/20 transition-all duration-300 hover:shadow-xl hover:shadow-honey/30">
                     Read the Book <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
-                <Link href="/collections">
+                <Link href="/collections/">
                   <Button size="lg" className="bg-cream hover:bg-cream/90 !text-navy font-semibold px-8 py-6 text-base transition-all duration-300">
                     Explore the Hive
                   </Button>
@@ -134,7 +134,7 @@ export default function Home() {
               <p className="font-display text-lg text-navy italic border-l-4 border-honey pl-4 mb-8">
                 The memoir became a philosophy. The philosophy became a movement.
               </p>
-              <Link href="/about">
+              <Link href="/about/">
                 <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 py-5 text-base transition-all duration-300">
                   Read My Story <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
@@ -159,7 +159,7 @@ export default function Home() {
 
           <div className="max-w-3xl mx-auto">
             <FadeIn delay={100}>
-              <Link href="/collections">
+              <Link href="/collections/">
                 <div className="group relative overflow-hidden rounded-2xl shadow-lg shadow-honey/5 hover:shadow-xl hover:shadow-honey/15 transition-all duration-500 cursor-pointer">
                   <div className="aspect-[16/9] overflow-hidden">
                     <img src={CAREER_IMG} alt="The Queen's Playbook collection" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -240,7 +240,7 @@ export default function Home() {
               <p className="text-charcoal/60 text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
                 A memoir about what happens when a high-achieving woman stops mistaking survival for personality and finally comes home to herself.
               </p>
-              <Link href="/the-book">
+              <Link href="/the-book/">
                 <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
                   Read About the Book <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>

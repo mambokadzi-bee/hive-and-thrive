@@ -283,12 +283,12 @@ export default function TheBook() {
               If any of this sounds like your life, this book was written for you. Be the first to know when it's available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/queens-circle">
+              <Link href="/queens-circle/">
                 <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
                   Join the Swarm <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
-              <Link href="/about">
+              <Link href="/about/">
                 <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-5 text-base">
                   Meet Bee
                 </Button>
