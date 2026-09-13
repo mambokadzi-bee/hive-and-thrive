@@ -12,6 +12,7 @@ import TheBook from "./pages/TheBook";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
+import Seo from "./components/Seo";
 
 function Router() {
   return (
@@ -43,6 +44,7 @@ function Router() {
 export default function App() {
   return (
     <TooltipProvider>
+      <Seo />
       <Toaster richColors position="top-center" />
       <Router />
     </TooltipProvider>

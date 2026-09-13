@@ -1,0 +1,56 @@
+[
+  {
+    "path": "/",
+    "title": "Hive & Thrive | Bring Your Gifts. Stay Whole.",
+    "description": "Hive & Thrive is a belonging and leadership growth brand for high-achieving women ready to share their gifts without losing themselves.",
+    "image": "https://hiveandthrive.life/images/book-cover.jpg"
+  },
+  {
+    "path": "/about/",
+    "title": "Meet Bee | Hive & Thrive",
+    "description": "Meet Bee, the author and finance executive behind Hive & Thrive, and the story of learning to stop confusing survival with personality.",
+    "image": "https://hiveandthrive.life/images/bee-headshot.png"
+  },
+  {
+    "path": "/the-book/",
+    "title": "I Thought I Was Just Nice | Hive & Thrive",
+    "description": "Explore I Thought I Was Just Nice, Bee's memoir for the woman who has been excellent her whole life and exhausted for just as long.",
+    "image": "https://hiveandthrive.life/images/book-cover.jpg"
+  },
+  {
+    "path": "/collections/",
+    "title": "The Queen's Playbook | Hive & Thrive",
+    "description": "Read the Queen's Playbook: lived lessons from the hive on survival, worth, visibility, rest, leadership, and becoming whole.",
+    "image": "https://hiveandthrive.life/images/career.jpg"
+  },
+  {
+    "path": "/queens-circle/",
+    "title": "The Queen's Circle | Hive & Thrive",
+    "description": "Join the Queen's Circle, a community for women who are done surviving success and ready to breathe, reflect, and belong.",
+    "image": "https://hiveandthrive.life/images/speaking.jpg"
+  },
+  {
+    "path": "/honeycomb/",
+    "title": "The Honeycomb | Hive & Thrive",
+    "description": "Browse Hive & Thrive reflections, resources, and book recommendations for high-achieving women becoming whole.",
+    "image": "https://hiveandthrive.life/images/honeycomb-bg.jpg"
+  },
+  {
+    "path": "/join/",
+    "title": "Join the Swarm | Hive & Thrive",
+    "description": "Join the Hive & Thrive email list for Honey Drops, book updates, reflections, and reminders to bring your gifts and stay whole.",
+    "image": "https://hiveandthrive.life/images/newsletter-bg.jpg"
+  },
+  {
+    "path": "/contact/",
+    "title": "Contact | Hive & Thrive",
+    "description": "Contact Hive & Thrive for questions, collaborations, speaking, workshops, or messages for Bee.",
+    "image": "https://hiveandthrive.life/images/logo.png"
+  },
+  {
+    "path": "/privacy/",
+    "title": "Privacy Policy | Hive & Thrive",
+    "description": "Read the Hive & Thrive privacy policy for email signups, contact messages, third-party tools, and data choices.",
+    "image": "https://hiveandthrive.life/images/logo.png"
+  }
+]
