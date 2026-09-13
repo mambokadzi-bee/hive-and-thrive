@@ -9,6 +9,7 @@ import JoinSwarm from "./pages/JoinSwarm";
 import QueensCircle from "./pages/QueensCircle";
 import Contact from "./pages/Contact";
 import TheBook from "./pages/TheBook";
+import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
 
@@ -31,6 +32,8 @@ function Router() {
         <Route path="/queens-circle" component={QueensCircle} />
         <Route path="/contact/" component={Contact} />
         <Route path="/contact" component={Contact} />
+        <Route path="/privacy/" component={Privacy} />
+        <Route path="/privacy" component={Privacy} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

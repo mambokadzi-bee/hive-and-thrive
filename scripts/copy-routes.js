@@ -11,6 +11,7 @@ const routes = [
   'collections',
   'join',
   'contact',
+  'privacy',
 ];
 
 const distDir = join(process.cwd(), 'dist');

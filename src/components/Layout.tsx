@@ -228,9 +228,15 @@ A place where high-achieving women stop surviving success and start belonging.
             <p className="text-xs text-cream/40">
               &copy; {new Date().getFullYear()} Hive & Thrive. All rights reserved.
             </p>
-            <p className="text-xs text-cream/40">
+            <div className="flex flex-col sm:flex-row items-center gap-3 text-xs text-cream/40">
+              <Link href="/privacy/" className="hover:text-honey transition-colors">
+                Privacy Policy
+              </Link>
+              <span className="hidden sm:inline text-cream/20">|</span>
+              <p>
               Built with purpose. Powered by passion.
-            </p>
+              </p>
+            </div>
           </div>
         </div>
       </footer>
