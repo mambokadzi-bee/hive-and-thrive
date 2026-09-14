@@ -309,7 +309,7 @@ export default function TheBook() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
             <FadeIn className="lg:col-span-2">
               <div className="relative">
-                <div className="absolute -inset-4 bg-honey/10 rounded-3xl rotate-3" />
+                <div className="absolute inset-0 sm:-inset-4 bg-honey/10 rounded-3xl rotate-3" />
                 <img
                   src="/images/bee-headshot.png"
                   alt="Blessing Bee Nyamolo"
