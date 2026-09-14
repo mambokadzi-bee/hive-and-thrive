@@ -6,6 +6,10 @@ import seoPages from '../src/lib/seo-pages.json' with { type: 'json' };
 
 const siteUrl = 'https://hiveandthrive.life';
 const routes = seoPages.filter((page) => page.path !== '/');
+const aliases = [
+  { path: '/the-hive/', target: '/' },
+  { path: '/collections/', target: '/the-queens-playbook/' },
+];
 
 const distDir = join(process.cwd(), 'dist');
 const source = join(distDir, 'index.html');
@@ -53,6 +57,19 @@ for (const page of routes) {
   copyFileSync(source, join(routeDir, 'index.html'));
   writeFileSync(join(routeDir, 'index.html'), withSeo(originalHtml, page));
   console.log(`Created dist/${route}/index.html with route SEO`);
+}
+
+for (const alias of aliases) {
+  const page = seoPages.find((candidate) => candidate.path === alias.target);
+  if (!page) {
+    throw new Error(`Missing SEO target for alias ${alias.path}`);
+  }
+
+  const route = alias.path.replace(/^\/|\/$/g, '');
+  const routeDir = join(distDir, route);
+  mkdirSync(routeDir, { recursive: true });
+  writeFileSync(join(routeDir, 'index.html'), withSeo(originalHtml, page));
+  console.log(`Created dist/${route}/index.html as alias for ${alias.target}`);
 }
 
 console.log('\nAll routes are indexed-ready.');

@@ -19,10 +19,14 @@ function Router() {
     <Layout>
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/the-hive/" component={Home} />
+        <Route path="/the-hive" component={Home} />
         <Route path="/about/" component={About} />
         <Route path="/about" component={About} />
         <Route path="/honeycomb/" component={Honeycomb} />
         <Route path="/honeycomb" component={Honeycomb} />
+        <Route path="/the-queens-playbook/" component={Collections} />
+        <Route path="/the-queens-playbook" component={Collections} />
         <Route path="/collections/" component={Collections} />
         <Route path="/collections" component={Collections} />
         <Route path="/join/" component={JoinSwarm} />

@@ -6,10 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 const LOGO_URL = "/images/logo.png";
 
 const navLinks = [
-  { href: "/", label: "The Hive" },
+  { href: "/", label: "Home" },
   { href: "/about/", label: "Meet Bee" },
   { href: "/the-book/", label: "The Book" },
-  { href: "/collections/", label: "The Queen's Playbook" },
+  { href: "/the-queens-playbook/", label: "The Queen's Playbook" },
   { href: "/queens-circle/", label: "The Queen's Circle" },
   { href: "/contact/", label: "Contact" },
 ];

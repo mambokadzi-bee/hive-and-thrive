@@ -71,7 +71,7 @@ export default function Home() {
                     Read the Book <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
-                <Link href="/collections/">
+                <Link href="/the-queens-playbook/">
                   <Button size="lg" className="bg-cream hover:bg-cream/90 !text-navy font-semibold px-8 py-6 text-base transition-all duration-300">
                     Explore the Hive
                   </Button>
@@ -159,7 +159,7 @@ export default function Home() {
 
           <div className="max-w-3xl mx-auto">
             <FadeIn delay={100}>
-              <Link href="/collections/">
+              <Link href="/the-queens-playbook/">
                 <div className="group relative overflow-hidden rounded-2xl shadow-lg shadow-honey/5 hover:shadow-xl hover:shadow-honey/15 transition-all duration-500 cursor-pointer">
                   <div className="aspect-[16/9] overflow-hidden">
                     <img src={CAREER_IMG} alt="The Queen's Playbook collection" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />

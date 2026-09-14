@@ -98,20 +98,15 @@ export default function TheBook() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.05] mb-2"
               >
-                I Thought I Was
-              </motion.h1>
-              <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.05] mb-2"
-              >
-                Just{" "}
-                <span className="relative inline-block">
-                  <span className="gold-shimmer italic">Nice</span>
-                  <svg className="absolute -bottom-2 left-0 w-full" height="6" viewBox="0 0 100 6" preserveAspectRatio="none">
-                    <path d="M0,5 Q25,0 50,5 Q75,10 100,5" stroke="currentColor" strokeWidth="2" fill="none" className="text-honey" />
-                  </svg>
+                <span className="block">I Thought I Was</span>
+                <span className="block">
+                  Just{" "}
+                  <span className="relative inline-block">
+                    <span className="gold-shimmer italic">Nice</span>
+                    <svg className="absolute -bottom-2 left-0 w-full" height="6" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true">
+                      <path d="M0,5 Q25,0 50,5 Q75,10 100,5" stroke="currentColor" strokeWidth="2" fill="none" className="text-honey" />
+                    </svg>
+                  </span>
                 </span>
               </motion.h1>
 

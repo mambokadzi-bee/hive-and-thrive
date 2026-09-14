@@ -12,6 +12,10 @@ type SeoPage = {
 const SITE_URL = "https://hiveandthrive.life";
 const SITE_NAME = "Hive & Thrive";
 const pages = seoPages as SeoPage[];
+const pathAliases: Record<string, string> = {
+  "/the-hive/": "/",
+  "/collections/": "/the-queens-playbook/",
+};
 
 function canonicalizePath(path: string) {
   const cleanPath = path.split(/[?#]/)[0] || "/";
@@ -21,7 +25,8 @@ function canonicalizePath(path: string) {
 
 function getPage(path: string) {
   const canonicalPath = canonicalizePath(path);
-  return pages.find((page) => page.path === canonicalPath) ?? pages[0];
+  const pagePath = pathAliases[canonicalPath] ?? canonicalPath;
+  return pages.find((page) => page.path === pagePath) ?? pages[0];
 }
 
 function setMeta(selector: string, attr: "name" | "property", key: string, content: string) {

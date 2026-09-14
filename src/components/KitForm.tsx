@@ -11,7 +11,7 @@ interface KitFormProps {
 export function KitForm({ className }: KitFormProps) {
   return (
     <div
-      className={className}
+      className={`kit-form-brand ${className ?? ""}`.trim()}
       dangerouslySetInnerHTML={{ __html: kitFormHtml }}
     />
   );
