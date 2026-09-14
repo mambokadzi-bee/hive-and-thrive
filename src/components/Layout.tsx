@@ -20,6 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const solidHeader = scrolled || location === "/the-book/" || location === "/the-book";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -37,7 +38,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Navigation */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
+          solidHeader
             ? "bg-cream/95 backdrop-blur-md shadow-[0_2px_20px_rgba(212,168,67,0.1)]"
             : "bg-transparent"
         }`}
@@ -52,12 +53,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             />
             <div className="flex flex-col leading-none">
               <span className={`font-display text-lg lg:text-xl font-bold tracking-wide transition-colors duration-500 ${
-                scrolled ? "text-navy" : "text-white"
+                solidHeader ? "text-navy" : "text-white"
               }`}>
                 Hive & Thrive
               </span>
               <span className={`text-[10px] lg:text-xs tracking-[0.2em] uppercase font-medium transition-colors duration-500 ${
-                scrolled ? "text-honey-dark" : "text-honey-light"
+                solidHeader ? "text-honey-dark" : "text-honey-light"
               }`}>
                 with Bee
               </span>
@@ -72,8 +73,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 href={link.href}
                 className={`relative px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-300 ${
                   location === link.href
-                    ? scrolled ? "text-honey-dark" : "text-honey-light"
-                    : scrolled ? "text-charcoal/70 hover:text-honey-dark" : "text-cream/70 hover:text-white"
+                    ? solidHeader ? "text-honey-dark" : "text-honey-light"
+                    : solidHeader ? "text-charcoal/70 hover:text-honey-dark" : "text-cream/70 hover:text-white"
                 }`}
               >
                 {link.label}
@@ -91,7 +92,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               target="_blank"
               rel="noopener noreferrer"
               className={`ml-2 px-5 py-2 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 border ${
-                scrolled
+                solidHeader
                   ? "border-honey text-honey-dark hover:bg-honey hover:text-navy"
                   : "border-honey/70 text-honey-light hover:bg-honey hover:text-navy"
               }`}
@@ -103,7 +104,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`lg:hidden p-2 transition-colors duration-500 ${scrolled ? "text-navy" : "text-white"}`}
+            className={`lg:hidden p-2 transition-colors duration-500 ${solidHeader ? "text-navy" : "text-white"}`}
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}

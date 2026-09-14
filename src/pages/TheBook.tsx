@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight, BookOpen, Heart, Star, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, CalendarDays, CheckCircle, FileText, HelpCircle, Mail, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -25,35 +25,53 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
-const parts = [
+const familiarSignals = [
+  "You have built a life you're proud of and still wondered why achievement can feel so exhausting.",
+  'Being dependable, agreeable, capable, or "nice" has become part of how people know you.',
+  "You say yes easily and sometimes understand the cost only afterward.",
+  "You have spent years being useful to everyone around you and are beginning to ask what you want.",
+  "You are discovering that being capable of something doesn't necessarily mean you have to choose it.",
+  "You want to bring your gifts without losing yourself in the giving.",
+];
+
+const launchDetails = [
   {
-    number: "Part I",
-    title: "The Making of a Nice Girl",
-    desc: "Where it starts. Learning early that being good, quiet, and agreeable was the price of belonging.",
-    color: "from-honey/20 to-honey/5",
+    icon: <CalendarDays className="w-5 h-5" />,
+    label: "Publication Date",
+    value: "November 2026",
   },
   {
-    number: "Part II",
-    title: "The Cost of Keeping the Peace",
-    desc: "Twenty years in corporate finance. The late nights, the yes-when-I-meant-no, the slow disappearing.",
-    color: "from-navy/10 to-navy/5",
+    icon: <FileText className="w-5 h-5" />,
+    label: "Available Formats",
+    value: "Paperback and eBook planned",
   },
   {
-    number: "Part III",
-    title: "The Quiet Reckoning",
-    desc: "Not a single revelation. Something slower: the growing awareness that success and wholeness were never the same thing.",
-    color: "from-honey/20 to-honey/5",
+    icon: <Mail className="w-5 h-5" />,
+    label: "Preorder Updates",
+    value: "Join the list for retailer links and launch-day news.",
+  },
+];
+
+const faqs = [
+  {
+    question: "When does the book launch?",
+    answer: "I Thought I Was Just Nice is planned for publication in November 2026.",
   },
   {
-    number: "Part IV",
-    title: "Hard-Won Freedom",
-    desc: "What it means to stop surviving the life you built. Not a tidy ending. Something richer, and more real, than that.",
-    color: "from-navy/10 to-navy/5",
+    question: "What formats will be available?",
+    answer: "Paperback and eBook editions are planned, with final retailer details still to come.",
+  },
+  {
+    question: "Is this book only for women?",
+    answer: "It is written from a woman's experience, primarily for women, and for anyone who recognizes themselves in its pages.",
+  },
+  {
+    question: "Will there be a signed edition or launch event?",
+    answer: "Those details are still being shaped. Join the launch list to hear first.",
   },
 ];
 
 export default function TheBook() {
-
   return (
     <div>
       {/* Hero */}
@@ -63,8 +81,6 @@ export default function TheBook() {
 
         <div className="container relative">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 pt-16 lg:pt-20">
-
-            {/* Book Cover */}
             <motion.div
               initial={{ opacity: 0, y: 30, rotate: -2 }}
               animate={{ opacity: 1, y: 0, rotate: -2 }}
@@ -76,14 +92,13 @@ export default function TheBook() {
                 <div className="absolute -inset-1 bg-gradient-to-br from-honey/20 to-transparent rounded-2xl" />
                 <img
                   src={BOOK_COVER}
-                  alt="I Thought I Was Just Nice: A Memoir of Becoming Whole by Blessing (Bee) Nyamolo"
+                  alt="I Thought I Was Just Nice: A Memoir by Blessing Bee Nyamolo"
                   className="relative w-[240px] sm:w-[280px] lg:w-[320px] rounded-xl shadow-2xl shadow-honey/20"
                   style={{ rotate: "-2deg" }}
                 />
               </div>
             </motion.div>
 
-            {/* Title & CTA */}
             <div className="flex-1 text-center lg:text-left pb-12 lg:pb-20">
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }}>
                 <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-honey/15 text-honey-dark text-sm font-medium tracking-wide border border-honey/20 mb-5">
@@ -96,7 +111,7 @@ export default function TheBook() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.05] mb-2"
+                className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-[1.05] mb-5"
               >
                 <span className="block">I Thought I Was</span>
                 <span className="block">
@@ -114,29 +129,31 @@ export default function TheBook() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className="text-honey-dark font-medium tracking-wide mt-4 mb-6 text-lg"
+                className="font-display text-xl lg:text-2xl text-charcoal/70 italic leading-relaxed mb-5 max-w-xl mx-auto lg:mx-0"
               >
-                by Blessing (Bee) Nyamolo
+                A memoir for the woman who has been excellent her whole life - and exhausted for just as long.
               </motion.p>
 
-              <motion.blockquote
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.8 }}
-                className="font-display text-lg lg:text-xl text-charcoal/70 italic leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0 border-l-4 border-honey pl-5"
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                className="text-honey-dark font-medium tracking-wide mb-8 text-lg"
               >
-                "For the woman who has been excellent her whole life and exhausted for just as long. This one is for you."
-              </motion.blockquote>
+                by Blessing "Bee" Nyamolo
+              </motion.p>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1 }}
+                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               >
-                <p className="text-charcoal/60 text-sm font-medium mb-3">
-                  The book is coming. Be the first to know when it launches.
-                </p>
-                <KitForm className="max-w-md mx-auto lg:mx-0" />
+                <Button asChild size="lg" className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-6 text-base shadow-lg shadow-honey/20">
+                  <a href="#book-signup">
+                    Be the First to Know <ArrowRight className="ml-2 w-5 h-5" />
+                  </a>
+                </Button>
               </motion.div>
             </div>
           </div>
@@ -145,40 +162,50 @@ export default function TheBook() {
 
       <HoneycombDivider />
 
-      {/* About the Book */}
+      {/* The Book */}
       <section className="py-20 lg:py-28 bg-cream">
         <div className="container">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <FadeIn className="text-center mb-12">
-              <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">About the Book</span>
-              <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
-                The story the résumé doesn't tell
-              </h2>
+              <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">The Book</span>
+              <blockquote className="font-display text-2xl lg:text-4xl font-bold text-navy leading-snug">
+                "I thought I was just nice.
+                <br />
+                Turns out, I had confused survival for personality."
+              </blockquote>
             </FadeIn>
 
             <FadeIn delay={100}>
-              <div className="space-y-5 text-charcoal/70 text-lg leading-relaxed">
+              <div className="space-y-5 text-charcoal/70 text-lg leading-relaxed max-w-3xl mx-auto">
                 <p>
-                  For over twenty years, Bee worked in corporate finance at some of the largest companies in the world. She stayed late. She said yes when she meant no. She made rooms comfortable, even when she wasn't.
+                  For more than twenty years, Bee built a career that looked, from the outside, like everything success was supposed to look like. Degrees. Senior titles. Bigger responsibilities. Rooms she had worked hard to enter.
                 </p>
                 <p>
-                  She thought she was just nice. She was also exhausted.
+                  But underneath the achievement was a quieter pattern she couldn't yet see.
                 </p>
                 <p>
-                  This memoir traces the exact moments: the meeting rooms, the missed opportunities, the silence where a no should have been. And the slow reckoning that followed. It is honest, specific, and at times uncomfortably familiar.
+                  The yes when she meant no. The instinct to make herself useful. The need to get it right. The ability to carry more than she should.
                 </p>
                 <p>
-                  It is a confession from a woman whose understanding of herself was incomplete, and the quiet, hard-won journey back to who she always was.
+                  What looked like personality had roots much older than her career.
+                </p>
+                <p>
+                  <em>I Thought I Was Just Nice</em> is the memoir of a high-achieving woman who stops mistaking survival for personality and begins coming home to herself. It is for every woman who has been praised for her excellence while quietly wondering what it was costing her.
+                </p>
+                <p>
+                  This is not a book about becoming someone else.
+                </p>
+                <p>
+                  It is about seeing clearly what was always yours, what survival taught you, and what you get to choose now.
                 </p>
               </div>
             </FadeIn>
 
-            <FadeIn delay={200} className="mt-10">
-              <div className="p-8 bg-navy rounded-2xl">
-                <p className="font-display text-xl lg:text-2xl text-cream/90 italic leading-relaxed mb-4">
-                  "Performance is not peace. It is the price you pay to borrow it."
+            <FadeIn delay={200} className="mt-12">
+              <div className="p-8 bg-navy rounded-2xl text-center">
+                <p className="font-display text-2xl lg:text-3xl text-cream/90 italic leading-relaxed">
+                  "I want the same woman. With different instructions."
                 </p>
-                <p className="text-honey/70 text-sm">— From Chapter 2, <em>I Thought I Was Just Nice</em></p>
               </div>
             </FadeIn>
           </div>
@@ -187,22 +214,22 @@ export default function TheBook() {
 
       <HoneycombDivider />
 
-      {/* The Four Parts */}
+      {/* Familiar Signals */}
       <section className="py-20 lg:py-28 bg-warm-white">
         <div className="container">
           <FadeIn className="text-center mb-14">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Inside the Book</span>
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">The Journey</h2>
-            <p className="text-charcoal/60 text-lg max-w-xl mx-auto mt-3">Four parts. One story. You'll probably recognise parts of it.</p>
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">This Book May Feel Familiar If...</span>
+            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
+              You have been carrying more than people can see
+            </h2>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {parts.map((part, i) => (
-              <FadeIn key={part.number} delay={i * 100}>
-                <div className={`h-full p-8 rounded-2xl bg-gradient-to-br ${part.color} border border-honey/10`}>
-                  <span className="text-honey-dark text-xs font-bold tracking-[0.2em] uppercase mb-3 block">{part.number}</span>
-                  <h3 className="font-display text-xl font-bold text-navy mb-3">{part.title}</h3>
-                  <p className="text-charcoal/60 text-sm leading-relaxed">{part.desc}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+            {familiarSignals.map((signal, i) => (
+              <FadeIn key={signal} delay={i * 75}>
+                <div className="h-full bg-white border border-honey/10 rounded-2xl p-6 flex gap-4">
+                  <CheckCircle className="w-5 h-5 text-honey-dark shrink-0 mt-1" />
+                  <p className="text-charcoal/70 leading-relaxed">{signal}</p>
                 </div>
               </FadeIn>
             ))}
@@ -210,86 +237,154 @@ export default function TheBook() {
         </div>
       </section>
 
-      {/* Honey Drop */}
-      <section className="py-16 lg:py-20 bg-navy relative overflow-hidden">
+      {/* Inside the Book */}
+      <section className="py-20 lg:py-24 bg-navy relative overflow-hidden">
         <div className="absolute top-10 left-10 w-32 h-32 border border-honey/10 hex-clip opacity-20" />
         <div className="absolute bottom-10 right-10 w-24 h-24 bg-honey/5 hex-clip" />
 
         <div className="container relative">
-          <FadeIn className="text-center max-w-3xl mx-auto">
+          <FadeIn className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 text-honey mb-6">
               <Sparkles className="w-4 h-4" />
-              <span className="text-xs font-semibold tracking-[0.2em] uppercase">Hive & Thrive Honey Drop</span>
+              <span className="text-xs font-semibold tracking-[0.2em] uppercase">Inside the Book</span>
               <Sparkles className="w-4 h-4" />
             </div>
-            <blockquote className="font-display text-2xl lg:text-3xl text-cream/90 italic leading-relaxed mb-4">
-              "Discomfort is information, not authority."
+            <p className="text-cream/80 text-lg lg:text-xl leading-relaxed mb-6">
+              Through childhood, ambition, career, marriage, motherhood, leadership, exhaustion, and reckoning, Bee traces the patterns she once mistook for personality - and what happened when she finally began to see them differently.
+            </p>
+            <p className="text-cream/70 text-lg leading-relaxed mb-10">
+              A story about niceness. Perfectionism. People-pleasing. Visibility. Rest. Leadership. Choice. And the long journey home to yourself.
+            </p>
+            <blockquote className="font-display text-2xl lg:text-3xl text-honey italic leading-relaxed">
+              "You can be excellent without abandoning yourself."
             </blockquote>
-            <p className="text-honey/60 text-sm">— From Chapter 10, <em>I Thought I Was Just Nice</em></p>
+            <p className="text-honey/60 text-sm mt-3">- Bee</p>
           </FadeIn>
         </div>
       </section>
 
-      {/* Who This Book Is For */}
-      <section className="py-20 lg:py-24 bg-cream">
+      {/* About the Author */}
+      <section className="py-20 lg:py-28 bg-cream">
         <div className="container">
-          <FadeIn className="text-center mb-14">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Who This Book Is For</span>
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
+            <FadeIn className="lg:col-span-2">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-honey/10 rounded-3xl rotate-3" />
+                <img
+                  src="/images/bee-headshot.png"
+                  alt="Blessing Bee Nyamolo"
+                  className="relative w-full max-w-md mx-auto rounded-2xl shadow-xl shadow-honey/10"
+                />
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={100} className="lg:col-span-3">
+              <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">About the Author</span>
+              <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-6">
+                Blessing "Bee" Nyamolo
+              </h2>
+              <div className="space-y-5 text-charcoal/70 text-lg leading-relaxed">
+                <p>
+                  Blessing "Bee" Nyamolo is an author, speaker, and finance executive with more than twenty years in corporate finance.
+                </p>
+                <p>
+                  Her work explores what happens when excellence and self-abandonment become difficult to tell apart - and what becomes possible when women choose wholeness instead.
+                </p>
+                <p>
+                  Hive & Thrive is her philosophy, her community, and her invitation:
+                </p>
+                <p className="font-display text-2xl text-navy italic">
+                  Bring your gifts. Stay whole.
+                </p>
+              </div>
+              <div className="mt-8">
+                <Link href="/about/">
+                  <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-5 text-base">
+                    Meet Bee <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      <HoneycombDivider />
+
+      {/* Launch Details */}
+      <section className="py-20 lg:py-24 bg-warm-white">
+        <div className="container">
+          <FadeIn className="text-center mb-12">
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Launch Details</span>
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
-              You'll recognise <span className="text-honey-dark italic">yourself</span> in these pages
+              The book is coming
             </h2>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-14">
-            {[
-              {
-                icon: "🐝",
-                headline: "The woman whose success still feels heavy.",
-                body: "You've done everything right. The career, the reputation, the results. And somehow you're more exhausted than you've ever been.",
-              },
-              {
-                icon: "🍯",
-                headline: "The woman who says yes when she means something more complicated.",
-                body: "You keep the peace. You stay late. You make rooms comfortable even when you aren't. You've told yourself it's just who you are.",
-              },
-              {
-                icon: "✨",
-                headline: "The woman who is done surviving and ready to remember.",
-                body: "You're starting to ask a different question. Not what's wrong with you. But what these patterns were once protecting you from.",
-              },
-            ].map((card, i) => (
-              <FadeIn key={card.headline} delay={i * 100}>
-                <div className="h-full bg-white border border-honey/10 rounded-2xl p-8 flex flex-col">
-                  <div className="text-3xl mb-5">{card.icon}</div>
-                  <h3 className="font-display text-lg font-bold text-navy mb-3 leading-snug">{card.headline}</h3>
-                  <p className="text-charcoal/60 text-sm leading-relaxed flex-1">{card.body}</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+            {launchDetails.map((detail, i) => (
+              <FadeIn key={detail.label} delay={i * 100}>
+                <div className="h-full bg-white border border-honey/10 rounded-2xl p-7 text-center">
+                  <div className="w-12 h-12 rounded-full bg-honey/15 text-honey-dark flex items-center justify-center mx-auto mb-5">
+                    {detail.icon}
+                  </div>
+                  <h3 className="font-display text-xl font-bold text-navy mb-2">{detail.label}</h3>
+                  <p className="text-charcoal/60 leading-relaxed">{detail.value}</p>
                 </div>
               </FadeIn>
             ))}
           </div>
+        </div>
+      </section>
 
-          <FadeIn className="text-center">
-            <div className="inline-flex items-center gap-2 text-honey-dark mb-6">
-              <div className="w-8 h-px bg-honey/40" />
-              <Star className="w-4 h-4" />
-              <div className="w-8 h-px bg-honey/40" />
-            </div>
-            <p className="text-charcoal/60 text-lg mb-8 max-w-xl mx-auto">
-              If any of this sounds like your life, this book was written for you. Be the first to know when it's available.
+      {/* Signup */}
+      <section id="book-signup" className="py-20 lg:py-24 bg-navy relative overflow-hidden scroll-mt-20">
+        <div className="absolute inset-0 bg-navy/85 backdrop-blur-sm" />
+        <div className="absolute top-10 left-10 w-32 h-32 border border-honey/10 hex-clip opacity-20" />
+        <div className="absolute bottom-10 right-10 w-24 h-24 bg-honey/5 hex-clip" />
+
+        <div className="container relative">
+          <FadeIn className="max-w-2xl mx-auto text-center">
+            <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">Be the First to Know</span>
+            <h2 className="font-display text-3xl lg:text-5xl font-bold text-cream mb-5">
+              Join the launch list
+            </h2>
+            <p className="text-cream/70 text-lg leading-relaxed mb-8">
+              Join the list for launch-day news and early access - and receive Honey Drops, the weekly letter from the Hive, in the meantime.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/queens-circle/">
-                <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
-                  Join the Swarm <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </Link>
-              <Link href="/about/">
-                <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-5 text-base">
-                  Meet Bee
-                </Button>
-              </Link>
-            </div>
+            <KitForm className="max-w-md mx-auto" />
+            <p className="text-honey/60 text-sm mt-3">
+              No spam, ever. Just pure honey for your inbox.
+            </p>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 lg:py-24 bg-cream">
+        <div className="container">
+          <FadeIn className="text-center mb-12">
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Frequently Asked Questions</span>
+            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
+              A few early details
+            </h2>
+          </FadeIn>
+
+          <div className="max-w-3xl mx-auto space-y-5">
+            {faqs.map((faq, i) => (
+              <FadeIn key={faq.question} delay={i * 75}>
+                <div className="bg-white border border-honey/10 rounded-2xl p-6">
+                  <div className="flex gap-4">
+                    <HelpCircle className="w-5 h-5 text-honey-dark shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-display text-xl font-bold text-navy mb-2">{faq.question}</h3>
+                      <p className="text-charcoal/65 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
     </div>
