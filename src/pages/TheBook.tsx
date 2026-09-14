@@ -34,6 +34,17 @@ const familiarSignals = [
   "You want to bring your gifts without losing yourself in the giving.",
 ];
 
+const sampleExcerpt = [
+  'A message comes through text or email. The sender is someone important to me, either personally or professionally. The message simply says: "Can we talk?"',
+  "Nothing has happened yet. No conflict. No bad news. No accusation. No actual danger. And still, before my adult mind has even fully processed the words, my body reacts. My chest tightens. My stomach churns. Something inside me braces. It is subtle, but unmistakable. A quick internal shift. My whole body moves into emotional readiness before my mind has even decided whether readiness is necessary.",
+  "For years, I barely noticed it. The reaction happened so automatically that I thought it was normal. I thought this was simply what responsibility felt like. Serious people prepared themselves. Mature people stayed alert. High performers anticipated problems. That is how I explained it to myself.",
+  "Not long after the season I just described, after my body had started telling the truth in ways I could no longer ignore, I slowed down enough to notice something unsettling. The adult woman was holding the phone. The finance executive was reading the email. But the younger me still living inside my body had already braced. My body was preparing for danger before danger had even arrived.",
+  "That realization stayed with me because the reaction itself felt older than the moment. Older than the job. Older than the title in my email signature. And for the first time, I started asking myself a question that began rearranging how I understood my life: Why was my body still living like I was unsafe?",
+  "At first, I wanted to believe the problem was only the job. The hours. The expectations. The role that asked more of me than I knew how to give sustainably. And indeed, that season was demanding. The work was complex. The responsibility was heavy. I was carrying more than any one person should have carried for that long without a different kind of support or a different kind of wisdom around what success was allowed to cost.",
+  "But the longer I sat with my realization, the more I understood something harder. The fear was older than the job. It was older than the room I was standing in when the message came through. Older than the executive decisions, the project plans, the performance ratings, and the polished language of professional responsibility. It was a careful fear. A polite fear. A useful fear. The kind that learns how to function so well it stops looking like fear at all.",
+  "Suddenly, I started to see it everywhere. In how quickly I prepared for problems that hadn't happened. In how hard it was to rest without feeling I had forgotten something. In how easily responsibility to others felt safer than taking care of myself.",
+];
+
 const launchDetails = [
   {
     icon: <CalendarDays className="w-5 h-5" />,
@@ -154,6 +165,11 @@ export default function TheBook() {
                     Be the First to Know <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
+                <Button asChild size="lg" variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-6 text-base">
+                  <a href="#excerpt">
+                    Read an Excerpt
+                  </a>
+                </Button>
               </motion.div>
             </div>
           </div>
@@ -259,6 +275,30 @@ export default function TheBook() {
               "You can be excellent without abandoning yourself."
             </blockquote>
             <p className="text-honey/60 text-sm mt-3">- Bee</p>
+          </FadeIn>
+        </div>
+      </section>
+
+      <HoneycombDivider />
+
+      {/* Excerpt */}
+      <section id="excerpt" className="py-20 lg:py-28 bg-warm-white scroll-mt-20">
+        <div className="container">
+          <FadeIn className="text-center mb-12">
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Read an Excerpt</span>
+            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
+              My Body Braced Before My Mind Did
+            </h2>
+          </FadeIn>
+
+          <FadeIn delay={100}>
+            <article className="max-w-3xl mx-auto bg-white border border-honey/10 rounded-2xl p-7 sm:p-10 shadow-lg shadow-honey/5">
+              <div className="space-y-5 text-charcoal/70 text-base lg:text-lg leading-relaxed">
+                {sampleExcerpt.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+            </article>
           </FadeIn>
         </div>
       </section>
