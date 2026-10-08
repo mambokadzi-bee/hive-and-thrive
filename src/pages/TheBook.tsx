@@ -86,12 +86,12 @@ export default function TheBook() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative pt-20 pb-0 bg-[oklch(0.97_0.01_60)] overflow-hidden">
+      <section className="relative pt-32 sm:pt-36 lg:pt-20 pb-0 bg-[oklch(0.97_0.01_60)] overflow-hidden">
         <div className="absolute top-20 right-10 w-40 h-40 border border-honey/10 hex-clip opacity-20" />
         <div className="absolute bottom-0 left-10 w-24 h-24 bg-honey/5 hex-clip" />
 
         <div className="container relative">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 pt-16 lg:pt-20">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 pt-12 sm:pt-16 lg:pt-20">
             <motion.div
               initial={{ opacity: 0, y: 30, rotate: -2 }}
               animate={{ opacity: 1, y: 0, rotate: -2 }}
