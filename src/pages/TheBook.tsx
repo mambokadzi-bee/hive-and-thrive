@@ -162,7 +162,7 @@ export default function TheBook() {
               >
                 <Button asChild size="lg" className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-6 text-base shadow-lg shadow-honey/20">
                   <a href="#book-signup">
-                    Be the First to Know <ArrowRight className="ml-2 w-5 h-5" />
+                    Read Chapter One Free <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-6 text-base">
@@ -387,10 +387,10 @@ export default function TheBook() {
           <FadeIn className="max-w-2xl mx-auto text-center">
             <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">Read Chapter One Free</span>
             <h2 className="font-display text-3xl lg:text-5xl font-bold text-cream mb-5">
-              Join the launch list
+              Get the free chapter
             </h2>
             <p className="text-cream/70 text-lg leading-relaxed mb-8">
-              Join the list for launch-day news and early access - and receive Honey Drops, the weekly letter from the Hive, in the meantime.
+              Join the launch list to receive Chapter One free, plus launch-day news and Honey Drops from the Hive.
             </p>
             <KitForm className="max-w-md mx-auto" />
             <p className="text-honey/60 text-sm mt-3">
