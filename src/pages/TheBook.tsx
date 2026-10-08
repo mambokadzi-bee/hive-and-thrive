@@ -167,7 +167,7 @@ export default function TheBook() {
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-6 text-base">
                   <a href="#excerpt">
-                    Read an Excerpt
+                    Preview the Book
                   </a>
                 </Button>
               </motion.div>
@@ -285,7 +285,7 @@ export default function TheBook() {
       <section id="excerpt" className="py-20 lg:py-28 bg-warm-white scroll-mt-20">
         <div className="container">
           <FadeIn className="text-center mb-12">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Read an Excerpt</span>
+            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Preview the Book</span>
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
               My Body Braced Before My Mind Did
             </h2>
