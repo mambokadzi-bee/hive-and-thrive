@@ -385,7 +385,7 @@ export default function TheBook() {
 
         <div className="container relative">
           <FadeIn className="max-w-2xl mx-auto text-center">
-            <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">Be the First to Know</span>
+            <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">Read Chapter One Free</span>
             <h2 className="font-display text-3xl lg:text-5xl font-bold text-cream mb-5">
               Join the launch list
             </h2>
