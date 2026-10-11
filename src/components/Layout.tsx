@@ -173,7 +173,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
               <p className="text-sm leading-relaxed text-cream/60 mb-4">
                 Bring your gifts. Stay whole.
-A place where high-achieving women stop surviving success and start belonging.
+A place where high achievers stop surviving success and start belonging.
               </p>
               <a href="mailto:info@hiveandthrive.life" className="text-sm text-honey/70 hover:text-honey transition-colors">
                 info@hiveandthrive.life

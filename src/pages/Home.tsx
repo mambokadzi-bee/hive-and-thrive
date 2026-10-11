@@ -62,7 +62,7 @@ export default function Home() {
               </motion.h1>
 
               <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.6 }} className="text-lg lg:text-xl text-cream/70 leading-relaxed mb-8 max-w-xl">
-                A place for high-achieving women who are ready to stop surviving success and start sharing their gifts without losing themselves.
+                A place for high achievers who are ready to stop surviving success and start sharing their gifts without losing themselves.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.8 }} className="flex flex-col sm:flex-row gap-4">
@@ -129,7 +129,7 @@ export default function Home() {
                 But beneath the promotions and performance was a quieter question: Why does success still feel so heavy?
               </p>
               <p className="text-charcoal/70 text-lg leading-relaxed mb-6">
-                The answer became a memoir. The memoir became a philosophy. The philosophy became Hive and Thrive, a place where high-achieving women learn to stop confusing survival with identity and begin sharing their gifts from a place of wholeness.
+                The answer became a memoir. The memoir became a philosophy. The philosophy became Hive and Thrive, a place for high achievers learning to stop confusing survival with identity and begin sharing their gifts from a place of wholeness.
               </p>
               <p className="font-display text-lg text-navy italic border-l-4 border-honey pl-4 mb-8">
                 The memoir became a philosophy. The philosophy became a movement.
@@ -238,7 +238,7 @@ export default function Home() {
               </h2>
               <p className="text-honey-dark/70 font-medium tracking-wide mb-6">by Blessing (Bee) Nyamolo</p>
               <p className="text-charcoal/60 text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-                A memoir about what happens when a high-achieving woman stops mistaking survival for personality and finally comes home to herself.
+                A memoir about what happens when a high-achieving woman stops mistaking survival for personality and begins coming home to herself.
               </p>
               <Link href="/the-book/">
                 <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
@@ -318,7 +318,7 @@ export default function Home() {
             <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-2">Honey Drops</h2>
             <p className="text-honey/70 font-medium tracking-wide mb-6">A weekly letter from the Hive.</p>
             <p className="text-cream/70 text-lg mb-8">
-              Join a growing hive of women who are done surviving their success. Receive Honey Drops, honest reflections, and gentle reminders to bring your gifts, and stay whole.
+              Join a growing hive of high achievers who are done surviving their success. Receive Honey Drops, honest reflections, and gentle reminders to bring your gifts, and stay whole.
             </p>
 
             <KitForm className="max-w-md mx-auto" />

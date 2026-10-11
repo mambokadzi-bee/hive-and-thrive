@@ -100,7 +100,7 @@ export default function About() {
                   That quiet reckoning is what eventually led me here. Not away from everything I built, but toward something more honest.
                 </p>
                 <p className="text-charcoal/70 text-lg leading-relaxed">
-                  Hive &amp; Thrive exists because too many women are admired for their excellence while quietly disappearing inside it.
+                  Hive &amp; Thrive exists because too many high achievers are admired for their excellence while quietly disappearing inside it.
                 </p>
               </FadeIn>
 
@@ -111,10 +111,10 @@ export default function About() {
                   Why the Hive?
                 </h3>
                 <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
-                  The hive has always felt like the perfect metaphor for the women I admire most. Women who build. Women who contribute. Women who carry more than most people ever see. But here's what we've forgotten: the hive doesn't thrive when the bees are depleted.
+                  The hive has always felt like the perfect metaphor for the people I admire most. People who build. People who contribute. People who carry more than anyone else sees. But here's what we forget: the hive doesn't thrive when the bees are depleted.
                 </p>
                 <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
-                  And my name? Well, life has a way of writing its own metaphors. When your real name is Blessing, and you go by Bee, the story practically writes itself. Every story I tell, every lesson I share, is nectar gathered from lessons corporate life taught me about resilience, humility, courage, and motion. Each story is meant to nourish, strengthen, and encourage women navigating career ceilings, identity shifts, and purpose awakenings.
+                  And my name? Well, life has a way of writing its own metaphors. When your real name is Blessing, and you go by Bee, the story practically writes itself. Every story I tell, every lesson I share, is nectar gathered from lessons corporate life taught me about resilience, humility, courage, and motion. The stories are rooted in my lived experience as a woman, and they are meant to nourish, strengthen, and encourage anyone navigating career ceilings, identity shifts, and purpose awakenings.
                 </p>
                 <p className="text-charcoal/70 text-lg leading-relaxed">
                   But underneath all of it is a simple belief: that <strong className="font-bold text-navy">you cannot build a career, a legacy, or a life worth living on a version of yourself that isn't real.</strong> Knowing who you are, and becoming courageous enough to live from that place, is the work beneath all the other work.

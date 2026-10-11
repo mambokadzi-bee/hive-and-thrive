@@ -74,7 +74,7 @@ const faqs = [
   },
   {
     question: "Is this book only for women?",
-    answer: "It is written from a woman's experience, primarily for women, and for anyone who recognizes themselves in its pages.",
+    answer: "It is written from one woman's experience and will especially resonate with women, but it is for anyone who recognizes the cost of being praised for patterns that were really survival.",
   },
   {
     question: "Will there be a signed edition or launch event?",
@@ -142,7 +142,7 @@ export default function TheBook() {
                 transition={{ duration: 0.6, delay: 0.7 }}
                 className="font-display text-xl lg:text-2xl text-charcoal/70 italic leading-relaxed mb-5 max-w-xl mx-auto lg:mx-0"
               >
-                A memoir for the woman who has been excellent her whole life - and exhausted for just as long.
+                One woman's memoir for anyone who knows what it means to be excellent - and exhausted.
               </motion.p>
 
               <motion.p
@@ -206,7 +206,7 @@ export default function TheBook() {
                   What looked like personality had roots much older than her career.
                 </p>
                 <p>
-                  <em>I Thought I Was Just Nice</em> is the memoir of a high-achieving woman who stops mistaking survival for personality and begins coming home to herself. It is for every woman who has been praised for her excellence while quietly wondering what it was costing her.
+                  <em>I Thought I Was Just Nice</em> is the memoir of a high-achieving woman who stops mistaking survival for personality and begins coming home to herself. It is for anyone who has been praised for excellence while quietly wondering what it was costing them.
                 </p>
                 <p>
                   This is not a book about becoming someone else.
@@ -328,7 +328,7 @@ export default function TheBook() {
                   Blessing "Bee" Nyamolo is an author, speaker, and finance executive with more than twenty years in corporate finance.
                 </p>
                 <p>
-                  Her work explores what happens when excellence and self-abandonment become difficult to tell apart - and what becomes possible when women choose wholeness instead.
+                  Her work explores what happens when excellence and self-abandonment become difficult to tell apart - and what becomes possible when people choose wholeness instead.
                 </p>
                 <p>
                   Hive & Thrive is her philosophy, her community, and her invitation:
