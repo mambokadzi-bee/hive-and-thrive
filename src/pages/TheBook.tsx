@@ -167,7 +167,7 @@ export default function TheBook() {
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 sm:px-8 py-6 text-base whitespace-normal text-center leading-snug">
                   <a href="#excerpt">
-                    A Taste from Later in the Book
+                    Read Another Excerpt
                   </a>
                 </Button>
               </motion.div>
