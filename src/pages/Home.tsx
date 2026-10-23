@@ -224,7 +224,7 @@ export default function Home() {
                 <div className="absolute -inset-4 bg-honey/10 blur-2xl rounded-2xl" />
                 <img
                   src="/images/book-cover.jpg"
-                  alt="I Thought I Was Just Nice by Blessing (Bee) Nyamolo"
+                  alt="I Thought I Was Just Nice by Blessing Sithole Nyamolo"
                   className="relative w-[220px] sm:w-[260px] rounded-xl shadow-2xl shadow-honey/20"
                   style={{ rotate: "-2deg" }}
                 />

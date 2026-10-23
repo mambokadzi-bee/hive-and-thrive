@@ -71,7 +71,7 @@ export default function TheBook() {
                 <div className="absolute -inset-1 bg-gradient-to-br from-honey/20 to-transparent rounded-2xl" />
                 <img
                   src={BOOK_COVER}
-                  alt="I Thought I Was Just Nice: A Memoir by Blessing Bee Nyamolo"
+                  alt="I Thought I Was Just Nice: A Memoir by Blessing Sithole Nyamolo"
                   className="relative w-[240px] sm:w-[280px] lg:w-[320px] rounded-xl shadow-2xl shadow-honey/20"
                   style={{ rotate: "-2deg" }}
                 />
@@ -119,7 +119,7 @@ export default function TheBook() {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 className="text-honey-dark font-medium tracking-wide mb-8 text-lg"
               >
-                by Blessing "Bee" Nyamolo
+                by Blessing Sithole Nyamolo
               </motion.p>
 
               <motion.div
@@ -241,7 +241,7 @@ export default function TheBook() {
                 <div className="absolute inset-0 sm:-inset-4 bg-honey/10 rounded-3xl rotate-3" />
                 <img
                   src="/images/bee-headshot.jpg"
-                  alt="Blessing Bee Nyamolo"
+                  alt="Blessing Sithole Nyamolo"
                   className="relative w-full max-w-md mx-auto rounded-2xl shadow-xl shadow-honey/10"
                 />
               </div>
