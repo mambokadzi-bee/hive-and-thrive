@@ -114,7 +114,7 @@ export default function JoinSwarm() {
               {
                 icon: <Sparkles className="w-6 h-6" />,
                 title: "Early Access",
-                desc: "Be the first to know about new books, the Hive Talks podcast launch, and new content as it drops.",
+                desc: "Be the first to know about book updates, new Honey Drops, and future offerings as they take shape.",
               },
             ].map((item, i) => (
               <FadeIn key={item.title} delay={i * 100}>

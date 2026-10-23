@@ -163,7 +163,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
 
         <div className="container py-12 lg:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-8">
             {/* Brand */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-2 mb-4">
@@ -198,16 +198,6 @@ A place where high achievers stop surviving success and start belonging.
                     </Link>
                   </li>
                 ))}
-              </ul>
-            </div>
-
-            {/* Coming Soon */}
-            <div>
-              <h4 className="font-display text-lg font-semibold text-honey mb-4">Coming Soon</h4>
-              <ul className="space-y-2.5">
-                <li className="text-sm text-cream/60">Hive Talks Podcast</li>
-                <li className="text-sm text-cream/60">Guided Journal</li>
-
               </ul>
             </div>
 

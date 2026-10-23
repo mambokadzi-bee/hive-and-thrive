@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight, BookOpen, Crown, Mic, Users } from "lucide-react";
+import { ArrowRight, Crown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { KitForm } from "@/components/KitForm";
 
-const SPEAKING_IMG = "/images/speaking.jpg";
 const PODCAST_IMG = "/images/podcast.jpg";
-const JOURNAL_IMG = "https://cdn.shopify.com/s/files/1/0983/4925/2883/files/3781165502475812487_2048.jpg?v=1775792122";
 
 function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const { ref, isVisible } = useScrollAnimation(0.1);
@@ -132,85 +130,6 @@ export default function QueensCircle() {
           </div>
         </div>
       </section>
-
-      {/* Coming Soon + Journal */}
-      <section className="py-20 lg:py-28 bg-navy relative overflow-hidden">
-        <div className="absolute top-10 left-10 w-32 h-32 border border-honey/10 hex-clip opacity-20" />
-        <div className="absolute bottom-10 right-10 w-24 h-24 bg-honey/5 hex-clip" />
-
-        <div className="container relative">
-          <FadeIn className="text-center mb-14">
-            <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">
-              What's Next
-            </span>
-            <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
-              More from the Hive
-            </h2>
-          </FadeIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <FadeIn delay={100}>
-              <div className="group bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-cream/10 hover:border-honey/20 transition-all duration-300">
-                <div className="aspect-[16/10] overflow-hidden">
-                  <img
-                    src={PODCAST_IMG}
-                    alt="Hive Talks Podcast"
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 text-honey mb-3">
-                    <Mic className="w-4 h-4" />
-                    <span className="text-xs font-semibold tracking-[0.1em] uppercase">Coming Soon</span>
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-white mb-2">Hive Talks Podcast</h3>
-                  <p className="text-cream/60 text-sm leading-relaxed">
-                    Honest conversations with women who've built careers on their own terms. No highlight reels. Just the real story.
-                  </p>
-                </div>
-              </div>
-            </FadeIn>
-
-            <FadeIn delay={250}>
-              <a
-                href="https://hive-thrive.myshopify.com/products/find-your-hive-hive-thrive-hardcover-journal"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-cream/10 hover:border-honey/20 transition-all duration-300"
-              >
-                <div className="aspect-[16/10] overflow-hidden">
-                  <img
-                    src={JOURNAL_IMG}
-                    alt="Find Your Hive Hardcover Journal"
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 text-honey mb-3">
-                    <BookOpen className="w-4 h-4" />
-                    <span className="text-xs font-semibold tracking-[0.1em] uppercase">Available Now</span>
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-white mb-2">Find Your Hive Journal</h3>
-                  <p className="text-cream/60 text-sm leading-relaxed">
-                    A hardcover journal for the woman who needs space to think. Available in the shop now.
-                  </p>
-                </div>
-              </a>
-            </FadeIn>
-          </div>
-
-          <FadeIn className="text-center mt-12">
-            <Link href="/join/">
-              <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base">
-                Stay in the Loop
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </Link>
-          </FadeIn>
-        </div>
-      </section>
-
-
 
       {/* Join the Swarm */}
       <section className="relative py-20 lg:py-28 overflow-hidden">
