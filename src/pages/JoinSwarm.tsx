@@ -80,7 +80,7 @@ export default function JoinSwarm() {
               What You'll Receive
             </h2>
             <p className="text-charcoal/60 text-lg max-w-2xl mx-auto">
-              A quieter inbox promise: thoughtful notes from Bee, book news when it matters, and the first chapter when it is ready.
+              A quieter inbox promise: thoughtful notes from Bee, book news when it matters, and Chapter One delivered right away.
             </p>
           </FadeIn>
 
@@ -99,7 +99,7 @@ export default function JoinSwarm() {
               {
                 icon: <Sparkles className="w-6 h-6" />,
                 title: "Chapter One",
-                desc: "The free first chapter from I Thought I Was Just Nice when the lead magnet is ready.",
+                desc: "The free first chapter from I Thought I Was Just Nice, ready for you now.",
               },
             ].map((item, i) => (
               <FadeIn key={item.title} delay={i * 100}>
