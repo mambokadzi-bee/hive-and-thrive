@@ -262,12 +262,9 @@ export default function Home() {
             </p>
           </FadeIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+          <div className="grid grid-cols-1 max-w-sm mx-auto gap-6 mb-10">
             {[
-              { name: "Even Bees Rest Sherpa Blanket", price: "$49.99", tag: "From Chapter 12", img: "https://cdn.shopify.com/s/files/1/0983/4925/2883/files/18234007988467994398_2048.jpg?v=1775792642", handle: "even-bees-rest-hive-thrive-sherpa-fleece-blanket" },
-              { name: "You Are the Honey Ceramic Mug", price: "$9.99", tag: "Core theme", img: "https://cdn.shopify.com/s/files/1/0983/4925/2883/files/11638481605759695721_2048.jpg?v=1775791970", handle: "you-are-the-honey-hive-thrive-ceramic-mug-11oz" },
               { name: "Find Your Hive Hardcover Journal", price: "$13.99", tag: "Community & belonging", img: "https://cdn.shopify.com/s/files/1/0983/4925/2883/files/3781165502475812487_2048.jpg?v=1775792122", handle: "find-your-hive-hive-thrive-hardcover-journal" },
-              { name: "Even Bees Rest T-Shirt", price: "$19.99", tag: "Wearable reminder", img: "https://cdn.shopify.com/s/files/1/0983/4925/2883/files/7928432989040128670_2048.jpg?v=1776022880", handle: "even-bees-rest-hive-thrive-t-shirt-1" },
             ].map((product, i) => (
               <FadeIn key={product.name} delay={i * 100}>
                 <a
@@ -299,7 +296,7 @@ export default function Home() {
           <FadeIn className="text-center">
             <a href="https://hive-thrive.myshopify.com/collections/best-sellers" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-8 py-5 text-base transition-all duration-300">
-                View All Products <ArrowRight className="ml-2 w-4 h-4" />
+                View the Shop <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </a>
           </FadeIn>
