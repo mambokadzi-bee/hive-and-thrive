@@ -13,7 +13,7 @@ const PODCAST_IMG = "/images/podcast.jpg";
 const SPEAKING_IMG = "/images/speaking.jpg";
 const DEVOTIONAL_IMG = "/images/devotional.jpg";
 const ABOUT_BG = "/images/about-bg.jpg";
-const BEE_HEADSHOT = "/images/bee-headshot.png";
+const BEE_HEADSHOT = "/images/bee-headshot.jpg";
 
 function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const { ref, isVisible } = useScrollAnimation(0.1);

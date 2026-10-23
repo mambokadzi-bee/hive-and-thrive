@@ -12,7 +12,7 @@ import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const ABOUT_BG = "/images/about-bg.jpg";
-const BEE_HEADSHOT = "/images/bee-headshot.png";
+const BEE_HEADSHOT = "/images/bee-headshot.jpg";
 
 function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const { ref, isVisible } = useScrollAnimation(0.1);

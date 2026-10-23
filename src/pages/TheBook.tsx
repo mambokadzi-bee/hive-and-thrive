@@ -311,7 +311,7 @@ export default function TheBook() {
               <div className="relative">
                 <div className="absolute inset-0 sm:-inset-4 bg-honey/10 rounded-3xl rotate-3" />
                 <img
-                  src="/images/bee-headshot.png"
+                  src="/images/bee-headshot.jpg"
                   alt="Blessing Bee Nyamolo"
                   className="relative w-full max-w-md mx-auto rounded-2xl shadow-xl shadow-honey/10"
                 />
