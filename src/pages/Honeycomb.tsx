@@ -4,9 +4,7 @@
  */
 
 import { motion } from "framer-motion";
-import { Link } from "wouter";
-import { ArrowRight, Calendar, Clock, Heart, Briefcase, BookOpen, Star, ExternalLink } from "lucide-react";
-import HoneycombDivider from "@/components/HoneycombDivider";
+import { ArrowRight, Calendar, Clock, Heart, Briefcase, BookOpen, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { toast } from "sonner";
@@ -336,27 +334,6 @@ export default function Honeycomb() {
         </div>
       </section>
 
-      <HoneycombDivider />
-
-      {/* Subscribe CTA */}
-      <section className="py-16 lg:py-20 bg-navy">
-        <div className="container">
-          <FadeIn className="text-center max-w-2xl mx-auto">
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-white mb-4">
-              Never Miss a Drop of Nectar
-            </h2>
-            <p className="text-cream/60 text-lg mb-8">
-              Subscribe to get new posts delivered straight to your inbox every week.
-            </p>
-            <Link href="/join/">
-              <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base">
-                Join the List
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </Link>
-          </FadeIn>
-        </div>
-      </section>
     </div>
   );
 }

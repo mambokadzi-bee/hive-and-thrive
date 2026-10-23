@@ -4,9 +4,6 @@ import { ArrowRight, Crown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { KitForm } from "@/components/KitForm";
-
-const PODCAST_IMG = "/images/podcast.jpg";
 
 function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const { ref, isVisible } = useScrollAnimation(0.1);
@@ -23,10 +20,6 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
       {children}
     </div>
   );
-}
-
-function JoinForm() {
-  return <KitForm className="max-w-md mx-auto" />;
 }
 
 export default function QueensCircle() {
@@ -127,30 +120,6 @@ export default function QueensCircle() {
                 </div>
               </FadeIn>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Join the List */}
-      <section className="relative py-20 lg:py-28 overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={PODCAST_IMG} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-navy/88 backdrop-blur-sm" />
-        </div>
-        <div className="container relative">
-          <div className="max-w-2xl mx-auto text-center">
-            <FadeIn>
-              <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">
-                Join the List
-              </span>
-              <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
-                Get notes from <span className="text-honey-light italic">Bee</span>
-              </h2>
-              <p className="text-cream/70 text-lg leading-relaxed mb-10">
-                Join the list for Honey Drops, book updates, and the free first chapter from <em>I Thought I Was Just Nice</em>.
-              </p>
-              <JoinForm />
-            </FadeIn>
           </div>
         </div>
       </section>

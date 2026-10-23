@@ -137,11 +137,6 @@ export default function About() {
                       Read My Stories <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                   </Link>
-                  <Link href="/join/">
-                    <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 py-5 text-base">
-                      Join the List
-                    </Button>
-                  </Link>
                 </div>
               </FadeIn>
             </div>
@@ -168,11 +163,6 @@ export default function About() {
               <Link href="/the-queens-playbook/">
                 <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
                   Explore the Playbook <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </Link>
-              <Link href="/join/">
-                <Button className="bg-cream hover:bg-cream/90 !text-navy font-semibold px-8 py-5 text-base">
-                  Join the List
                 </Button>
               </Link>
             </div>

@@ -5,9 +5,6 @@
  */
 
 import { motion } from "framer-motion";
-import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
@@ -93,24 +90,6 @@ export default function HoneyDrops() {
                 &ldquo;These are not just words. They are the sentences I wish someone had handed me sooner.&rdquo;
               </p>
               <p className="text-honey/70 text-sm mb-12">~ Bee</p>
-
-              <div className="border-t border-honey/20 pt-12">
-                <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">
-                  For the Swarm
-                </span>
-                <h2 className="font-display text-2xl lg:text-3xl font-bold text-white mb-4">
-                  The Full Collection Is Yours
-                </h2>
-                <p className="text-cream/60 text-lg leading-relaxed mb-8">
-                  These 10 are just the beginning. Join the list for Honey Drops, book updates, and the free first chapter.
-                </p>
-                <Link href="/join/">
-                  <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
-                    Join the List
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </Link>
-              </div>
             </div>
           </FadeIn>
         </div>

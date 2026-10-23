@@ -190,11 +190,6 @@ export default function Collections() {
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
-              <Link href="/join/">
-                <Button className="bg-cream hover:bg-cream/90 !text-navy font-semibold px-8 py-5 text-base">
-                  Join the List
-                </Button>
-              </Link>
             </div>
           </FadeIn>
         </div>
