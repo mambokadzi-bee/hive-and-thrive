@@ -131,7 +131,7 @@ export default function QueensCircle() {
         </div>
       </section>
 
-      {/* Join the Swarm */}
+      {/* Join the List */}
       <section className="relative py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img src={PODCAST_IMG} alt="" className="w-full h-full object-cover" />
@@ -141,13 +141,13 @@ export default function QueensCircle() {
           <div className="max-w-2xl mx-auto text-center">
             <FadeIn>
               <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">
-                Join the Swarm
+                Join the List
               </span>
               <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
-                Ready to join the <span className="text-honey-light italic">Circle?</span>
+                Get notes from <span className="text-honey-light italic">Bee</span>
               </h2>
               <p className="text-cream/70 text-lg leading-relaxed mb-10">
-                Join the Queen's Circle and receive Honey Drops, first access to the book, and a community of women who get it. No performance required.
+                Join the list for Honey Drops, book updates, and the free first chapter from <em>I Thought I Was Just Nice</em>.
               </p>
               <JoinForm />
             </FadeIn>

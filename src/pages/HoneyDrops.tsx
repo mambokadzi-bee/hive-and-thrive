@@ -102,11 +102,11 @@ export default function HoneyDrops() {
                   The Full Collection Is Yours
                 </h2>
                 <p className="text-cream/60 text-lg leading-relaxed mb-8">
-                  These 10 are just the beginning. Join the Swarm and receive the complete Honey Drops collection — all themes, all drops — delivered to your inbox.
+                  These 10 are just the beginning. Join the list for Honey Drops, book updates, and the free first chapter.
                 </p>
-                <Link href="/queens-circle/#join">
+                <Link href="/join/">
                   <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base shadow-lg shadow-honey/20">
-                    Join the Swarm
+                    Join the List
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>

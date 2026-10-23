@@ -316,9 +316,9 @@ export default function Home() {
         <div className="container relative">
           <FadeIn className="text-center max-w-2xl mx-auto">
             <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-2">Honey Drops</h2>
-            <p className="text-honey/70 font-medium tracking-wide mb-6">A weekly letter from the Hive.</p>
+            <p className="text-honey/70 font-medium tracking-wide mb-6">Honey Drops, book updates, and Chapter One.</p>
             <p className="text-cream/70 text-lg mb-8">
-              Join a growing hive of high achievers who are done surviving their success. Receive Honey Drops, honest reflections, and gentle reminders to bring your gifts, and stay whole.
+              Join the list for honest reflections from Bee, updates on <em>I Thought I Was Just Nice</em>, and the free first chapter when it is ready.
             </p>
 
             <KitForm className="max-w-md mx-auto" />

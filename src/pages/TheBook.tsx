@@ -78,7 +78,7 @@ const faqs = [
   },
   {
     question: "Will there be a signed edition or launch event?",
-    answer: "Those details are still being shaped. Join the launch list to hear first.",
+    answer: "Those details are still being shaped. Join the list to hear first.",
   },
 ];
 
@@ -390,7 +390,7 @@ export default function TheBook() {
               Get the free chapter
             </h2>
             <p className="text-cream/70 text-lg leading-relaxed mb-8">
-              Join the launch list to receive Chapter One free, plus launch-day news and Honey Drops from the Hive.
+              Join the list to receive Chapter One free, book updates, and Honey Drops from Bee.
             </p>
             <KitForm className="max-w-md mx-auto" />
             <p className="text-honey/60 text-sm mt-3">

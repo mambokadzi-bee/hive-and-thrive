@@ -5,7 +5,7 @@
  */
 
 import { motion } from "framer-motion";
-import { Heart, Mail, MessageCircle, Sparkles, Users } from "lucide-react";
+import { Heart, Mail, Sparkles } from "lucide-react";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { KitForm } from "@/components/KitForm";
@@ -47,13 +47,13 @@ export default function JoinSwarm() {
               transition={{ duration: 0.6 }}
             >
               <span className="text-honey text-sm font-semibold tracking-[0.15em] uppercase mb-4 block">
-                Join the Swarm
+                Join the List
               </span>
               <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6">
-                Be Part of Something <span className="text-honey-light italic">Sweet</span>
+                Get Honey Drops &amp; <span className="text-honey-light italic">Chapter One</span>
               </h1>
               <p className="text-cream/70 text-lg lg:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-                Join a growing community of professional women who refuse to choose between career success and personal fulfillment. Weekly inspiration delivered with love.
+                One simple list for Honey Drops, book updates, and the free first chapter from <em>I Thought I Was Just Nice</em>.
               </p>
             </motion.div>
 
@@ -77,44 +77,29 @@ export default function JoinSwarm() {
               What's Inside
             </span>
             <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy mb-4">
-              Your Weekly Drop of Nectar
+              What You'll Receive
             </h2>
             <p className="text-charcoal/60 text-lg max-w-2xl mx-auto">
-              Every week, you'll receive a carefully crafted email designed to inspire, encourage, and equip you for the week ahead.
+              A quieter inbox promise: thoughtful notes from Bee, book news when it matters, and the first chapter when it is ready.
             </p>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               {
                 icon: <Heart className="w-6 h-6" />,
-                title: "Purposeful Encouragement",
-                desc: "A weekly reflection that connects meaning to your professional life; because your purpose doesn't clock out at 5 PM.",
-              },
-              {
-                icon: <Sparkles className="w-6 h-6" />,
-                title: "Career Wisdom",
-                desc: "Practical insights from 20+ years in corporate finance. The kind of advice you'd get from a mentor over coffee.",
-              },
-              {
-                icon: <MessageCircle className="w-6 h-6" />,
-                title: "Exclusive Stories",
-                desc: "First access to new stories and content from the Hive & Thrive collections before they're published anywhere else.",
-              },
-              {
-                icon: <Users className="w-6 h-6" />,
-                title: "Community Connection",
-                desc: "Be part of a growing community of like-minded professional women who lift each other up.",
+                title: "Honey Drops",
+                desc: "Honest reflections from Bee on excellence, identity, rest, leadership, and staying whole.",
               },
               {
                 icon: <Mail className="w-6 h-6" />,
-                title: "Personal Touch",
-                desc: "Every email is written by Bee personally. No AI-generated filler, no corporate speak. Just real talk from a real woman.",
+                title: "Book Updates",
+                desc: "Launch news, preorder details when they are ready, and notes from the road to publication.",
               },
               {
                 icon: <Sparkles className="w-6 h-6" />,
-                title: "Early Access",
-                desc: "Be the first to know about book updates, new Honey Drops, and future offerings as they take shape.",
+                title: "Chapter One",
+                desc: "The free first chapter from I Thought I Was Just Nice when the lead magnet is ready.",
               },
             ].map((item, i) => (
               <FadeIn key={item.title} delay={i * 100}>

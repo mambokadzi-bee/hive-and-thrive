@@ -139,7 +139,7 @@ export default function About() {
                   </Link>
                   <Link href="/join/">
                     <Button variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 py-5 text-base">
-                      Join the Swarm
+                      Join the List
                     </Button>
                   </Link>
                 </div>
@@ -172,7 +172,7 @@ export default function About() {
               </Link>
               <Link href="/join/">
                 <Button className="bg-cream hover:bg-cream/90 !text-navy font-semibold px-8 py-5 text-base">
-                  Join the Swarm
+                  Join the List
                 </Button>
               </Link>
             </div>

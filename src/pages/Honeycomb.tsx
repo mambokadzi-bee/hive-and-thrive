@@ -350,7 +350,7 @@ export default function Honeycomb() {
             </p>
             <Link href="/join/">
               <Button className="bg-honey hover:bg-honey-dark text-navy font-semibold px-8 py-5 text-base">
-                Join the Swarm
+                Join the List
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>

@@ -192,7 +192,7 @@ export default function Collections() {
               </Link>
               <Link href="/join/">
                 <Button className="bg-cream hover:bg-cream/90 !text-navy font-semibold px-8 py-5 text-base">
-                  Join the Swarm
+                  Join the List
                 </Button>
               </Link>
             </div>
