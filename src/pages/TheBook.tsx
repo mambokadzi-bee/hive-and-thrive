@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight, BookOpen, CalendarDays, CheckCircle, FileText, HelpCircle, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, CalendarDays, CheckCircle, FileText, Mail, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HoneycombDivider from "@/components/HoneycombDivider";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -29,20 +29,7 @@ const familiarSignals = [
   "You have built a life you're proud of and still wondered why achievement can feel so exhausting.",
   'Being dependable, agreeable, capable, or "nice" has become part of how people know you.',
   "You say yes easily and sometimes understand the cost only afterward.",
-  "You have spent years being useful to everyone around you and are beginning to ask what you want.",
-  "You are discovering that being capable of something doesn't necessarily mean you have to choose it.",
   "You want to bring your gifts without losing yourself in the giving.",
-];
-
-const sampleExcerpt = [
-  'A message comes through text or email. The sender is someone important to me, either personally or professionally. The message simply says: "Can we talk?"',
-  "Nothing has happened yet. No conflict. No bad news. No accusation. No actual danger. And still, before my adult mind has even fully processed the words, my body reacts. My chest tightens. My stomach churns. Something inside me braces. It is subtle, but unmistakable. A quick internal shift. My whole body moves into emotional readiness before my mind has even decided whether readiness is necessary.",
-  "For years, I barely noticed it. The reaction happened so automatically that I thought it was normal. I thought this was simply what responsibility felt like. Serious people prepared themselves. Mature people stayed alert. High performers anticipated problems. That is how I explained it to myself.",
-  "Not long after the season I just described, after my body had started telling the truth in ways I could no longer ignore, I slowed down enough to notice something unsettling. The adult woman was holding the phone. The finance executive was reading the email. But the younger me still living inside my body had already braced. My body was preparing for danger before danger had even arrived.",
-  "That realization stayed with me because the reaction itself felt older than the moment. Older than the job. Older than the title in my email signature. And for the first time, I started asking myself a question that began rearranging how I understood my life: Why was my body still living like I was unsafe?",
-  "At first, I wanted to believe the problem was only the job. The hours. The expectations. The role that asked more of me than I knew how to give sustainably. And indeed, that season was demanding. The work was complex. The responsibility was heavy. I was carrying more than any one person should have carried for that long without a different kind of support or a different kind of wisdom around what success was allowed to cost.",
-  "But the longer I sat with my realization, the more I understood something harder. The fear was older than the job. It was older than the room I was standing in when the message came through. Older than the executive decisions, the project plans, the performance ratings, and the polished language of professional responsibility. It was a careful fear. A polite fear. A useful fear. The kind that learns how to function so well it stops looking like fear at all.",
-  "Suddenly, I started to see it everywhere. In how quickly I prepared for problems that hadn't happened. In how hard it was to rest without feeling I had forgotten something. In how easily responsibility to others felt safer than taking care of myself.",
 ];
 
 const launchDetails = [
@@ -60,25 +47,6 @@ const launchDetails = [
     icon: <Mail className="w-5 h-5" />,
     label: "Preorder Updates",
     value: "Join the list for retailer links and launch-day news.",
-  },
-];
-
-const faqs = [
-  {
-    question: "When does the book launch?",
-    answer: "I Thought I Was Just Nice is planned for publication in November 2026.",
-  },
-  {
-    question: "What formats will be available?",
-    answer: "Paperback and eBook editions are planned, with final retailer details still to come.",
-  },
-  {
-    question: "Is this book only for women?",
-    answer: "It is written from one woman's experience and will especially resonate with women, but it is for anyone who recognizes the cost of being praised for patterns that were really survival.",
-  },
-  {
-    question: "Will there be a signed edition or launch event?",
-    answer: "Those details are still being shaped. Join the list to hear first.",
   },
 ];
 
@@ -165,11 +133,6 @@ export default function TheBook() {
                     Read Chapter One Free <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-navy/20 text-navy hover:bg-navy hover:text-cream px-6 sm:px-8 py-6 text-base whitespace-normal text-center leading-snug">
-                  <a href="#excerpt">
-                    Read Another Excerpt
-                  </a>
-                </Button>
               </motion.div>
             </div>
           </div>
@@ -194,25 +157,16 @@ export default function TheBook() {
             <FadeIn delay={100}>
               <div className="space-y-5 text-charcoal/70 text-lg leading-relaxed max-w-3xl mx-auto">
                 <p>
-                  For more than twenty years, Bee built a career that looked, from the outside, like everything success was supposed to look like. Degrees. Senior titles. Bigger responsibilities. Rooms she had worked hard to enter.
+                  For more than twenty years, Bee built a career that looked, from the outside, like everything success was supposed to look like: degrees, senior titles, bigger responsibilities, and rooms she had worked hard to enter.
                 </p>
                 <p>
-                  But underneath the achievement was a quieter pattern she couldn't yet see.
-                </p>
-                <p>
-                  The yes when she meant no. The instinct to make herself useful. The need to get it right. The ability to carry more than she should.
-                </p>
-                <p>
-                  What looked like personality had roots much older than her career.
+                  Underneath the achievement was a quieter pattern she couldn't yet see: the yes when she meant no, the instinct to make herself useful, the need to get it right, and the ability to carry more than she should.
                 </p>
                 <p>
                   <em>I Thought I Was Just Nice</em> is the memoir of a high-achieving woman who stops mistaking survival for personality and begins coming home to herself. It is for anyone who has been praised for excellence while quietly wondering what it was costing them.
                 </p>
                 <p>
-                  This is not a book about becoming someone else.
-                </p>
-                <p>
-                  It is about seeing clearly what was always yours, what survival taught you, and what you get to choose now.
+                  This is not a book about becoming someone else. It is about seeing clearly what was always yours, what survival taught you, and what you get to choose now.
                 </p>
               </div>
             </FadeIn>
@@ -268,9 +222,6 @@ export default function TheBook() {
             <p className="text-cream/80 text-lg lg:text-xl leading-relaxed mb-6">
               Through childhood, ambition, career, marriage, motherhood, leadership, exhaustion, and reckoning, Bee traces the patterns she once mistook for personality - and what happened when she finally began to see them differently.
             </p>
-            <p className="text-cream/70 text-lg leading-relaxed mb-10">
-              A story about niceness. Perfectionism. People-pleasing. Visibility. Rest. Leadership. Choice. And the long journey home to yourself.
-            </p>
             <blockquote className="font-display text-2xl lg:text-3xl text-honey italic leading-relaxed">
               "You can be excellent without abandoning yourself."
             </blockquote>
@@ -280,28 +231,6 @@ export default function TheBook() {
       </section>
 
       <HoneycombDivider />
-
-      {/* Excerpt */}
-      <section id="excerpt" className="py-20 lg:py-28 bg-warm-white scroll-mt-20">
-        <div className="container">
-          <FadeIn className="text-center mb-12">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">A Taste from Later in the Book</span>
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
-              My Body Braced Before My Mind Did
-            </h2>
-          </FadeIn>
-
-          <FadeIn delay={100}>
-            <article className="max-w-3xl mx-auto bg-white border border-honey/10 rounded-2xl p-7 sm:p-10 shadow-lg shadow-honey/5">
-              <div className="space-y-5 text-charcoal/70 text-base lg:text-lg leading-relaxed">
-                {sampleExcerpt.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </div>
-            </article>
-          </FadeIn>
-        </div>
-      </section>
 
       {/* About the Author */}
       <section className="py-20 lg:py-28 bg-cream">
@@ -400,33 +329,6 @@ export default function TheBook() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20 lg:py-24 bg-cream">
-        <div className="container">
-          <FadeIn className="text-center mb-12">
-            <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">Frequently Asked Questions</span>
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy">
-              A few early details
-            </h2>
-          </FadeIn>
-
-          <div className="max-w-3xl mx-auto space-y-5">
-            {faqs.map((faq, i) => (
-              <FadeIn key={faq.question} delay={i * 75}>
-                <div className="bg-white border border-honey/10 rounded-2xl p-6">
-                  <div className="flex gap-4">
-                    <HelpCircle className="w-5 h-5 text-honey-dark shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-display text-xl font-bold text-navy mb-2">{faq.question}</h3>
-                      <p className="text-charcoal/65 leading-relaxed">{faq.answer}</p>
-                    </div>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
