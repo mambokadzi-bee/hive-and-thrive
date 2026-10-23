@@ -250,11 +250,11 @@ export default function TheBook() {
             <FadeIn delay={100} className="lg:col-span-3">
               <span className="text-honey-dark text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">About the Author</span>
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy mb-6">
-                Blessing "Bee" Nyamolo
+                Meet Bee
               </h2>
               <div className="space-y-5 text-charcoal/70 text-lg leading-relaxed">
                 <p>
-                  Blessing "Bee" Nyamolo is an author, speaker, and finance executive with more than twenty years in corporate finance.
+                  Bee is an author, speaker, and finance executive with more than twenty years in corporate finance.
                 </p>
                 <p>
                   Her work explores what happens when excellence and self-abandonment become difficult to tell apart - and what becomes possible when people choose wholeness instead.

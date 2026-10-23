@@ -199,7 +199,7 @@ export default function Home() {
             <blockquote className="font-display text-2xl lg:text-3xl xl:text-4xl text-cream/90 italic leading-relaxed mb-6">
               "Performance is not peace. It is the price you pay to borrow it."
             </blockquote>
-            <p className="text-honey/70 text-sm tracking-[0.15em] uppercase">~ Blessing (Bee) Nyamolo, <em>I Thought I Was Just Nice</em></p>
+            <p className="text-honey/70 text-sm tracking-[0.15em] uppercase">~ Bee, <em>I Thought I Was Just Nice</em></p>
           </FadeIn>
         </div>
       </section>
@@ -236,7 +236,7 @@ export default function Home() {
               <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-navy leading-tight mb-2">
                 I Thought I Was Just <span className="text-honey-dark italic">Nice</span>
               </h2>
-              <p className="text-honey-dark/70 font-medium tracking-wide mb-6">by Blessing (Bee) Nyamolo</p>
+              <p className="text-honey-dark/70 font-medium tracking-wide mb-6">by Bee</p>
               <p className="text-charcoal/60 text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
                 A memoir about what happens when a high-achieving woman stops mistaking survival for personality and begins coming home to herself.
               </p>
