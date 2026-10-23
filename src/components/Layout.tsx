@@ -10,7 +10,6 @@ const navLinks = [
   { href: "/about/", label: "Meet Bee" },
   { href: "/the-book/", label: "The Book" },
   { href: "/the-queens-playbook/", label: "The Queen's Playbook" },
-  { href: "/queens-circle/", label: "The Queen's Circle" },
   { href: "/contact/", label: "Contact" },
 ];
 
